@@ -1,0 +1,50 @@
+[
+ {
+  "file": "images/grilled.webp",
+  "title": "File:Grilled Cheese Sandwich (16938984390).jpg",
+  "artist": "Willis Lam",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Grilled_Cheese_Sandwich_(16938984390).jpg",
+  "role": "cut"
+ },
+ {
+  "file": "images/hero.jpg",
+  "title": "File:Canal Days 2019 - Port Colborne, ON.jpg",
+  "artist": "JFVoll",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Canal_Days_2019_-_Port_Colborne,_ON.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/scones.jpg",
+  "title": "File:Lemon Scones (6849625315).jpg",
+  "artist": "Benson Kua from Toronto, Canada",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lemon_Scones_(6849625315).jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/soup.jpg",
+  "title": "File:Grilled four-cheese on Jesus bread sandwich with garlic-tomato soup.jpg",
+  "artist": "goblinbox_(queen_of_ad_hoc_bento) from Minneapolis, MN, US",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Grilled_four-cheese_on_Jesus_bread_sandwich_with_garlic-tomato_soup.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/lighthouse.jpg",
+  "title": "File:Lock 8 Gateway Park-Port Colborne-Ontario-20220317.jpg",
+  "artist": "Mhsheikholeslami",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lock_8_Gateway_Park-Port_Colborne-Ontario-20220317.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/bowl.jpg",
+  "title": "File:DFC 3982 A steaming bowl of homemade vegetable soup garnished with chopped parsley served with a slice of rustic brown bread.jpg",
+  "artist": "PattayaPatrol",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:DFC_3982_A_steaming_bowl_of_homemade_vegetable_soup_garnished_with_chopped_parsley_served_with_a_slice_of_rustic_brown_bread.jpg",
+  "role": "img"
+ }
+]

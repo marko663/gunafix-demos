@@ -1,0 +1,50 @@
+[
+ {
+  "file": "images/slice.webp",
+  "title": "File:Pizza slice (1).jpg",
+  "artist": "Renee Comet (Photographer)",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Pizza_slice_(1).jpg",
+  "role": "cut"
+ },
+ {
+  "file": "images/hero.jpg",
+  "title": "File:Selection of cheese at Sydney deli shop.jpg",
+  "artist": "Maksym Kozlenko",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Selection_of_cheese_at_Sydney_deli_shop.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/lasagna.jpg",
+  "title": "File:Lasagna with minced meat, Brisbane.jpg",
+  "artist": "Chris Olszewski",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lasagna_with_minced_meat,_Brisbane.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/espresso.jpg",
+  "title": "File:Cup of espresso 02.jpg",
+  "artist": "Kritzolina",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cup_of_espresso_02.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/pizza.jpg",
+  "title": "File:Brooklyn Slices of Pizza.JPG",
+  "artist": "Ashoka Jegroo",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Brooklyn_Slices_of_Pizza.JPG",
+  "role": "img"
+ },
+ {
+  "file": "images/lasagna2.jpg",
+  "title": "File:Lasagna (1).jpg",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lasagna_(1).jpg",
+  "role": "img"
+ }
+]

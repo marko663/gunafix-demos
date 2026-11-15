@@ -1,0 +1,50 @@
+[
+ {
+  "file": "images/guitar.webp",
+  "title": "File:Guitarra el\u00e9ctrica.JPG",
+  "artist": "Rjcastillo",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Guitarra_el%C3%A9ctrica.JPG",
+  "role": "cut"
+ },
+ {
+  "file": "images/hero.jpg",
+  "title": "File:Noisepollution (3).jpg",
+  "artist": "\u00a9 1971markus",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Noisepollution_(3).jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/nachos.jpg",
+  "title": "File:Nachos (2897108459).jpg",
+  "artist": "Mack Male from Edmonton, AB, Canada",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nachos_(2897108459).jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/clock.jpg",
+  "title": "File:Chatham Street Clock, Chatham, Ontario, 2025-07-06 01.jpg",
+  "artist": "Chris Woodrich",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chatham_Street_Clock,_Chatham,_Ontario,_2025-07-06_01.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/taps.jpg",
+  "title": "File:Beer Taps from the EBA Beer Tasting - Flickr - Andre Charland.jpg",
+  "artist": "Andre Charland from Canada",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Beer_Taps_from_the_EBA_Beer_Tasting_-_Flickr_-_Andre_Charland.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/river.jpg",
+  "title": "File:50 Queen Street South, Tilbury, Ontario, 2026-09-07 01.jpg",
+  "artist": "Chris Woodrich",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:50_Queen_Street_South,_Tilbury,_Ontario,_2026-09-07_01.jpg",
+  "role": "img"
+ }
+]
