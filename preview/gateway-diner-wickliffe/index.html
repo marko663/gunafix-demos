@@ -1,0 +1,247 @@
+<!doctype html><html lang="en-US"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>The Gateway Diner · Breakfast all day · Wickliffe, OH</title>
+<meta name="description" content="The Gateway Diner on Euclid Ave, Wickliffe, Ohio. Breakfast served all day, every day, hand pressed burgers and homemade soups.">
+<meta name="theme-color" content="#FFD84A">
+<link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="core.css"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🍔%3C/text%3E%3C/svg%3E">
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script defer src="core.js"></script><script defer src="app.js"></script>
+<style>
+:root{--y:#FFD84A;--ink:#121212;--k:#E4352A;--w:#FFFDF5;--b:3px solid var(--ink);--sh:8px 8px 0 var(--ink);--d:'Dela Gothic One',Impact,sans-serif;--m:'IBM Plex Mono',ui-monospace,monospace;--t:'Inter Tight',system-ui,sans-serif}
+body{background:var(--y);color:var(--ink);font:400 17px/1.55 var(--t)}
+.demo-bar{background:var(--ink);color:var(--y);font-family:var(--m)}
+.mono{font-family:var(--m);text-transform:uppercase;letter-spacing:.08em;font-size:13px}
+.wrap{width:min(1320px,100% - 32px);margin-inline:auto}
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:var(--y);border-bottom:var(--b)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.logo{font:400 20px/1 var(--d);text-decoration:none;letter-spacing:-.01em}
+.logo span{color:var(--k)}
+.nav ul{display:none;list-style:none;margin:0;padding:0;gap:26px}
+.nav ul a{text-decoration:none}.nav ul a:hover{text-decoration:underline;text-decoration-thickness:3px}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 14px/1 var(--m);text-transform:uppercase;letter-spacing:.06em;padding:14px 18px;border:var(--b);background:var(--w);text-decoration:none;box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn.k{background:var(--k);color:var(--w)}
+/* hero */
+.hero{padding:34px 0 40px;border-bottom:var(--b)}
+.hero-grid{display:grid;gap:26px;grid-template-columns:minmax(0,1fr)}
+.h1{font:400 17vw/.9 var(--d);margin:0;letter-spacing:-.02em;text-transform:uppercase}
+.h1 .l{display:block}.h1 .k{color:var(--k)}
+.h1 .sm{display:block;letter-spacing:0}
+.h1 .l:last-child{font-size:.3em;line-height:1.1;margin-top:.35em}
+.hero{position:relative}.egg{position:absolute;right:5vw;top:19vw;width:clamp(110px,17vw,260px);pointer-events:none}
+html.motion .egg{animation:wob 5s ease-in-out infinite}@keyframes wob{50%{transform:rotate(8deg) translateY(-8px)}}
+@media (max-width:767px){.egg{top:auto;bottom:-40px;right:8px;width:110px;z-index:2}}
+html.motion .h1 .l{overflow:hidden}
+html.motion .h1 .l>span{display:inline-block;animation:up .9s cubic-bezier(.2,.8,.2,1) both}
+html.motion .h1 .l:nth-child(2)>span{animation-delay:.12s}html.motion .h1 .l:nth-child(3)>span{animation-delay:.24s}
+@keyframes up{from{transform:translateY(105%)}}
+.stamp{position:relative;width:132px;height:132px;flex:none}
+.stamp svg{width:100%;height:100%}
+html.motion .stamp svg{animation:spin 14s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stamp b{position:absolute;inset:0;display:grid;place-items:center;font:400 30px var(--d);color:var(--k)}
+.lede{font-size:19px;max-width:34ch;margin:0}
+.ticket{background:var(--w);border:var(--b);box-shadow:var(--sh);padding:22px 22px 26px;position:relative;font-family:var(--m)}
+.ticket::before,.ticket::after{content:"";position:absolute;left:-3px;right:-3px;height:12px;background:radial-gradient(circle at 8px 0,transparent 7px,var(--w) 7.5px) -2px 0/16px 12px repeat-x}
+.ticket::before{top:-12px;transform:scaleY(-1)}.ticket::after{display:none}
+.ticket h2{font:600 13px var(--m);letter-spacing:.1em;margin:0 0 14px;display:flex;justify-content:space-between;border-bottom:2px dashed var(--ink);padding-bottom:10px}
+.status{display:inline-block;font:600 14px var(--m);padding:6px 10px;border:2px solid var(--ink);margin-bottom:12px}
+.status.is-open{background:#2BB673}.status.is-closed{background:var(--k);color:var(--w)}
+.hrs{width:100%;border-collapse:collapse;font-size:14px}
+.hrs td{padding:6px 0;border-bottom:1px dotted #9a9a9a}.hrs td:last-child{text-align:right}
+.hrs tr.today td{font-weight:600;background:var(--y)}
+.ticket .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.note{font-size:12px;margin:10px 0 0;opacity:.8}
+/* marquee */
+.mq{background:var(--ink);color:var(--y);overflow:hidden;border-bottom:var(--b);white-space:nowrap}
+.mq-t{display:inline-flex;gap:40px;padding:14px 0;font:600 15px var(--m);text-transform:uppercase;letter-spacing:.1em}
+html.motion .mq-t{animation:mq 26s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+.mq-t span::before{content:"✱ ";color:var(--k)}
+/* burger */
+.press{border-bottom:var(--b);background:var(--w);position:relative}
+.press-in{min-height:100svh;display:grid;align-content:center;gap:18px;padding:40px 0}
+.stage{position:relative;width:min(88vw,460px);aspect-ratio:1;margin-inline:auto}
+.stage svg{width:100%;height:100%;overflow:hidden}
+.caps{list-style:none;margin:0;padding:0;font-family:var(--m)}
+.caps li{border:var(--b);background:var(--y);padding:12px 14px;margin-bottom:-3px;display:flex;gap:12px;align-items:baseline}
+.caps li b{font:400 18px var(--d);text-transform:uppercase}
+.caps li i{font-style:normal;font-size:12px;opacity:.7;margin-left:auto}
+.press h2{font:400 clamp(34px,6vw,76px)/.95 var(--d);text-transform:uppercase;margin:0}
+/* friends */
+.sec{padding:80px 0;border-bottom:var(--b)}
+.sec-h{font:400 clamp(40px,8vw,120px)/.9 var(--d);text-transform:uppercase;margin:0 0 30px;letter-spacing:-.02em}
+.comic{display:grid;gap:18px}
+.panel{background:var(--w);border:var(--b);box-shadow:var(--sh);padding:22px;position:relative}
+.panel .n{position:absolute;top:-16px;left:16px;background:var(--k);color:var(--w);font:600 13px var(--m);padding:4px 10px;border:2px solid var(--ink)}
+.panel p{margin:8px 0 0;font-size:18px}
+.bub{display:inline-block;font:400 22px/1.1 var(--d);background:var(--y);border:var(--b);padding:12px 14px;border-radius:18px 18px 18px 0;margin-bottom:6px}
+.friends svg{width:100%;max-width:340px;height:auto;margin:6px auto 0}
+/* bento */
+.bento{display:grid;gap:16px}
+.cell{border:var(--b);background:var(--w);box-shadow:var(--sh);padding:22px;min-height:180px;display:flex;flex-direction:column;justify-content:space-between}
+.cell h3{font:400 clamp(24px,2.5vw,40px)/.95 var(--d);overflow-wrap:anywhere;text-transform:uppercase;margin:0}
+.cell p{margin:12px 0 0}
+.cell.k{background:var(--k);color:var(--w)}.cell.i{background:var(--ink);color:var(--y)}.cell.y{background:var(--y)}
+.cell .big{font:400 clamp(44px,6.4vw,104px)/.8 var(--d);display:block;overflow-wrap:anywhere}
+/* visit */
+.visit{display:grid;gap:20px}
+.map{border:var(--b);box-shadow:var(--sh);background:var(--w);padding:22px;display:flex;flex-direction:column;gap:14px}
+.addr{font:400 clamp(26px,4vw,48px)/1 var(--d);text-transform:uppercase}
+footer{padding:40px 0 110px;font:400 13px var(--m)}
+footer a{text-decoration:underline}
+/* curtain */
+.curtain{background:var(--k);color:var(--w)}
+.curtain .wrap{min-height:100%;display:grid;align-content:center;gap:26px;padding:70px 0}
+.curtain h2{font:400 clamp(48px,11vw,150px)/.88 var(--d);margin:0;text-transform:uppercase}
+.curtain .btn{font-size:16px}
+.x{position:absolute;top:16px;right:16px;background:var(--w);color:var(--ink);border:var(--b);width:48px;height:48px;font:600 20px var(--m)}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:0;border-top:var(--b)}
+.sticky a,.sticky button{flex:1;text-align:center;padding:16px 8px;font:600 14px var(--m);text-transform:uppercase;text-decoration:none;border:0;background:var(--w)}
+.sticky .k{background:var(--k);color:var(--w);border-left:var(--b)}
+/* ---------- iPad 768–1024: distinct 2-col layout ---------- */
+@media (min-width:768px){
+ .wrap{width:min(1320px,100% - 64px)}
+ .nav ul{display:flex}
+ .h1{font-size:14vw}
+ .hero-grid{grid-template-columns:minmax(0,1fr)}
+ .hero-grid .h1{grid-column:1/-1}
+ .ticket{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+ .ticket h2{grid-column:1/-1}
+ .press-in{min-height:100vh}
+ .stage{width:min(62vw,520px)}
+ .caps{display:grid;grid-template-columns:1fr;max-width:560px;margin-inline:auto;width:100%}
+ .comic{grid-template-columns:1fr 1fr}
+ .comic .panel:last-child{grid-column:1/-1}
+ .bento{grid-template-columns:1fr 1fr}
+ .bento .wide{grid-column:1/-1}
+ .visit{grid-template-columns:1fr 1fr}
+ .sticky{display:none}
+ footer{padding-bottom:40px}
+}
+/* ---------- Laptop >=1025: asymmetric bento, side-by-side press ---------- */
+@media (min-width:1025px){
+ .h1{font-size:10.4vw}
+ .hero{padding:48px 0 56px}
+ .hero-grid{grid-template-columns:minmax(0,1fr);gap:30px}
+ .hero-side{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px;align-items:start}
+ .ticket{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;grid-column:auto}
+ .egg{top:15.5vw;right:9vw}
+ .press-in{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center;gap:40px;min-height:100vh}
+ .press-copy{grid-column:1;grid-row:1}
+ .stage{grid-column:2;grid-row:1;width:min(44vw,640px)}
+ .comic{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}
+ .comic .panel:nth-child(2){margin-top:70px}.comic .panel:last-child{grid-column:auto;margin-top:140px}
+ .bento{grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:minmax(220px,auto)}
+ .bento .wide{grid-column:span 2}.bento .tall{grid-row:span 2}
+ .visit{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+}
+@media (max-width:767px){
+ .hero-side{display:grid;gap:22px}
+ .stamp{width:92px;height:92px}
+ .stamp b{font-size:22px}
+ .hero{position:relative}
+ .caps li:not(.on){display:none}
+ html.rm .caps li{display:flex}
+ .caps li{margin-bottom:0}
+}
+@media (min-width:768px) and (max-width:1024px){ .caps li:not(.on){opacity:.35} html.rm .caps li{opacity:1} .stamp{width:120px;height:120px} }
+@media (min-width:1025px){ .caps li{opacity:.3;transition:opacity .3s} .caps li.on{opacity:1} html.rm .caps li{opacity:1} }
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="demo-bar">Preview redesign by GunaFix for The Gateway Diner · not the official website</div>
+<header class="nav"><div class="wrap">
+ <a class="logo" href="#top">THE GATEWAY <span>DINER</span></a>
+ <ul><li><a class="mono" href="#press">Burgers</a></li><li><a class="mono" href="#friends">Our story</a></li><li><a class="mono" href="#cooking">Menu</a></li><li><a class="mono" href="#visit">Visit</a></li></ul>
+ <button class="btn k" data-open="#order">Order</button>
+</div></header>
+<main id="main">
+<section class="hero" id="top"><svg class="egg" viewBox="0 0 200 180" aria-hidden="true"><path d="M30 92c-14-40 30-78 70-70 22-28 78-12 82 26 26 22 14 76-22 84-20 40-90 40-110 6C18 136 8 112 30 92z" fill="#FFFDF5" stroke="#121212" stroke-width="5"/><circle cx="104" cy="88" r="34" fill="#FFB300" stroke="#121212" stroke-width="5"/><path d="M90 74c6-6 14-8 20-6" stroke="#FFFDF5" stroke-width="6" stroke-linecap="round" fill="none"/></svg><div class="wrap hero-grid">
+ <h1 class="h1" data-fit data-fit-max="240"><span class="l"><span>Breakfast</span></span><span class="l"><span class="k">all day.</span></span><span class="l"><span class="sm">Every day. Wickliffe, OH.</span></span></h1>
+ <div class="hero-side">
+  <div style="display:flex;gap:20px;align-items:center">
+   <div class="stamp" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><path id="c" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs><circle cx="100" cy="100" r="96" fill="#FFFDF5" stroke="#121212" stroke-width="5"/><text style="font:600 19px 'IBM Plex Mono',monospace;letter-spacing:3px"><textPath href="#c">WHERE FRIENDS BECOME FAMILY ✱ WHERE FRIENDS BECOME FAMILY ✱ </textPath></text></svg><b>GD</b></div>
+   <p class="lede">Family owned &amp; operated on Euclid Ave. Hand pressed burgers made fresh daily, homemade soups, and you won't walk out hungry.</p>
+  </div>
+  <div class="ticket" aria-label="Opening hours">
+   <h2><span>ORDER #29325</span><span>EUCLID AVE</span></h2>
+   <div><span class="status" data-status>Hours</span>
+   <table class="hrs" data-hours><tbody>
+    <tr data-day="0"><td>Monday</td><td>8:00–3:00</td></tr><tr data-day="1"><td>Tuesday</td><td>8:00–3:00</td></tr><tr data-day="2"><td>Wednesday</td><td>8:00–3:00</td></tr><tr data-day="3"><td>Thursday</td><td>8:00–3:00</td></tr><tr data-day="4"><td>Friday</td><td>8:00–3:00</td></tr><tr data-day="5"><td>Saturday</td><td>8:00–2:00</td></tr><tr data-day="6"><td>Sunday</td><td>8:00–2:00</td></tr>
+   </tbody></table></div>
+   <div><p class="note">Hours will change for holidays. Gift cards available.</p>
+   <div class="row"><a class="btn k" href="https://www.toasttab.com/the-gateway-diner/v3" rel="noopener">Order on Toast</a><a class="btn" href="tel:+14402958095">440-295-8095</a></div></div>
+  </div>
+ </div>
+</div></section>
+<div class="mq" aria-hidden="true"><div class="mq-t"><span>Breakfast all day</span><span>Hand pressed burgers</span><span>Homemade soups</span><span>Gift cards available</span><span>Order online</span><span>Breakfast all day</span><span>Hand pressed burgers</span><span>Homemade soups</span><span>Gift cards available</span><span>Order online</span></div></div>
+
+<section class="press" id="press"><div class="wrap press-in">
+ <div class="press-copy">
+  <p class="mono">Fresh daily · no frozen patties on this ticket</p>
+  <h2>Hand pressed.<br>Right here.</h2>
+  <ol class="caps" id="caps">
+   <li class="on"><b>Bun down</b><i>01</i></li>
+   <li><b>Smash</b><span>hand pressed fresh</span><i>02</i></li>
+   <li><b>Cheese on</b><i>03</i></li>
+   <li><b>Lettuce, tomato</b><i>04</i></li>
+   <li><b>Order up!</b><i>05</i></li>
+  </ol>
+ </div>
+ <div class="stage" aria-hidden="true">
+  <svg viewBox="0 0 400 400" id="burger">
+   <ellipse cx="200" cy="356" rx="170" ry="18" fill="#121212" opacity=".15"/>
+   <g id="b-bot"><path d="M58 300h284c8 0 12 6 10 14l-6 22c-3 10-10 16-20 16H74c-10 0-17-6-20-16l-6-22c-2-8 2-14 10-14z" fill="#E9A43C" stroke="#121212" stroke-width="4"/></g>
+   <g id="b-pat"><rect x="46" y="250" width="308" height="52" rx="22" fill="#6B3A1F" stroke="#121212" stroke-width="4"/><path d="M70 268h40M150 280h50M240 266h60M120 290h30" stroke="#3E2010" stroke-width="5" stroke-linecap="round"/></g>
+   <g id="b-chs"><path d="M50 246h300l-8 18-26 10-10 34-12-34-60 8-8 26-10-28-70 2-14 30-12-30-40-6z" fill="#FFB300" stroke="#121212" stroke-width="4" stroke-linejoin="round"/></g>
+   <g id="b-let"><path d="M44 232c20-18 30 10 50-6s30 12 52-4 30 12 52-2 32 12 52-2 30 10 52-4 36 6 54 2l-2 20H46z" fill="#43B05C" stroke="#121212" stroke-width="4" stroke-linejoin="round"/></g>
+   <g id="b-tom"><rect x="70" y="208" width="120" height="24" rx="12" fill="#E4352A" stroke="#121212" stroke-width="4"/><rect x="210" y="208" width="120" height="24" rx="12" fill="#E4352A" stroke="#121212" stroke-width="4"/></g>
+   <g id="b-top"><path d="M50 206c0-80 70-124 150-124s150 44 150 124z" fill="#E9A43C" stroke="#121212" stroke-width="4"/><g fill="#FFFDF5" stroke="#121212" stroke-width="2"><ellipse cx="140" cy="128" rx="8" ry="4" transform="rotate(-20 140 128)"/><ellipse cx="200" cy="110" rx="8" ry="4"/><ellipse cx="260" cy="128" rx="8" ry="4" transform="rotate(20 260 128)"/><ellipse cx="170" cy="160" rx="8" ry="4" transform="rotate(-10 170 160)"/><ellipse cx="235" cy="158" rx="8" ry="4" transform="rotate(12 235 158)"/><ellipse cx="110" cy="170" rx="8" ry="4" transform="rotate(-30 110 170)"/><ellipse cx="292" cy="170" rx="8" ry="4" transform="rotate(30 292 170)"/></g></g>
+   <g id="b-steam" fill="none" stroke="#121212" stroke-width="4" stroke-linecap="round"><path d="M150 60c-14-16 14-26 0-44"/><path d="M200 50c-14-16 14-26 0-44"/><path d="M250 60c-14-16 14-26 0-44"/></g>
+   <circle id="b-ball" cx="200" cy="262" r="64" fill="#6B3A1F" stroke="#121212" stroke-width="4" opacity="0"/><g id="b-spat" opacity="0"><rect x="120" y="-60" width="160" height="22" rx="4" fill="#C9CED6" stroke="#121212" stroke-width="4"/><rect x="190" y="-160" width="20" height="104" rx="6" fill="#121212"/></g>
+  </svg>
+ </div>
+</div></section>
+
+<section class="sec friends" id="friends"><div class="wrap">
+ <h2 class="sec-h" data-r>Two friends.<br>One diner.</h2>
+ <div class="comic">
+  <div class="panel" data-r><span class="n">PANEL 1</span><span class="bub">"Let's do it."</span><p>The Gateway Diner was founded by two girls who became good friends, which then soon formed a family.</p></div>
+  <div class="panel" data-r><span class="n">PANEL 2</span><span class="bub">A crazy journey.</span><p>Being so close, they decided to follow their dreams and take a crazy journey opening up The Gateway Diner.</p></div>
+  <div class="panel" data-r><span class="n">PANEL 3</span><span class="bub">Pull up a stool.</span><p>Casual comfort, honest cooking and a place to laugh, talk and meet new friends. Loved by locals and travelers from all around.</p></div>
+ </div>
+</div></section>
+
+<section class="sec" id="cooking"><div class="wrap">
+ <h2 class="sec-h" data-r>What's<br>cooking</h2>
+ <div class="bento">
+  <div class="cell y wide tall" data-r><span class="mono">All day, every day</span><div><span class="big">Breakfast</span><p>Breakfast is served all day, every day. Come at 8, come at 2.</p></div></div>
+  <div class="cell k" data-r><span class="mono">Fresh daily</span><h3>Hand pressed burgers</h3></div>
+  <div class="cell" data-r><span class="mono">From scratch</span><h3>Homemade soups</h3></div>
+  <div class="cell i wide" data-r><span class="mono">American home cooking</span><h3>You won't walk out hungry.</h3></div>
+  <div class="cell" data-r><span class="mono">Gift cards</span><h3>Available</h3><p>Ask at the counter.</p></div>
+  <div class="cell y" data-r><span class="mono">Full menu</span><h3>On Toast</h3><a class="btn" href="https://www.toasttab.com/the-gateway-diner/v3" rel="noopener">See menu</a></div>
+ </div>
+</div></section>
+
+<section class="sec" id="visit"><div class="wrap visit">
+ <div class="map" data-r><span class="mono">Find us</span><div class="addr">29325 Euclid Ave<br>Wickliffe, OH 44092</div>
+  <div class="row" style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=The+Gateway+Diner,+29325+Euclid+Ave,+Wickliffe,+OH+44092" rel="noopener">Directions</a><a class="btn" href="tel:+14402958095">Call 440-295-8095</a></div></div>
+ <div class="map" data-r style="background:var(--ink);color:var(--y)"><span class="mono">Write to us</span><a class="addr" style="font-size:clamp(15px,1.7vw,24px);word-break:break-all" href="mailto:thegatewaydiner2019@yahoo.com">thegatewaydiner2019@yahoo.com</a><p style="margin:0">Order ahead online for pickup, or come on in.</p><button class="btn k" data-open="#order" style="align-self:start">Order now</button></div>
+</div></section>
+</main>
+<footer><div class="wrap">© <span data-year></span> The Gateway Diner, Wickliffe, Ohio. Facts from the diner's own website. Illustrations by GunaFix, not photos of the diner's food. Preview by GunaFix.</div></footer>
+
+<div class="curtain" id="order" hidden role="dialog" aria-modal="true" aria-label="Order"><button class="x" data-close aria-label="Close">✕</button><div class="wrap">
+ <p class="mono">Order up</p><h2>Hungry?<br>Let's go.</h2>
+ <div style="display:flex;gap:16px;flex-wrap:wrap"><a class="btn" href="https://www.toasttab.com/the-gateway-diner/v3" rel="noopener">Order online (Toast)</a><a class="btn" href="tel:+14402958095">Call 440-295-8095</a></div>
+ <p class="mono" style="color:var(--w)">Mon–Fri 8–3 · Sat–Sun 8–2</p>
+</div></div>
+<nav class="sticky" aria-label="Quick actions"><a href="tel:+14402958095">Call</a><a class="k" href="https://www.toasttab.com/the-gateway-diner/v3" rel="noopener">Order online</a></nav>
+<script>window.HOURS={tz:'America/New_York',days:[[["08:00","15:00"]],[["08:00","15:00"]],[["08:00","15:00"]],[["08:00","15:00"]],[["08:00","15:00"]],[["08:00","14:00"]],[["08:00","14:00"]]],labels:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],open:'Open now',closed:'Closed',until:'until',opens:'opens',today:'today'}</script>
+</body></html>

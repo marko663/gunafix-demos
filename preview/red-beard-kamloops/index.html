@@ -1,0 +1,180 @@
+<!doctype html><html lang="en-CA"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Red Beard · Part pub, part cafe, part restaurant · Kamloops</title>
+<meta name="description" content="Red Beard, 449 Tranquille Rd, Kamloops. 18 rotating taps of BC craft beer and cider, third wave coffee, brunch, lunch and dinner from scratch.">
+<meta name="theme-color" content="#EFE7D7">
+<link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="core.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🍺%3C/text%3E%3C/svg%3E">
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script defer src="core.js"></script><script defer src="app.js"></script>
+<style>
+:root{--bone:#EFE7D7;--bark:#2B1D16;--gin:#C8461F;--hop:#D9B45A;--foam:#FFF9EE;--d:'Fraunces',Georgia,serif;--s:'Inter',system-ui,sans-serif}
+body{background:var(--bone);color:var(--bark);font:400 16px/1.55 var(--s)}
+.demo-bar{background:var(--bark);color:var(--bone)}
+.wrap{width:min(1360px,100% - 32px);margin-inline:auto}
+.d{font-family:var(--d);font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144;font-weight:900;line-height:.86;letter-spacing:-.02em}
+.k{font:600 12px/1.2 var(--s);letter-spacing:.18em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;border:1.5px solid var(--bark);background:transparent;font:600 15px var(--s);text-decoration:none;transition:background .2s,color .2s}
+.btn:hover{background:var(--bark);color:var(--bone)}
+.btn.g{background:var(--gin);border-color:var(--gin);color:var(--foam)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.nav .d{font-size:28px;text-decoration:none}
+.nav ul{display:none;gap:26px;list-style:none;margin:0;padding:0}.nav ul a{text-decoration:none;font-weight:600}
+/* hero */
+.hero{padding:20px 0 0}
+.hgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+.h1{font-size:20vw;margin:0}
+.h1 .l{display:block}.h1 em{font-style:italic;color:var(--gin);font-weight:700}
+.lede{font-size:18px;max-width:40ch;margin:0}
+.taps{margin-top:30px;border-top:1.5px solid var(--bark);border-bottom:1.5px solid var(--bark);background:var(--foam)}
+.tap-row{display:grid;grid-auto-flow:column;grid-auto-columns:72px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px 10px 0;gap:6px}
+.tap{all:unset;scroll-snap-align:start;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:6px;padding-bottom:14px;position:relative}
+.tap:focus-visible{outline:2px solid var(--gin);outline-offset:2px;border-radius:8px}
+.tap svg{width:44px;height:120px;transform-origin:50% 100%;transition:transform .35s cubic-bezier(.3,1.6,.5,1)}
+.tap:hover svg,.tap.on svg{transform:rotate(-16deg)}
+.tap i{font:700 11px var(--s);font-style:normal;opacity:.6}
+.tap .drop{position:absolute;bottom:34px;width:6px;height:6px;border-radius:50%;background:var(--hop);opacity:0}
+.tap.on .drop{animation:dr .7s ease-in 2}
+@keyframes dr{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(26px)}}
+.tap-bar{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border-top:1.5px solid var(--bark);font-size:14px;flex-wrap:wrap}
+/* pint */
+.pint{position:relative}
+.p-in{min-height:100svh;display:grid;align-content:center;gap:24px;padding:40px 0}
+.glass{width:min(56vw,300px);margin-inline:auto}
+.glass svg{width:100%;height:auto}
+.pour-h{font-size:clamp(40px,10.5vw,80px);margin:10px 0 26px;white-space:nowrap}
+@media (min-width:1025px){.pour-h{font-size:clamp(50px,5.2vw,86px)}}
+.times{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.times li{border-top:1.5px solid var(--bark);padding:14px 0 0;display:grid;grid-template-columns:76px minmax(0,1fr);gap:10px}
+.times b{font:900 26px/1 var(--d);font-variation-settings:"SOFT" 100,"WONK" 1}
+.times h3{margin:0 0 4px;font:700 22px/1.1 var(--d)}
+.times p{margin:0;font-size:15px}
+/* menu */
+.menu{padding:60px 0 70px;background:var(--bark);color:var(--bone)}
+.mh{font-size:clamp(52px,9vw,140px);margin:0 0 20px}
+.mtools{position:sticky;top:0;z-index:20;background:var(--bark);padding:12px 0;display:grid;gap:12px;border-bottom:1.5px solid rgba(239,231,215,.3)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px}
+.chips button{flex:none;border:1.5px solid var(--bone);background:transparent;color:var(--bone);border-radius:999px;padding:10px 16px;font:600 14px var(--s)}
+.chips button[aria-pressed=true]{background:var(--hop);color:var(--bark);border-color:var(--hop)}
+.search{display:flex;align-items:center;gap:10px;border:1.5px solid var(--bone);border-radius:999px;padding:0 16px}
+.search input{all:unset;flex:1;padding:12px 0;font:500 16px var(--s);color:var(--bone)}
+.search input::placeholder{color:rgba(239,231,215,.6)}
+.count{font-size:13px;opacity:.75}
+.mlist{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0}
+.dish{padding:16px 0;border-bottom:1px solid rgba(239,231,215,.25);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px}
+.dish h3{margin:0;font:700 22px/1.15 var(--d);font-variation-settings:"SOFT" 100,"WONK" 1}
+.dish .p{font:700 18px var(--s);color:var(--hop)}
+.dish p{grid-column:1/-1;margin:0;font-size:14px;opacity:.8}
+.dish .c{grid-column:1/-1;font:600 11px var(--s);letter-spacing:.14em;text-transform:uppercase;color:var(--gin)}
+.none{padding:30px 0;font:italic 700 26px var(--d)}
+.mnote{font-size:13px;opacity:.7;margin-top:18px}
+/* visit */
+.visit{padding:70px 0 120px}
+.vgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+.vbig{font-size:clamp(44px,7vw,108px);margin:10px 0 18px}
+.hrs div{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(43,29,22,.25)}
+.hrs .today{font-weight:700;color:var(--gin)}
+.status{display:inline-block;padding:8px 14px;border-radius:999px;border:1.5px solid var(--bark);font-weight:600}
+.status.is-open{background:var(--hop);border-color:var(--hop)}
+.perks{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.perks span{border:1.5px solid var(--bark);border-radius:999px;padding:8px 14px;font-size:14px}
+.key{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:10px;margin-top:26px;font:italic 600 16px var(--d)}
+.key svg{width:26px;height:34px}
+.key:focus-visible{outline:2px solid var(--gin);outline-offset:4px}
+.secret{font:italic 700 clamp(22px,3vw,34px)/1.2 var(--d);color:var(--gin);margin:12px 0 0}
+footer{font-size:13px;padding:0 0 100px}
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:60}.sticky .btn{width:100%;justify-content:center}
+/* iPad */
+@media (min-width:768px){
+ .wrap{width:min(1360px,100% - 64px)}
+ .nav ul{display:flex}
+ .h1{font-size:15.5vw}
+ .hgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:end}
+ .hgrid .h1{grid-column:1/-1}
+ .tap-row{grid-auto-flow:row;grid-template-columns:repeat(9,minmax(0,1fr));overflow:visible}
+ .p-in{min-height:100vh}
+ .glass{width:300px}
+ .times{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 30px}
+ .mlist{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 34px}
+ .mtools{grid-template-columns:minmax(0,1fr) 260px;align-items:center}
+ .vgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .sticky{display:none}footer{padding-bottom:30px}
+}
+/* Laptop */
+@media (min-width:1025px){
+ .h1{font-size:11.6vw}
+ .hgrid{grid-template-columns:minmax(0,8fr) minmax(0,4fr)}
+ .hgrid .h1{grid-column:1}
+ .hgrid .side{padding-bottom:20px}
+ .tap-row{grid-template-columns:repeat(18,minmax(0,1fr));padding-inline:20px}
+ .p-in{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center;gap:60px}
+ .glass{grid-column:2;grid-row:1/3;width:min(30vw,400px)}
+ .times{grid-template-columns:minmax(0,1fr)}
+ .mgrid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:50px;align-items:start}
+ .mtools{position:sticky;top:30px;grid-template-columns:minmax(0,1fr);border:0;padding:0}
+ .chips{flex-direction:column;align-items:stretch}
+ .chips button{text-align:left;font-size:16px;padding:12px 18px}
+ .mlist{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:0}
+ .dish{border:1.5px solid rgba(239,231,215,.35);border-radius:18px;padding:20px;align-content:start}
+ .vgrid{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="demo-bar">Preview redesign by GunaFix for Red Beard, Kamloops · not the official website</div>
+<div class="wrap nav"><a class="d" href="#top">Red Beard</a><ul><li><a href="#taps">Taps</a></li><li><a href="#day">All day</a></li><li><a href="#menu">Menu</a></li><li><a href="#visit">Visit</a></li></ul><a class="btn g" href="#menu">Menu</a></div>
+<main id="main">
+<section class="hero" id="top">
+ <div class="wrap hgrid">
+  <h1 class="h1 d" data-fit data-fit-max="230"><span class="l">Craft beer</span><span class="l">to <em>coffee.</em></span></h1>
+  <div class="side"><p class="k">Part pub · part cafe · part restaurant · since 2012</p><p class="lede" style="margin-top:12px">Brunch to dinner, cooked from scratch. Eighteen rotating taps of the best BC craft beer and cider we can find, crafted cocktails and third wave coffee. A place for visiting.</p>
+   <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px"><a class="btn g" href="#menu">See the menu</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=449+Tranquille+Rd,+Kamloops,+BC+V2B+3G9" rel="noopener">Directions</a></div></div>
+ </div>
+ <div class="taps" id="taps"><div class="tap-row" id="taprow" aria-label="18 rotating taps"></div>
+  <div class="tap-bar"><span><b>18 rotating taps</b> · BC craft beer &amp; cider. The tap list changes often.</span><span id="tapmsg" aria-live="polite">Pull a handle.</span></div></div>
+</section>
+
+<section class="pint" id="day"><div class="wrap p-in">
+ <div><p class="k">One room, all day</p><h2 class="d pour-h">From the first<br>espresso to<br>the last pour.</h2>
+ <ol class="times" id="times">
+  <li><b>10:00</b><div><h3>Coffee &amp; brunch</h3><p>Espresso from Fernwood, filter from Counterpart, house-made bagels and bennies until 1pm.</p></div></li>
+  <li><b>13:00</b><div><h3>Lunch</h3><p>Grapefruit garden salad, butter chicken, gnocchi al tartufo.</p></div></li>
+  <li><b>18:00</b><div><h3>Dinner &amp; taps</h3><p>Steak frites, moules frites, seafood pasta and 18 rotating taps.</p></div></li>
+ </ol></div>
+ <div class="glass" aria-hidden="true"><svg viewBox="0 0 200 320">
+  <defs><clipPath id="gl"><path d="M30 30h140l-14 270c-1 10-8 16-18 16H62c-10 0-17-6-18-16z"/></clipPath></defs>
+  <g clip-path="url(#gl)"><rect id="beer" x="0" y="60" width="200" height="270" fill="#D9B45A"/><rect id="foam" x="0" y="34" width="200" height="34" fill="#FFF9EE"/>
+   <g id="bub" fill="#FFF9EE" opacity=".7"><circle cx="70" cy="280" r="3"/><circle cx="110" cy="240" r="2.5"/><circle cx="140" cy="290" r="3"/><circle cx="90" cy="200" r="2"/><circle cx="125" cy="170" r="2.5"/></g></g>
+  <path d="M30 30h140l-14 270c-1 10-8 16-18 16H62c-10 0-17-6-18-16z" fill="none" stroke="#2B1D16" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M50 60l8 220" stroke="#FFF9EE" stroke-width="6" stroke-linecap="round" opacity=".6"/>
+ </svg></div>
+</div></section>
+
+<section class="menu" id="menu"><div class="wrap">
+ <p class="k" style="color:var(--hop)">Spring–Summer 2026 menus</p>
+ <h2 class="mh d">The menu</h2>
+ <div class="mgrid">
+  <div class="mtools">
+   <div class="chips" role="group" aria-label="Filter by meal" id="chips"><button aria-pressed="true" data-c="all">Everything</button><button aria-pressed="false" data-c="Brunch">Brunch</button><button aria-pressed="false" data-c="Lunch">Lunch</button><button aria-pressed="false" data-c="Dinner">Dinner</button><button aria-pressed="false" data-c="Dessert">Dessert</button></div>
+   <label class="search"><span aria-hidden="true">⌕</span><span class="sr">Search the menu</span><input id="q" type="search" placeholder="Search: benny, curry, truffle…" autocomplete="off"></label>
+   <span class="count" id="count" aria-live="polite"></span>
+  </div>
+  <div><ul class="mlist" id="mlist"></ul><p class="none" id="none" hidden>Nothing on the menu by that name. Ask at the bar.</p>
+   <p class="mnote">From Red Beard's Spring–Summer 2026 menus. Menus change with the seasons and the tap list changes often.</p></div>
+ </div>
+</div></section>
+
+<section class="visit" id="visit"><div class="wrap vgrid">
+ <div><p class="k">Come visit</p><div class="vbig d">449 Tranquille Rd,<br>Kamloops</div><p>BC V2B 3G9</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn g" href="https://www.google.com/maps/dir/?api=1&destination=449+Tranquille+Rd,+Kamloops,+BC+V2B+3G9" rel="noopener">Get directions</a><a class="btn" href="mailto:redbeardcafe@gmail.com">redbeardcafe@gmail.com</a></div>
+  <div class="perks"><span>Brunch until 1pm</span><span>Bring the kids</span><span>Dogs on the patio</span><span>Date night</span></div>
+  <button class="key" id="key" aria-expanded="false" aria-controls="secret"><svg viewBox="0 0 26 34" aria-hidden="true"><circle cx="13" cy="11" r="8" fill="none" stroke="#2B1D16" stroke-width="3"/><path d="M13 16l-5 16h10z" fill="#2B1D16"/></svg>A keyhole?</button>
+  <p class="secret" id="secret" hidden>Do you know about our speakeasy? Ask at the bar.</p></div>
+ <div><span class="status" data-status>Hours</span><div class="hrs" data-hours style="margin-top:14px"><div data-day="0"><span>Monday</span><span>10am–10pm</span></div><div data-day="1"><span>Tuesday</span><span>10am–10pm</span></div><div data-day="2"><span>Wednesday</span><span>10am–10pm</span></div><div data-day="3"><span>Thursday</span><span>10am–10pm</span></div><div data-day="4"><span>Friday</span><span>10am–10pm</span></div><div data-day="5"><span>Saturday</span><span>10am–10pm</span></div><div data-day="6"><span>Sunday</span><span>10am–4pm</span></div></div></div>
+</div></section>
+</main>
+<footer><div class="wrap">© <span data-year></span> Red Beard, Kamloops. Menu, prices and hours from Red Beard's own website and 2026 PDF menus. Drawings by GunaFix. Preview by GunaFix.</div></footer>
+<div class="sticky"><a class="btn g" href="https://www.google.com/maps/dir/?api=1&destination=449+Tranquille+Rd,+Kamloops,+BC+V2B+3G9" rel="noopener">Directions to Red Beard</a></div>
+<script>window.HOURS={tz:'America/Vancouver',days:[[["10:00","22:00"]],[["10:00","22:00"]],[["10:00","22:00"]],[["10:00","22:00"]],[["10:00","22:00"]],[["10:00","22:00"]],[["10:00","16:00"]]],labels:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],open:'Open now',closed:'Closed',until:'until',opens:'opens',today:'today'}</script>
+</body></html>

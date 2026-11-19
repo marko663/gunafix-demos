@@ -1,0 +1,212 @@
+<!doctype html><html lang="en-GB"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Micklegate Brunch Box · Sandwiches made while you wait · York</title>
+<meta name="description" content="Micklegate Brunch Box, 91 Micklegate, York. Sandwiches freshly made while you wait, hot sandwiches, paninis, business lunches and buffets.">
+<meta name="theme-color" content="#1F8A4C">
+<link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="core.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🥪%3C/text%3E%3C/svg%3E">
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script defer src="core.js"></script><script defer src="app.js"></script>
+<style>
+:root{--w:#FBFBF7;--g:#1F8A4C;--gd:#14603A;--i:#141414;--f:'Bricolage Grotesque',system-ui,sans-serif;--o:2px solid var(--i)}
+body{background:var(--w);color:var(--i);font:400 17px/1.55 var(--f);font-variation-settings:"opsz" 14}
+.demo-bar{background:var(--i);color:var(--w)}
+.wrap{width:min(1320px,100% - 32px);margin-inline:auto}
+.check{background-color:var(--w);background-image:linear-gradient(90deg,rgba(31,138,76,.09) 50%,transparent 50%),linear-gradient(rgba(31,138,76,.09) 50%,transparent 50%);background-size:44px 44px}
+.d{font-weight:800;font-variation-settings:"opsz" 96,"wdth" 75;letter-spacing:-.02em;line-height:.88}
+.tag{display:inline-block;font:700 12px/1 var(--f);letter-spacing:.14em;text-transform:uppercase;background:var(--g);color:var(--w);padding:7px 10px;border-radius:999px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 22px;border-radius:999px;border:var(--o);background:var(--w);font:700 16px var(--f);text-decoration:none;transition:transform .15s}
+.btn:hover{transform:rotate(-2deg) scale(1.03)}
+.btn.g{background:var(--g);color:var(--w);border-color:var(--g)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:12px}
+.logo{font-size:22px;text-decoration:none}
+.logo b{color:var(--g)}
+.nav ul{display:none;list-style:none;gap:24px;margin:0;padding:0}.nav ul a{text-decoration:none;font-weight:600}
+/* hero */
+.hero{padding:26px 0 50px;border-bottom:var(--o)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:center}
+.h1{font-size:19vw;margin:10px 0 0}
+.h1 .l{display:block}.h1 .gr{color:var(--g)}
+.lede{font-size:19px;max-width:40ch;margin:0 0 20px}
+.hs{position:relative;width:min(100%,520px);justify-self:center}
+.hs svg{width:100%;height:auto;overflow:visible}
+.sticker{position:absolute;right:0;top:0;width:110px;height:110px;border-radius:50%;background:var(--g);color:var(--w);display:grid;place-content:center;text-align:center;font:800 13px/1.1 var(--f);transform:rotate(12deg);border:3px dashed var(--w);outline:2px solid var(--g)}
+.sticker b{font-size:40px;line-height:1}
+html.motion .hs .ly{animation:drop .7s cubic-bezier(.3,1.4,.5,1) both}
+@keyframes drop{from{transform:translateY(-140px);opacity:0}}
+/* builder */
+.builder{padding:70px 0;border-bottom:var(--o)}
+.bh{font-size:clamp(48px,9vw,124px);margin:12px 0 30px}
+.bgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+.stage{background:var(--w);border:var(--o);border-radius:24px;padding:18px;position:sticky;top:0;z-index:5;display:grid;grid-template-columns:110px minmax(0,1fr);gap:14px;align-items:center}
+.stage svg{width:100%;height:auto;overflow:visible}
+.stage .sum{font-size:14px;line-height:1.35}
+.stage .sum b{display:block;font-size:20px;font-weight:800;font-variation-settings:"wdth" 75}
+.step{border:var(--o);border-radius:24px;padding:22px;background:var(--w)}
+.step h3{font-size:30px;margin:0 0 4px}
+.step p{margin:0 0 16px;font-size:15px}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt span{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:999px;border:var(--o);font-weight:600;font-size:15px;cursor:pointer;transition:background .15s,color .15s,transform .15s;background:var(--w)}
+.opt span i{width:14px;height:14px;border-radius:50%;border:2px solid var(--i);display:inline-block}
+.opt input:checked+span{background:var(--i);color:var(--w)}
+.opt input:focus-visible+span{outline:3px solid var(--g);outline-offset:2px}
+.opt input:disabled+span{opacity:.35;cursor:not-allowed}
+.stepnav{display:none;gap:10px;margin-top:16px}
+.ring{background:var(--g);color:var(--w);border-color:var(--g)}
+.ring h3{color:var(--w)}
+.ring .order{font-size:22px;font-weight:700;line-height:1.3;margin:6px 0 18px;font-variation-settings:"wdth" 80}
+.ring .btn{background:var(--w);color:var(--i)}
+/* menu */
+.menu{padding:70px 0;border-bottom:var(--o)}
+.cards{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;margin-top:28px}
+.card{border:var(--o);border-radius:24px;padding:24px;background:var(--w)}
+.card h3{font-size:40px;margin:0 0 12px}
+.card ul{list-style:none;margin:0;padding:0}
+.card li{padding:10px 0;border-top:1.5px dashed rgba(20,20,20,.35)}
+.card li small{display:block;color:#555;font-size:14px}
+.card.g{background:var(--g);color:var(--w)}.card.g li{border-color:rgba(255,255,255,.4)}.card.g li small{color:#d9f0e2}
+/* suppliers + visit */
+.local{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.local span{border:var(--o);border-radius:999px;padding:10px 16px;font-weight:700;background:var(--w)}
+.visit{padding:70px 0 120px;display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+.vbig{font-size:clamp(44px,7vw,100px);margin:8px 0 16px}
+.status{display:inline-block;padding:8px 14px;border-radius:999px;font-weight:700;border:var(--o)}
+.status.is-open{background:var(--g);color:var(--w);border-color:var(--g)}.status.is-closed{background:var(--i);color:var(--w)}
+.hrs div{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1.5px dashed rgba(20,20,20,.35)}
+.hrs .today{font-weight:800;color:var(--g)}
+footer{padding:20px 0 100px;font-size:13px}
+.curtain{background:var(--g);color:var(--w)}
+.curtain .wrap{padding:80px 0;display:grid;gap:22px}
+.curtain h2{font-size:clamp(56px,11vw,150px);margin:0}
+.x{position:absolute;right:16px;top:16px;width:50px;height:50px;border-radius:50%;border:2px solid var(--w);background:transparent;color:var(--w);font-size:22px}
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:60}.sticky .btn{width:100%;justify-content:center;box-shadow:0 6px 0 var(--i)}
+/* phone: one step at a time */
+@media (max-width:767px){
+ .bgrid.js-steps .step{display:none}.bgrid.js-steps .step.cur{display:block}
+ .bgrid.js-steps .stepnav{display:flex}
+ .sticker{width:86px;height:86px;font-size:11px}.sticker b{font-size:30px}
+}
+/* iPad */
+@media (min-width:768px){
+ .wrap{width:min(1320px,100% - 64px)}
+ .nav ul{display:flex}
+ .h1{font-size:15vw}
+ .hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .hero-grid .h1{grid-column:1/-1}
+ .bgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .stage{grid-column:1/-1;grid-template-columns:200px minmax(0,1fr);top:10px}
+ .step.ring{grid-column:1/-1}
+ .cards{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .visit{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .sticky{display:none}footer{padding-bottom:30px}
+}
+/* Laptop */
+@media (min-width:1025px){
+ .hero-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+ .hero-grid .h1{grid-column:auto;font-size:11.5vw}
+ .hero-grid .htxt{grid-row:1;grid-column:1}
+ .hero-grid>div:nth-child(2){grid-row:2;grid-column:1}
+ .hero-grid .hs{grid-column:2;grid-row:1/3;width:100%;max-width:560px}
+ .hero{padding:40px 0 70px}
+ .bgrid{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:start}
+ .stage{grid-column:1;grid-row:1/4;display:block;top:30px;padding:34px}
+ .stage svg{max-width:420px;margin:0 auto 20px}
+ .step{grid-column:2}.step.ring{grid-column:2}
+ .cards{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .card h3{font-size:34px}
+ .visit{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="demo-bar">Preview redesign by GunaFix for Micklegate Brunch Box · not the official website</div>
+<div class="wrap nav"><a class="logo d" href="#top">Brunch <b>Box</b></a>
+ <ul><li><a href="#build">Build one</a></li><li><a href="#menu">Menu</a></li><li><a href="#visit">Visit</a></li></ul>
+ <button class="btn g" data-open="#office">Office lunch?</button></div>
+<main id="main">
+<section class="hero check" id="top"><div class="wrap hero-grid">
+ <div class="htxt"><span class="tag">91 Micklegate · York</span>
+ <h1 class="h1 d" data-fit data-fit-max="230"><span class="l">Made while</span><span class="l gr">you wait.</span></h1></div>
+ <div><p class="lede">A small traditional takeaway sandwich shop. Every sandwich freshly made in front of you, with fillings made fresh each day. Unlike any prepacked sandwich.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn g" href="#build">Build your sandwich</a><a class="btn" href="tel:+441904628493">Ring 01904 628493</a></div></div>
+ <div class="hs" aria-hidden="true"><div class="sticker"><span>Food hygiene</span><b>5</b><span>rating</span></div>
+  <svg viewBox="0 0 400 300">
+   <g class="ly" style="animation-delay:.7s"><path d="M40 120c0-70 320-70 320 0z" fill="#E7B86C" stroke="#141414" stroke-width="4"/><g fill="#FBFBF7"><ellipse cx="140" cy="80" rx="8" ry="4"/><ellipse cx="200" cy="66" rx="8" ry="4"/><ellipse cx="260" cy="80" rx="8" ry="4"/></g></g>
+   <g class="ly" style="animation-delay:.55s"><path d="M36 132c30 14 50-10 80 2s50-12 80 0 50-10 80 2 46-8 92 0v12H36z" fill="#5DBB63" stroke="#141414" stroke-width="4" stroke-linejoin="round"/></g>
+   <g class="ly" style="animation-delay:.4s"><rect x="44" y="146" width="312" height="26" rx="13" fill="#F2C94C" stroke="#141414" stroke-width="4"/></g>
+   <g class="ly" style="animation-delay:.25s"><rect x="40" y="172" width="320" height="30" rx="12" fill="#D9776A" stroke="#141414" stroke-width="4"/></g>
+   <g class="ly" style="animation-delay:.1s"><path d="M40 204h320c0 40-60 50-160 50S40 244 40 204z" fill="#E7B86C" stroke="#141414" stroke-width="4"/></g>
+   <ellipse cx="200" cy="280" rx="150" ry="10" fill="#141414" opacity=".12"/>
+  </svg></div>
+</div></section>
+
+<section class="builder" id="build"><div class="wrap">
+ <span class="tag">Any combination you like</span>
+ <h2 class="bh d">Build your<br>sandwich.</h2>
+ <form class="bgrid" id="bgrid" onsubmit="return false" aria-describedby="sum">
+  <div class="stage"><svg viewBox="0 0 400 320" id="sw" aria-hidden="true"></svg><div class="sum" id="sum" aria-live="polite"><b id="sum-h">White bread</b><span id="sum-t">Pick up to three fillings.</span></div></div>
+  <fieldset class="step cur" data-step="0"><legend class="sr">Step 1: bread</legend><h3 class="d">1 · Bread</h3><p>Standard or large rolls, or a tortilla wrap.</p>
+   <div class="opts">
+    <label class="opt"><input type="radio" name="bread" value="White bread" data-c="#F4E3C1" checked><span>White</span></label>
+    <label class="opt"><input type="radio" name="bread" value="Brown bread" data-c="#B98552"><span>Brown</span></label>
+    <label class="opt"><input type="radio" name="bread" value="Granary" data-c="#C99A5B" data-seed="1"><span>Granary</span></label>
+    <label class="opt"><input type="radio" name="bread" value="Large bread roll" data-c="#E7B86C" data-roll="1"><span>Large roll</span></label>
+    <label class="opt"><input type="radio" name="bread" value="Tortilla wrap" data-c="#EFD9A7" data-wrap="1"><span>Tortilla wrap</span></label>
+   </div><div class="stepnav"><button type="button" class="btn g" data-next>Next: fillings →</button></div></fieldset>
+  <fieldset class="step" data-step="1"><legend class="sr">Step 2: fillings</legend><h3 class="d">2 · Fillings</h3><p>Made fresh each day. Choose up to three.</p>
+   <div class="opts" id="fill">
+    <label class="opt"><input type="checkbox" name="f" value="Cheese" data-c="#F2C94C"><span><i style="background:#F2C94C"></i>Cheese</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Cheese savoury" data-c="#F6DC7A"><span><i style="background:#F6DC7A"></i>Cheese savoury</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Chicken mayo" data-c="#F3E7CF"><span><i style="background:#F3E7CF"></i>Chicken mayo</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Coronation chicken" data-c="#E9B949"><span><i style="background:#E9B949"></i>Coronation chicken</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Chicken tikka" data-c="#D9673E"><span><i style="background:#D9673E"></i>Chicken tikka</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Sliced ham" data-c="#E79A9A"><span><i style="background:#E79A9A"></i>Ham</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Sliced beef" data-c="#9C4A3C"><span><i style="background:#9C4A3C"></i>Beef</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Minted lamb" data-c="#8E6B5A"><span><i style="background:#8E6B5A"></i>Minted lamb</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Tuna mayo" data-c="#D8CDB8"><span><i style="background:#D8CDB8"></i>Tuna mayo</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Bacon" data-c="#C4553F"><span><i style="background:#C4553F"></i>Bacon</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Sweetcorn" data-c="#FFD23F"><span><i style="background:#FFD23F"></i>Sweetcorn</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Butcher's steak & onions" data-c="#6E3424" data-hot="1"><span><i style="background:#6E3424"></i>Hot: butcher's steak</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Roast pork, apple & stuffing" data-c="#D9A07A" data-hot="1"><span><i style="background:#D9A07A"></i>Hot: roast pork</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Pulled pork & coleslaw" data-c="#A8553A" data-hot="1"><span><i style="background:#A8553A"></i>Hot: pulled pork</span></label>
+    <label class="opt"><input type="checkbox" name="f" value="Meatballs in salsa" data-c="#B53A2A" data-hot="1"><span><i style="background:#B53A2A"></i>Hot: meatballs</span></label>
+   </div><div class="stepnav"><button type="button" class="btn" data-prev>← Bread</button><button type="button" class="btn g" data-next>Next →</button></div></fieldset>
+  <fieldset class="step ring" data-step="2"><legend class="sr">Step 3: order</legend><h3 class="d">3 · Ring it in</h3>
+   <p class="order" id="order-txt">White bread with your choice of fillings.</p>
+   <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="tel:+441904628493">Ring 01904 628493</a><button type="button" class="btn" data-prev style="background:transparent;color:#fff;border-color:#fff">← Change</button></div>
+   <p style="margin:14px 0 0;font-size:14px">Ask in the shop for today's prices and daily special. Allergen list always available.</p></fieldset>
+ </form>
+</div></section>
+
+<section class="menu check" id="menu"><div class="wrap">
+ <span class="tag">The menu is only a guide</span>
+ <h2 class="bh d" style="margin-bottom:0">Today's<br>fillings</h2>
+ <div class="cards">
+  <div class="card" data-r><h3 class="d">Cold</h3><ul><li>Cheese<small>or cheese savoury with onions and peppers</small></li><li>Chicken mayonnaise<small>with bacon or sweetcorn</small></li><li>Sliced beef, ham or chicken</li><li>Chicken, sweet chilli &amp; jalapeños</li><li>Chicken tikka</li><li>Minted lamb</li><li>Coronation chicken</li><li>Tuna mayo<small>or tuna crunch, or with sweetcorn</small></li></ul></div>
+  <div class="card g" data-r><h3 class="d">Hot</h3><ul><li>Butcher's steak<small>with onions or mushrooms</small></li><li>Roast pork<small>with apple and stuffing</small></li><li>Pulled pork<small>with coleslaw</small></li><li>Meatballs<small>with a salsa sauce</small></li><li>Tortilla wrap<small>with chilli and cheese</small></li></ul></div>
+  <div class="card" data-r><h3 class="d">Paninis</h3><ul><li>Brie, bacon &amp; caramelised onion chutney</li><li>Chicken pesto &amp; mozzarella</li><li>Meatballs &amp; cheese</li></ul><p style="font-size:14px;margin:14px 0 0">Soup in the colder months, salad boxes all year, a seasonal daily special, homemade cakes and scones.</p></div>
+  <div class="card" data-r><h3 class="d">Business</h3><ul><li>Hot breakfast sandwiches<small>orders of 6 or more</small></li><li>Working lunch<small>minimum 10 people: sandwich platters, crisps and traybakes</small></li><li>Extras<small>pork pies, quiche, mini bites, Yorkshire puddings, fruit platters</small></li></ul><button class="btn g" data-open="#office" style="margin-top:14px">Plan a lunch</button></div>
+ </div>
+ <p style="margin:30px 0 6px;font-weight:700">Proudly local, as far as possible:</p>
+ <div class="local"><span>Brackenhill Fine Foods</span><span>Pipers Crisps</span><span>Tarte and Berry brownies</span></div>
+</div></section>
+
+<section class="wrap visit" id="visit">
+ <div><span class="tag">Pop in</span><div class="vbig d">91 Micklegate,<br>York</div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn g" href="tel:+441904628493">Ring 01904 628493</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Brunch+Box,+91+Micklegate,+York" rel="noopener">Directions</a></div>
+  <p style="margin-top:16px"><a href="mailto:brunchbox91@gmail.com">brunchbox91@gmail.com</a></p></div>
+ <div><span class="status" data-status>Hours</span>
+  <div class="hrs" data-hours style="margin-top:14px"><div data-day="0"><span>Monday</span><span>7:30–2:00</span></div><div data-day="1"><span>Tuesday</span><span>7:30–2:00</span></div><div data-day="2"><span>Wednesday</span><span>7:30–2:00</span></div><div data-day="3"><span>Thursday</span><span>7:30–2:00</span></div><div data-day="4"><span>Friday</span><span>7:30–2:00</span></div><div data-day="5"><span>Saturday</span><span>Closed</span></div><div data-day="6"><span>Sunday</span><span>Closed</span></div></div>
+  <p style="font-size:14px">Buffets on request. Food hygiene rating 5.</p></div>
+</section>
+</main>
+<footer><div class="wrap">© <span data-year></span> Micklegate Brunch Box. Facts from the shop's own website; prices are not shown because the listed ones look out of date. Drawings by GunaFix. Preview by GunaFix.</div></footer>
+<div class="curtain" id="office" hidden role="dialog" aria-modal="true" aria-label="Business lunches"><button class="x" data-close aria-label="Close">✕</button><div class="wrap">
+ <span class="tag" style="background:#fff;color:var(--g);justify-self:start">Business lunches</span><h2 class="d">Lunch for<br>the office?</h2>
+ <p style="font-size:20px;max-width:46ch;margin:0">Hot breakfast sandwiches for orders of 6 or more. Working lunches for a minimum of 10: sandwich platters, crisps and traybakes. Buffets on request.</p>
+ <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="tel:+441904628493">Ring 01904 628493</a><a class="btn" href="mailto:brunchbox91@gmail.com">Email us</a></div></div></div>
+<div class="sticky"><a class="btn g" href="tel:+441904628493">Ring your order in · 01904 628493</a></div>
+<script>window.HOURS={tz:'Europe/London',days:[[["07:30","14:00"]],[["07:30","14:00"]],[["07:30","14:00"]],[["07:30","14:00"]],[["07:30","14:00"]],[],[]],labels:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],open:'Open now',closed:'Closed',until:'until',opens:'opens',today:'today'}</script>
+</body></html>

@@ -1,0 +1,156 @@
+<!doctype html><html lang="pt-PT"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>O Frade · Cozinha alentejana · Calçada da Ajuda, Belém</title>
+<meta name="description" content="O Frade, Calçada da Ajuda 14, Lisboa. Cozinha alentejana, bons vinhos e gente à volta do balcão. Almoço e jantar todos os dias.">
+<meta name="theme-color" content="#4A0E1B">
+<link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="core.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🍷%3C/text%3E%3C/svg%3E">
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script defer src="core.js"></script><script defer src="app.js"></script>
+<style>
+:root{--ox:#4A0E1B;--dp:#2C0710;--ch:#F2EADB;--ol:#8A9A3B;--ck:#C9A36B;--d:'Bodoni Moda',Didot,serif;--s:'Manrope',system-ui,sans-serif}
+body{background:var(--ox);color:var(--ch);font:400 17px/1.6 var(--s)}
+.demo-bar{background:var(--dp);color:var(--ck)}
+.wrap{width:min(1360px,100% - 40px);margin-inline:auto}
+.d{font-family:var(--d);font-variation-settings:"opsz" 30;font-weight:800;line-height:.82;letter-spacing:-.02em}
+.k{font:600 12px/1.3 var(--s);letter-spacing:.22em;text-transform:uppercase;color:var(--ck)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;border:1px solid var(--ch);font:600 14px var(--s);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;background:transparent;color:var(--ch);transition:background .25s,color .25s}
+.btn:hover{background:var(--ch);color:var(--ox)}
+.btn.o{background:var(--ol);border-color:var(--ol);color:var(--dp)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:1px solid rgba(201,163,107,.4)}
+.nav .brand{font:italic 800 24px var(--d);text-decoration:none}
+.nav ul{display:none;gap:30px;list-style:none;margin:0;padding:0}.nav ul a{text-decoration:none}
+/* tiles hero */
+.hero{padding:34px 0 50px;min-height:calc(100svh - 110px);display:grid;grid-template-columns:minmax(0,1fr);align-content:space-between;gap:30px}
+.tiles{display:flex;align-items:flex-end;gap:.04em;font-size:24vw;font-family:var(--d);font-weight:900;line-height:.8;user-select:none;font-variation-settings:"opsz" 36}
+.tile{display:inline-block;transition:transform .5s cubic-bezier(.2,.8,.2,1),color .3s;will-change:transform}
+.tile.it{font-style:italic;color:var(--ck)}
+.tile.sp{width:.25em}
+button.tile{all:unset;cursor:pointer;display:inline-block;font:inherit;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+button.tile:focus-visible{outline:2px solid var(--ck);outline-offset:4px}
+html.motion:not(.fine) .tile{animation:br 4s ease-in-out infinite}
+@keyframes br{50%{transform:translateY(-.03em)}}
+.hb{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+.tag{font:italic 500 clamp(22px,2.4vw,34px)/1.25 var(--d);max-width:28ch;margin:0}
+.wink{font:italic 600 18px var(--d);color:var(--ck);min-height:1.4em;margin:0}
+/* track */
+.track-w{position:relative;border-block:1px solid rgba(201,163,107,.4)}
+.track{display:flex;flex-direction:column}
+.panel{min-height:auto;padding:60px 20px;display:grid;gap:18px;border-bottom:1px solid rgba(201,163,107,.25);align-content:center}
+.panel .n{font:italic 800 clamp(80px,22vw,200px)/.8 var(--d);color:var(--ck);font-variation-settings:"opsz" 40}
+.panel h2{font:800 clamp(40px,7vw,96px)/.9 var(--d);margin:0;font-variation-settings:"opsz" 24}
+.panel p{max-width:38ch;font-size:18px;margin:0}
+.panel.vinho{background:var(--dp)}
+.glass{width:min(56vw,240px)}
+.glass svg{width:100%;height:auto}
+/* carta */
+.carta{padding:80px 0}
+.cgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+.card{border:1px solid var(--ck);padding:30px;position:relative}
+.card::before{content:"";position:absolute;inset:8px;border:1px solid rgba(201,163,107,.4);pointer-events:none}
+.card h3{font:italic 800 clamp(34px,4vw,56px)/1 var(--d);margin:0 0 14px}
+/* visit */
+.visit{padding:60px 0 120px;border-top:1px solid rgba(201,163,107,.4)}
+.vgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
+.addr{font:800 clamp(38px,6vw,90px)/.9 var(--d);margin:10px 0 18px}
+.hrs div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;padding:10px 0;border-bottom:1px solid rgba(201,163,107,.3);font-size:15px}
+.hrs .today{color:var(--ol);font-weight:700}
+.status{display:inline-block;padding:8px 16px;border-radius:999px;border:1px solid var(--ck);font-size:14px}
+.status.is-open{background:var(--ol);color:var(--dp);border-color:var(--ol)}
+footer{font-size:12px;padding:0 0 100px;color:var(--ck)}
+.curtain{background:var(--ch);color:var(--ox)}
+.curtain .wrap{padding:80px 0;display:grid;gap:26px}
+.curtain h2{font-size:clamp(64px,12vw,190px);margin:0}
+.curtain .btn{border-color:var(--ox);color:var(--ox)}.curtain .btn:hover{background:var(--ox);color:var(--ch)}
+.x{position:absolute;right:18px;top:18px;width:50px;height:50px;border-radius:50%;border:1px solid var(--ox);background:transparent;color:var(--ox);font-size:20px}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--ck);background:var(--dp)}
+.sticky a,.sticky button{all:unset;text-align:center;padding:16px 4px;font:600 13px var(--s);letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.sticky button{background:var(--ol);color:var(--dp)}
+/* phone: chapters as swipe carousel, word stacked */
+@media (max-width:767px){
+ .tiles{flex-direction:column;align-items:flex-start;font-size:30vw;gap:0}
+ .tiles .row2{display:flex}
+ .track{flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory}
+ .panel{flex:0 0 88%;scroll-snap-align:start;border-bottom:0;border-right:1px solid rgba(201,163,107,.25);min-height:72svh}
+ .dots{display:flex;gap:8px;justify-content:center;padding:14px 0}
+ .dots span{width:8px;height:8px;border-radius:50%;background:rgba(201,163,107,.4)}.dots span.on{background:var(--ck)}
+}
+/* iPad: stacked split panels */
+@media (min-width:768px){
+ .wrap{width:min(1360px,100% - 64px)}
+ .nav ul{display:flex}
+ .tiles{flex-wrap:wrap;font-size:26vw}
+ .tiles .row2{display:flex}
+ .hb{grid-template-columns:minmax(0,1fr) auto;align-items:end}
+ .panel{grid-template-columns:minmax(0,4fr) minmax(0,6fr);padding:80px 32px;min-height:70vh;align-items:center}
+ .panel .n{grid-row:1/4}
+ .glass{width:220px}
+ .dots{display:none}
+ .cgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .vgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .sticky{display:none}footer{padding-bottom:30px}
+}
+/* Laptop: horizontal track */
+@media (min-width:1025px){
+ .tiles{flex-wrap:nowrap;font-size:20.5vw}
+ .hb{grid-template-columns:minmax(0,6fr) minmax(0,4fr) auto}
+ .track-w{overflow:hidden}
+ .track{flex-direction:row;width:max-content;height:100vh}
+ .panel{width:100vw;height:100vh;min-height:0;grid-template-columns:minmax(0,5fr) minmax(0,5fr);padding:0 8vw;border-bottom:0;border-right:1px solid rgba(201,163,107,.25)}
+ .panel .n{grid-row:1/4;font-size:min(30vw,360px)}
+ .panel.vinho{grid-template-columns:minmax(0,4fr) minmax(0,4fr) minmax(0,3fr)}
+ .panel.vinho .glass{grid-column:3;grid-row:1/4;width:100%;max-width:300px}
+ html.rm .track,html.notrack .track{flex-direction:column;width:auto;height:auto}
+ html.rm .panel,html.notrack .panel{width:auto;height:auto;min-height:80vh}
+ .cgrid{grid-template-columns:minmax(0,5fr) minmax(0,4fr) minmax(0,3fr)}
+ .vgrid{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+}
+</style></head><body>
+<a class="skip" href="#main">Saltar para o conteúdo</a>
+<div class="demo-bar">Pré-visualização de redesign pela GunaFix para O Frade · não é o site oficial</div>
+<div class="wrap nav"><a class="brand" href="#top">O Frade</a><ul><li><a href="#casa">A casa</a></li><li><a href="#carta">Carta</a></li><li><a href="#visita">Visitar</a></li></ul><button class="btn o" data-open="#reservar">Reservar</button></div>
+<main id="main">
+<section class="wrap hero" id="top">
+ <h1 class="sr">O Frade, cozinha alentejana em Lisboa</h1>
+ <div class="tiles" id="tiles" aria-hidden="true"><span class="row1"><button class="tile it" id="o" tabindex="-1">O</button></span><span class="tile sp"></span><span class="row2"><span class="tile">F</span><span class="tile">r</span><span class="tile">a</span><span class="tile">d</span><span class="tile">e</span></span></div>
+ <div class="hb">
+  <div><p class="k">Cozinha alentejana · Calçada da Ajuda · Belém</p><p class="tag" style="margin-top:14px">A porta continua aberta: boa comida, bons vinhos e gente à volta do balcão.</p></div>
+  <p class="wink" id="wink" aria-live="polite"></p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn o" data-open="#reservar">Reservar mesa</button><a class="btn" href="tel:+351939482939">Ligar</a></div>
+ </div>
+</section>
+
+<section class="track-w" id="casa" aria-label="A casa"><div class="track" id="track">
+ <article class="panel"><span class="n">01</span><p class="k">Cozinha</p><h2>Alentejana,<br>em Lisboa</h2><p>Restaurante de cozinha alentejana na Calçada da Ajuda, em Belém.</p></article>
+ <article class="panel vinho"><span class="n">02</span><p class="k">Vinho</p><h2>Bons<br>vinhos</h2><p>Boa comida e bons vinhos, como sempre gostámos.</p>
+  <div class="glass" aria-hidden="true"><svg viewBox="0 0 200 320"><defs><clipPath id="bowl"><path d="M40 20h120c4 60-6 110-60 120C46 130 36 80 40 20z"/></clipPath></defs>
+   <g clip-path="url(#bowl)"><rect id="wine" x="0" y="40" width="200" height="120" fill="#8E1B30"/><g id="bub" fill="#F2EADB" opacity=".5"><circle cx="80" cy="120" r="3"/><circle cx="110" cy="100" r="2"/><circle cx="130" cy="126" r="2.5"/></g></g>
+   <path d="M40 20h120c4 60-6 110-60 120C46 130 36 80 40 20z" fill="none" stroke="#F2EADB" stroke-width="4"/><path d="M100 140v130M56 290c0-14 20-20 44-20s44 6 44 20z" fill="none" stroke="#F2EADB" stroke-width="4" stroke-linejoin="round"/><path d="M58 36c-2 30 2 54 14 70" stroke="#F2EADB" stroke-width="5" stroke-linecap="round" opacity=".5" fill="none"/></svg></div></article>
+ <article class="panel"><span class="n">03</span><p class="k">Balcão</p><h2>Gente à volta<br>do balcão</h2><p>O Frade vive do balcão e de quem se senta à volta dele.</p></article>
+ <article class="panel"><span class="n">04</span><p class="k">Mesa</p><h2>Esperamos<br>por si</h2><p>Almoço das 12h30 às 16h00 e jantar a partir das 18h00, todos os dias.</p><div><button class="btn o" data-open="#reservar">Reservar mesa</button></div></article>
+</div><div class="dots" id="dots" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span></div></section>
+
+<section class="carta" id="carta"><div class="wrap cgrid">
+ <div><p class="k">A carta</p><h2 class="d" style="font-size:clamp(54px,9vw,140px);margin:12px 0 0">Muda<br><em style="color:var(--ck)">com a casa</em></h2></div>
+ <div class="card"><h3>Carta do dia</h3><p>A carta muda com a casa: peça a carta do dia ao balcão ou pelo +351 939 482 939.</p><a class="btn" href="tel:+351939482939">+351 939 482 939</a></div>
+ <div class="card"><h3>Instagram</h3><p>Siga a casa para ver o que sai da cozinha.</p><a class="btn" href="https://www.instagram.com/restauranteofrade/" rel="noopener">@restauranteofrade</a></div>
+</div></section>
+
+<section class="visit" id="visita"><div class="wrap vgrid">
+ <div><p class="k">Onde estamos</p><div class="addr">Calçada da<br>Ajuda, 14</div><p>1300-014 Lisboa, Portugal</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn o" data-open="#reservar">Reservar mesa</button><a class="btn" href="https://www.google.com/maps/search/?api=1&query=O+Frade,+Cal%C3%A7ada+da+Ajuda+14,+1300-014+Lisboa" rel="noopener">Como chegar</a></div>
+  <p style="margin-top:16px"><a href="mailto:fraderestaurante@gmail.com">fraderestaurante@gmail.com</a> · <a href="https://www.facebook.com/ofradebelem" rel="noopener">Facebook</a></p></div>
+ <div><span class="status" data-status>Horário</span><div class="hrs" data-hours style="margin-top:14px"><div data-day="0"><span>Segunda</span><span>12h30–16h00 · 18h00–23h00</span></div><div data-day="1"><span>Terça</span><span>12h30–16h00 · 18h00–23h00</span></div><div data-day="2"><span>Quarta</span><span>12h30–16h00 · 18h00–23h00</span></div><div data-day="3"><span>Quinta</span><span>12h30–16h00 · 18h00–23h00</span></div><div data-day="4"><span>Sexta</span><span>12h30–16h00 · 18h00–23h30</span></div><div data-day="5"><span>Sábado</span><span>12h30–16h00 · 18h00–23h30</span></div><div data-day="6"><span>Domingo</span><span>12h30–16h00 · 18h00–23h30</span></div></div></div>
+</div></section>
+</main>
+<footer><div class="wrap">© <span data-year></span> O Frade · Calçada da Ajuda. Dados do site e das páginas oficiais da casa. Ilustração da GunaFix. Pré-visualização GunaFix.</div></footer>
+<div class="curtain" id="reservar" hidden role="dialog" aria-modal="true" aria-label="Reservar mesa"><button class="x" data-close aria-label="Fechar">✕</button><div class="wrap">
+ <p class="k" style="color:var(--ox)">Três maneiras</p><h2 class="d">Uma mesa<br><em>n'O Frade</em></h2>
+ <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="https://widget.thefork.com/11cf1326-3441-4589-a0c5-2632eca0ee12?UTM_source=website" rel="noopener">Reservar online</a><a class="btn" href="tel:+351939482939">+351 939 482 939</a><a class="btn" href="mailto:fraderestaurante@gmail.com">Email</a></div>
+ <p style="margin:0">Almoço 12h30–16h00 · Jantar 18h00–23h00 (sexta a domingo até 23h30)</p></div></div>
+<nav class="sticky" aria-label="Ações rápidas"><a href="tel:+351939482939">Ligar</a><button data-open="#reservar">Reservar</button></nav>
+<script>window.HOURS={tz:'Europe/Lisbon',days:[[["12:30","16:00"],["18:00","23:00"]],[["12:30","16:00"],["18:00","23:00"]],[["12:30","16:00"],["18:00","23:00"]],[["12:30","16:00"],["18:00","23:00"]],[["12:30","16:00"],["18:00","23:30"]],[["12:30","16:00"],["18:00","23:30"]],[["12:30","16:00"],["18:00","23:30"]]],labels:['segunda','terça','quarta','quinta','sexta','sábado','domingo'],open:'Aberto agora',closed:'Fechado',until:'até às',opens:'abre',today:'hoje às'}</script>
+</body></html>

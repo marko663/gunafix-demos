@@ -1,0 +1,187 @@
+<!doctype html><html lang="en-GB"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Skoosh · Cafe &amp; friends · 50 Main Street, Drymen</title>
+<meta name="description" content="Skoosh, 50 Main Street, Drymen. Coffee that people love from 100% Fair Trade beans, full Scottish breakfasts, baguettes, scones and ice cream. Open seven days.">
+<meta name="theme-color" content="#2A140C">
+<link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="core.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🍦%3C/text%3E%3C/svg%3E">
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script defer src="core.js"></script><script defer src="app.js"></script>
+<style>
+:root{--v:#FFF6E6;--c:#2A140C;--r:#E3263A;--wf:#E8B26A;--d:'Bagel Fat One',system-ui,sans-serif;--b:'Nunito',system-ui,sans-serif}
+body{background:var(--v);color:var(--c);font:500 18px/1.55 var(--b)}
+.demo-bar{background:var(--c);color:var(--v)}
+.wrap{width:min(1320px,100% - 32px);margin-inline:auto}
+.d{font-family:var(--d);font-weight:400;line-height:.9}
+.chip{display:inline-block;padding:8px 14px;border-radius:999px;background:var(--r);color:var(--v);font:800 13px var(--b);letter-spacing:.06em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 24px;border-radius:999px;background:var(--c);color:var(--v);font:800 16px var(--b);text-decoration:none;border:0;transition:transform .2s cubic-bezier(.3,1.6,.5,1)}
+.btn:hover{transform:scale(1.06) rotate(-2deg)}
+.btn.r{background:var(--r)}.btn.o{background:transparent;color:var(--c);box-shadow:inset 0 0 0 3px var(--c)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+.nav .d{font-size:30px;text-decoration:none}
+.nav ul{display:none;gap:26px;list-style:none;margin:0;padding:0}.nav ul a{text-decoration:none;font-weight:800}
+/* hero */
+.hero{background:var(--c);color:var(--v);position:relative;padding:30px 0 0}
+.hero .nav a{color:var(--v)}
+.hgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;position:relative;padding-bottom:40px}
+.h1{font-size:30vw;margin:10px 0 0;color:var(--v)}
+.h1 .l{display:block}
+html.motion .h1 .ch{display:inline-block;animation:boing 1.1s cubic-bezier(.3,1.8,.5,1) both}
+@keyframes boing{from{transform:translateY(60%) scaleY(.4)}}
+.lede{font-size:19px;max-width:34ch;margin:0}
+.cone{position:relative;width:min(62vw,320px);justify-self:center}
+.cone svg{width:100%;height:auto;overflow:visible}
+.cone button{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);white-space:nowrap}
+.scoopmsg{min-height:1.5em;text-align:center;font-weight:800;margin:56px 0 0}
+.drip{display:block;width:100%;height:70px;color:var(--c)}
+/* scroll-built cone */
+.build{position:relative}
+.b-in{min-height:100svh;display:grid;align-content:center;gap:16px;padding:30px 0}
+.b-stage{width:min(70vw,360px);margin-inline:auto}
+.b-stage svg{width:100%;height:auto;overflow:hidden}
+.b-caps{display:grid;gap:10px}
+.b-caps div{background:#fff;border-radius:28px;padding:18px 22px;box-shadow:0 6px 0 var(--c);border:3px solid var(--c)}
+.b-caps b{font:400 28px/1 var(--d);display:block;margin-bottom:4px}
+.b-h{font-size:clamp(46px,8vw,120px);margin:0}
+/* day blobs */
+.days{padding:60px 0 80px}
+.dgrid{display:grid;grid-auto-flow:column;grid-auto-columns:84%;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 4px 20px}
+.day{scroll-snap-align:start;border-radius:44px 44px 44px 12px;padding:30px 24px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;background:#fff;border:3px solid var(--c)}
+.day:nth-child(2){background:var(--wf)}.day:nth-child(3){background:var(--r);color:var(--v);border-color:var(--r)}.day:nth-child(4){background:var(--c);color:var(--v)}
+.day h3{font:400 clamp(30px,3.2vw,46px)/.95 var(--d);margin:10px 0 12px}
+.day .t{font:800 13px var(--b);letter-spacing:.14em;text-transform:uppercase}
+html.motion .day[data-r]{clip-path:circle(0% at 50% 100%);opacity:1;transform:none;transition:clip-path 1s cubic-bezier(.7,0,.2,1)}
+html.motion .day[data-r].in{clip-path:circle(150% at 50% 100%)}
+/* menu */
+.menu{background:#fff;border-radius:60px 60px 0 0;padding:60px 0 70px;border-top:3px solid var(--c)}
+.tabs{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 14px}
+.tabs button{flex:none;border:3px solid var(--c);background:var(--v);border-radius:999px;padding:12px 20px;font:800 16px var(--b)}
+.tabs button[aria-selected=true]{background:var(--c);color:var(--v)}
+.panel ul{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.panel li{background:var(--v);border-radius:26px;padding:18px 22px}
+.panel li b{display:block;font-size:20px;font-weight:800}
+.panel li span{font-size:15px;opacity:.8}
+/* visit */
+.visit{background:var(--r);color:var(--v);padding:70px 0 120px}
+.vgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+.vbig{font-size:clamp(44px,7vw,104px);margin:10px 0 18px}
+.hrs div{display:flex;justify-content:space-between;padding:9px 0;border-bottom:2px dotted rgba(255,246,230,.5)}
+.hrs .today{font-weight:900}
+.status{display:inline-block;padding:9px 16px;border-radius:999px;background:var(--v);color:var(--c);font-weight:900}
+.visit .btn{background:var(--v);color:var(--c)}.visit .btn.o{background:transparent;color:var(--v);box-shadow:inset 0 0 0 3px var(--v)}
+.visit a{color:var(--v)}
+footer{background:var(--r);color:var(--v);font-size:13px;padding:0 0 100px}
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:60}.sticky .btn{width:100%;justify-content:center;box-shadow:0 5px 0 rgba(0,0,0,.25)}
+/* iPad */
+@media (min-width:768px){
+ .wrap{width:min(1320px,100% - 64px)}
+ .nav ul{display:flex}
+ .h1{font-size:24vw}
+ .hgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center}
+ .hgrid .h1{grid-column:1/-1}
+ .cone{width:300px}
+ .b-in{min-height:100vh}
+ .b-caps{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .dgrid{grid-auto-flow:row;grid-template-columns:minmax(0,1fr) minmax(0,1fr);overflow:visible}
+ .panel ul{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .vgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .sticky{display:none}footer{padding-bottom:30px}
+}
+/* Laptop */
+@media (min-width:1025px){
+ .h1{font-size:19vw;margin-top:0}
+ .hgrid{grid-template-columns:minmax(0,5fr) minmax(0,4fr) minmax(0,3fr);align-items:end}
+ .hgrid .h1{grid-column:1/-1;grid-row:1}
+ .hgrid .lede-w{grid-column:1;grid-row:2}
+ .cone{grid-column:3;grid-row:2;align-self:start;width:100%;max-width:300px;margin-top:-30px}
+ .b-in{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center;gap:60px}
+ .b-stage{grid-column:1;grid-row:1/3;width:100%;max-width:420px}
+ .b-caps{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .dgrid{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .day:nth-child(even){margin-top:60px}
+ .mgrid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:50px;align-items:start}
+ .tabs{flex-direction:column;align-items:flex-start;position:sticky;top:30px}
+ .tabs button{font-size:22px;padding:14px 26px}
+ .vgrid{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="demo-bar">Preview redesign by GunaFix for Skoosh, Drymen · not the official website</div>
+<main id="main">
+<section class="hero" id="top"><div class="wrap">
+ <div class="nav"><a class="d" href="#top">Skoosh</a><ul><li><a href="#day">Your day</a></li><li><a href="#menu">Menu</a></li><li><a href="#visit">Visit</a></li></ul><a class="btn r" href="tel:+441360661212">Call</a></div>
+ <div class="hgrid">
+  <h1 class="h1 d" data-fit data-fit-max="400" aria-label="Skoosh"><span class="l" aria-hidden="true"><span class="ch">S</span><span class="ch" style="animation-delay:.05s">k</span><span class="ch" style="animation-delay:.1s">o</span><span class="ch" style="animation-delay:.15s">o</span><span class="ch" style="animation-delay:.2s">s</span><span class="ch" style="animation-delay:.25s">h</span></span></h1>
+  <div class="lede-w"><span class="chip">Cafe &amp; friends · Drymen</span><p class="lede" style="margin-top:14px">Coffee that people love, made with 100% Fair Trade beans. Full Scottish breakfasts, fresh baguettes, scones and ice cream on Main Street.</p>
+   <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px"><a class="btn r" href="#menu">See the menu</a><a class="btn o" style="color:var(--v);box-shadow:inset 0 0 0 3px var(--v)" href="#visit">Open 7 days</a></div></div>
+  <div class="cone">
+   <svg viewBox="0 0 200 300" id="hcone" aria-hidden="true">
+    <g id="scoops"></g>
+    <path d="M52 150l48 140 48-140z" fill="#E8B26A" stroke="#FFF6E6" stroke-width="5" stroke-linejoin="round"/><path d="M62 168l70 40M70 200l54 30M58 186l60-30M74 222l44-24" stroke="#B07A3A" stroke-width="4"/>
+    <ellipse cx="100" cy="148" rx="54" ry="10" fill="#E8B26A" stroke="#FFF6E6" stroke-width="5"/>
+   </svg>
+   <button class="btn r" type="button" id="addscoop" aria-describedby="scoopmsg">+ another scoop</button>
+  </div>
+ </div>
+ <p class="scoopmsg" id="scoopmsg" aria-live="polite"></p>
+</div>
+<svg class="drip" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v20c-40 0-50 40-80 40s-30-40-70-40-60 30-90 30-40-30-80-30-50 46-90 46-40-46-80-46-60 20-100 20-40-20-80-20-50 40-90 40-40-40-80-40-60 28-90 28-40-28-80-28-50 44-90 44-40-44-80-44-40 20-80 20-50-20-80-20-40 36-80 36S50 20 0 20z" fill="currentColor"/></svg>
+</section>
+
+<section class="build" id="build"><div class="wrap b-in">
+ <div class="b-stage" aria-hidden="true"><svg viewBox="0 0 220 340">
+  <g id="k-sprinkles" stroke-width="5" stroke-linecap="round"><path d="M80 52l6 -8" stroke="#E3263A"/><path d="M120 46l8 4" stroke="#2A140C"/><path d="M100 60l-2 9" stroke="#E8B26A"/><path d="M140 70l7-5" stroke="#E3263A"/><path d="M70 82l-6-6" stroke="#2A140C"/></g>
+  <g id="k-cherry"><path d="M112 18c4-10 14-14 22-14" stroke="#2A140C" stroke-width="4" fill="none"/><circle cx="108" cy="30" r="14" fill="#E3263A" stroke="#2A140C" stroke-width="4"/></g>
+  <g id="k-s2"><path d="M54 96c-6-36 30-60 56-56 30-6 66 20 58 56 10 6 8 22-4 24H58c-14-2-14-18-4-24z" fill="#FFF6E6" stroke="#2A140C" stroke-width="5"/></g>
+  <g id="k-s1"><path d="M42 150c-8-36 26-60 68-60s76 24 68 60c12 6 10 24-4 26H46c-14-2-16-20-4-26z" fill="#7A3E22" stroke="#2A140C" stroke-width="5"/><path d="M60 168c8 14 14 20 12 30M150 168c-4 16-10 22-6 34" stroke="#7A3E22" stroke-width="12" stroke-linecap="round"/></g>
+  <g id="k-cone"><path d="M46 176l64 156 64-156z" fill="#E8B26A" stroke="#2A140C" stroke-width="5" stroke-linejoin="round"/><path d="M60 200l90 50M68 236l70 38M56 222l80-40M74 262l56-30" stroke="#B07A3A" stroke-width="4"/></g>
+ </svg></div>
+ <h2 class="b-h d">One cone,<br>all day.</h2>
+ <div class="b-caps">
+  <div data-r><b>The cone</b>Tubs, cones and waffle cones.</div>
+  <div data-r><b>Scoop one</b>Ice cream flavours change weekly.</div>
+  <div data-r><b>Scoop two</b>Or make it a milkshake: vanilla, chocolate, strawberry, raspberry.</div>
+  <div data-r><b>The cherry</b>Coffee that people love, 100% Fair Trade beans.</div>
+ </div>
+</div></section>
+
+<section class="days" id="day"><div class="wrap">
+ <span class="chip">Open seven days</span>
+ <h2 class="d" style="font-size:clamp(46px,8vw,120px);margin:14px 0 20px">A day at<br>Skoosh</h2>
+ <div class="dgrid">
+  <article class="day" data-r><div><span class="t">Morning</span><h3>Full Scottish breakfast</h3></div><p>Bacon, sausage, haggis, black pudding, potato scone, tomatoes, egg, mushrooms and beans.</p></article>
+  <article class="day" data-r><div><span class="t">Lunch</span><h3>Baguettes &amp; paninis</h3></div><p>Freshly prepared, with dressed side salad and coleslaw.</p></article>
+  <article class="day" data-r><div><span class="t">Afternoon</span><h3>You can never go wrong with a scone</h3></div><p>Bakes and cakes made fresh daily, changing with the seasons.</p></article>
+  <article class="day" data-r><div><span class="t">Anytime</span><h3>Ice cream</h3></div><p>Tubs, cones and waffle cones; flavours change weekly.</p></article>
+ </div>
+</div></section>
+
+<section class="menu" id="menu"><div class="wrap">
+ <h2 class="d" style="font-size:clamp(46px,8vw,120px);margin:0 0 24px">The menu</h2>
+ <div class="mgrid">
+  <div class="tabs" role="tablist" aria-label="Menu sections">
+   <button role="tab" id="t0" aria-controls="p0" aria-selected="true">Morning</button><button role="tab" id="t1" aria-controls="p1" aria-selected="false" tabindex="-1">Lunch</button><button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">Sweet</button><button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">Coffee</button></div>
+  <div>
+   <div class="panel" role="tabpanel" id="p0" aria-labelledby="t0"><ul><li><b>Daily pastry &amp; bread selection</b><span>Changes daily, see the board</span></li><li><b>Full Scottish breakfast</b><span>Bacon, sausage, haggis, black pudding, potato scone, tomatoes, egg, mushrooms, beans</span></li><li><b>Small breakfast</b><span>Choose any six items</span></li><li><b>Hot filled rolls &amp; breakfast baguettes</b><span>Sausage, bacon, egg, potato scone</span></li></ul></div>
+   <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1" hidden><ul><li><b>Baguettes &amp; sandwiches</b><span>Freshly prepared</span></li><li><b>Toasted sandwiches &amp; paninis</b></li><li><b>Baked potatoes</b><span>Tuna, chicken, cheese, beans &amp; cheese</span></li><li><b>Quarter-pound burgers</b><span>Cheese, onions, salad</span></li><li><b>Salads</b><span>Seasonal, ham, grilled chicken, tuna, cheese</span></li></ul></div>
+   <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden><ul><li><b>Bakes and cakes</b><span>Made fresh daily</span></li><li><b>Scone</b><span>With butter and preserves, or cream</span></li><li><b>Ice cream</b><span>Tubs and cones; flavours change weekly</span></li><li><b>Ice cream milkshakes</b><span>Vanilla, chocolate, strawberry, raspberry</span></li></ul></div>
+   <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden><ul><li><b>Cappuccino</b></li><li><b>Americano</b></li><li><b>Latte</b></li><li><b>Tea</b></li><li><b>Hot chocolate</b><span>With cream and marshmallows</span></li></ul></div>
+   <p style="font-size:15px;margin-top:18px">Ask at the counter or see the board for today's prices and bakes.</p>
+  </div>
+ </div>
+</div></section>
+
+<section class="visit" id="visit"><div class="wrap vgrid">
+ <div><span class="chip" style="background:var(--v);color:var(--r)">Find us</span><div class="vbig d">50 Main Street,<br>Drymen</div><p>G63 0BG, near Loch Lomond.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="tel:+441360661212">Call 01360 661212</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Skoosh,+50+Main+Street,+Drymen+G63+0BG" rel="noopener">Directions</a></div>
+  <p><a href="mailto:SkooshDeli@hotmail.com">SkooshDeli@hotmail.com</a></p></div>
+ <div><span class="status" data-status>Hours</span><div class="hrs" data-hours style="margin-top:16px"><div data-day="0"><span>Monday</span><span>8am–5pm</span></div><div data-day="1"><span>Tuesday</span><span>8am–5pm</span></div><div data-day="2"><span>Wednesday</span><span>8am–5pm</span></div><div data-day="3"><span>Thursday</span><span>8am–5pm</span></div><div data-day="4"><span>Friday</span><span>8am–5pm</span></div><div data-day="5"><span>Saturday</span><span>8am–5pm</span></div><div data-day="6"><span>Sunday</span><span>8am–4pm</span></div></div></div>
+</div></section>
+</main>
+<footer><div class="wrap">© <span data-year></span> Skoosh, Drymen. Facts from Skoosh's own website; prices left out because the listed ones are from 2014. Drawings by GunaFix. Preview by GunaFix.</div></footer>
+<div class="sticky"><a class="btn" href="tel:+441360661212">Call 01360 661212</a></div>
+<script>window.HOURS={tz:'Europe/London',days:[[["08:00","17:00"]],[["08:00","17:00"]],[["08:00","17:00"]],[["08:00","17:00"]],[["08:00","17:00"]],[["08:00","17:00"]],[["08:00","16:00"]]],labels:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],open:'Open now',closed:'Closed',until:'until',opens:'opens',today:'today'}</script>
+</body></html>
