@@ -1,0 +1,57 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "title": "File:Croissant-newspaper-and-tea.jpg",
+  "artist": "Petr Kratochvil",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Croissant-newspaper-and-tea.jpg",
+  "size": [
+   1280,
+   853
+  ]
+ },
+ {
+  "file": "images/sfogliatella.jpg",
+  "title": "File:Sfogliatella - Caffe Vini Spuntini.jpg",
+  "artist": "Alpha",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sfogliatella_-_Caffe_Vini_Spuntini.jpg",
+  "size": [
+   1600,
+   1071
+  ]
+ },
+ {
+  "file": "images/tiramisu.jpg",
+  "title": "File:Tiramisu - Raffaele Diomede.jpg",
+  "artist": "Raffaele Diomede from Pordenone, ITALIA",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tiramisu_-_Raffaele_Diomede.jpg",
+  "size": [
+   1600,
+   1200
+  ]
+ },
+ {
+  "file": "images/cappuccino.jpg",
+  "title": "File:Cappuccino at Sightglass Coffee.jpg",
+  "artist": "Jonathan McIntosh",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cappuccino_at_Sightglass_Coffee.jpg",
+  "size": [
+   1600,
+   1067
+  ]
+ },
+ {
+  "file": "images/croissant-cut.jpg",
+  "title": "File:Croissant, cross section.jpg",
+  "artist": "SKopp",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Croissant,_cross_section.jpg",
+  "size": [
+   1600,
+   1200
+  ]
+ }
+]

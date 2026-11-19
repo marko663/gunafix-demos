@@ -1,0 +1,57 @@
+[
+ {
+  "file": "images/omelette.jpg",
+  "title": "File:Egg and spinach breakfast omelet.jpg",
+  "artist": "Kurt Kaiser",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Egg_and_spinach_breakfast_omelet.jpg",
+  "size": [
+   1200,
+   1600
+  ]
+ },
+ {
+  "file": "images/french-toast.jpg",
+  "title": "File:Poppyseed French Toast, Another Broken Egg Cafe, Pensacola.jpg",
+  "artist": "Michael Rivera",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Poppyseed_French_Toast,_Another_Broken_Egg_Cafe,_Pensacola.jpg",
+  "size": [
+   1600,
+   1200
+  ]
+ },
+ {
+  "file": "images/breakfast-plate.jpg",
+  "title": "File:Black Bear Diner - December 30 2024 - Sarah Stierch 02.jpg",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Black_Bear_Diner_-_December_30_2024_-_Sarah_Stierch_02.jpg",
+  "size": [
+   1600,
+   1200
+  ]
+ },
+ {
+  "file": "images/coffee.jpg",
+  "title": "File:Coffee mug - Flickr - Stiller Beobachter.jpg",
+  "artist": "Stiller Beobachter from Ansbach, Germany",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Coffee_mug_-_Flickr_-_Stiller_Beobachter.jpg",
+  "size": [
+   1599,
+   1600
+  ]
+ },
+ {
+  "file": "images/lemon-soup.jpg",
+  "title": "File:Avgolemono - Sarah Stierch.jpg",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Avgolemono_-_Sarah_Stierch.jpg",
+  "size": [
+   1200,
+   1600
+  ]
+ }
+]
