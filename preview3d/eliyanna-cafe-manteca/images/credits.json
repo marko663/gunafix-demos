@@ -1,0 +1,50 @@
+[
+ {
+  "file": "images/matcha.webp",
+  "title": "File:Matcha Latte with Seasalt Cream.jpg",
+  "artist": "MichaellaaRubio",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Matcha_Latte_with_Seasalt_Cream.jpg",
+  "role": "cut"
+ },
+ {
+  "file": "images/hero.jpg",
+  "title": "File:Smashed Avocado On Toast (with one poached egg) - Jonny's 2026-01-06.jpg",
+  "artist": "Andy Li",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Smashed_Avocado_On_Toast_(with_one_poached_egg)_-_Jonny%27s_2026-01-06.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/latte.jpg",
+  "title": "File:Latte at Doppio Ristretto Chiang Mai 01 (cropped).jpg",
+  "artist": "Takeaway",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Latte_at_Doppio_Ristretto_Chiang_Mai_01_(cropped).jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/croissant.jpg",
+  "title": "File:Croissant with egg and mushrooms - The Mad Hatter.jpg",
+  "artist": "Andy Li",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Croissant_with_egg_and_mushrooms_-_The_Mad_Hatter.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/matcha-glass.jpg",
+  "title": "File:Matcha latte.jpg",
+  "artist": "Noriko YAMAMOTO",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Matcha_latte.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/cup.jpg",
+  "title": "File:Latte art - London Grind, London, UK - 28424820001.jpg",
+  "artist": "Bex Walton",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Latte_art_-_London_Grind,_London,_UK_-_28424820001.jpg",
+  "role": "img"
+ }
+]

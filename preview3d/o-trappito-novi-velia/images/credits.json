@@ -1,0 +1,50 @@
+[
+ {
+  "file": "images/pizza.webp",
+  "title": "File:Pizza-napoletana.jpg",
+  "artist": "Fabryx98",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pizza-napoletana.jpg",
+  "role": "cut"
+ },
+ {
+  "file": "images/hero.jpg",
+  "title": "File:Pizza-oven.jpg",
+  "artist": "Lotus Head from Johannesburg, Gauteng, South Africa",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Pizza-oven.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/forno.jpg",
+  "title": "File:Wood Fired Pizza Oven @ Via Farina - Omaha, NE.jpg",
+  "artist": "Shelby L. Bell",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wood_Fired_Pizza_Oven_@_Via_Farina_-_Omaha,_NE.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/espresso.jpg",
+  "title": "File:Espresso coffee.jpg",
+  "artist": "Fraapal",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Espresso_coffee.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/borgo.jpg",
+  "title": "File:Prignano Cilento (panorama).jpg",
+  "artist": "Ziegler175",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Prignano_Cilento_(panorama).jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/mare.jpg",
+  "title": "File:Parco del Cilento verso Punta Licosa.jpg",
+  "artist": "ChristiHarri",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Parco_del_Cilento_verso_Punta_Licosa.jpg",
+  "role": "img"
+ }
+]

@@ -1,0 +1,35 @@
+[
+ {
+  "file": "images/pizza.jpg",
+  "title": "File:D.O.C. Margherita Pizza at Punch Pizza St Paul (2198174643).jpg",
+  "artist": "Aaron Landry from Honolulu, HI, USA",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:D.O.C._Margherita_Pizza_at_Punch_Pizza_St_Paul_(2198174643).jpg",
+  "size": [
+   1600,
+   1064
+  ]
+ },
+ {
+  "file": "images/vongole.jpg",
+  "title": "File:Spaghetti Vongole by ayustety in Ginza, Tokyo.jpg",
+  "artist": "ayustety from Restaurant \"Aruden-tei\" in Ginza, Tokyo",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Spaghetti_Vongole_by_ayustety_in_Ginza,_Tokyo.jpg",
+  "size": [
+   1600,
+   1200
+  ]
+ },
+ {
+  "file": "images/caprese.jpg",
+  "title": "File:Caprese cherry tomatoes.JPG",
+  "artist": "Basotxerri",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Caprese_cherry_tomatoes.JPG",
+  "size": [
+   1600,
+   1200
+  ]
+ }
+]

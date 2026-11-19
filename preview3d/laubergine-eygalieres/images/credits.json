@@ -1,0 +1,50 @@
+[
+ {
+  "file": "images/aubergine.webp",
+  "title": "File:Aubergine-Varianten.JPG",
+  "artist": "Grey Geezer",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aubergine-Varianten.JPG",
+  "role": "cut"
+ },
+ {
+  "file": "images/hero.jpg",
+  "title": "File:Eygali\u00e8res-Panorama (6).jpg",
+  "artist": "Ji-Elle",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Eygali%C3%A8res-Panorama_(6).jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/village.jpg",
+  "title": "File:Village d'Eygali\u00e8res et Alpilles 1.jpg",
+  "artist": "Mathieu BROSSAIS",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Village_d%27Eygali%C3%A8res_et_Alpilles_1.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/chapelle.jpg",
+  "title": "File:Eglise-Saint-Laurent-d-Eygali\u00e8res-13.jpg",
+  "artist": "Vi..Cult...",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Eglise-Saint-Laurent-d-Eygali%C3%A8res-13.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/risotto.jpg",
+  "title": "File:Risotto of leek, mushroom, pea, spinach - Relish Food Store AUD14 (4139673555).jpg",
+  "artist": "Alpha from Melbourne, Australia",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Risotto_of_leek,_mushroom,_pea,_spinach_-_Relish_Food_Store_AUD14_(4139673555).jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/plat.jpg",
+  "title": "File:Aubergine frite.jpg",
+  "artist": "Marianne Casamance",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aubergine_frite.jpg",
+  "role": "img"
+ }
+]
