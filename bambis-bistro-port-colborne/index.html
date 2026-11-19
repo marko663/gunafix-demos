@@ -1,297 +1,176 @@
-<!DOCTYPE html>
-<html lang="en-CA">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bambi&#x27;s Bistro · Port Colborne, ON · GunaFix preview</title>
-<meta name="description" content="Fresh, homemade food on Main Street West. Hearty warm fare in fall and winter, a fresher menu in spring and summer, and baking done daily in small batches. GunaFix design preview, not the official website.">
-<meta name="robots" content="noindex"><meta name="theme-color" content="#FBF4E8">
-<meta property="og:title" content="Bambi&#x27;s Bistro · GunaFix preview"><meta property="og:description" content="Fresh, homemade food on Main Street West. Hearty warm fare in fall and winter, a fresher menu in spring and summer, and baking done daily in small batches."><meta property="og:image" content="images/hero.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%239C5A28'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' font-family='Georgia,serif' fill='%23FBF4E8'%3EB%3C/text%3E%3C/svg%3E"><link rel="preload" href="images/grilled.webp" as="image">
-<script>(function(d){if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('motion-ok');setTimeout(function(){if(!window.gsap||!window.__ready)d.classList.remove('motion-ok')},4500)}})(document.documentElement)</script>
-<style>@font-face {
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 300 800;
-  font-display: swap;
-  src: url(fonts/figtree-eca8d8b3.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 300 800;
-  font-display: swap;
-  src: url(fonts/figtree-202cfb54.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Fraunces';
-  font-style: italic;
-  font-weight: 300 900;
-  font-display: swap;
-  src: url(fonts/fraunces-53f88656.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Fraunces';
-  font-style: italic;
-  font-weight: 300 900;
-  font-display: swap;
-  src: url(fonts/fraunces-fa7ce081.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Fraunces';
-  font-style: normal;
-  font-weight: 300 900;
-  font-display: swap;
-  src: url(fonts/fraunces-a04d3539.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Fraunces';
-  font-style: normal;
-  font-weight: 300 900;
-  font-display: swap;
-  src: url(fonts/fraunces-069cb90e.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-:root{--bg:#FBF4E8;--sf:#F2E5CF;--ink:#2E3B2F;--mut:#6C7466;--pri:#9C5A28;--sec:#7E9C6B;--onp:#FBF4E8;--line:#E8D8BE;--fd:'Fraunces',serif;--fb:'Figtree',sans-serif;--dw:700;--dst:normal;--dls:-0.04em;--dtt:none;--dwd:100%;--r1:12px;--r2:22px;--r3:36px;--rb:999px;--gut:20px;--gutd:56px;--max:1320px;--section:150px;--sec-vw:7.2vw;--bg-rgb:251,244,232;--ink-rgb:46,59,47;--pri-rgb:156,90,40;--sec-rgb:126,156,107;--hero-vw:17.0vw}
-*,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-padding-top:80px}
-html.lenis,html.lenis body{height:auto}
-.lenis.lenis-smooth{scroll-behavior:auto!important}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fb),system-ui,sans-serif;font-size:1.0625rem;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden;text-rendering:optimizeLegibility}
-img{max-width:100%;display:block}
-a{color:inherit}
-p{margin:0 0 1em}
-h1,h2,h3{margin:0;font-weight:inherit}
-.wrap{width:min(100% - 2*var(--gut),var(--max));margin-inline:auto}
-@media(min-width:760px){.wrap{width:min(100% - 2*var(--gutd),var(--max))}}
-.d{font-family:var(--fd);font-weight:var(--dw);font-style:var(--dst);letter-spacing:var(--dls);text-transform:var(--dtt);line-height:.88;font-stretch:var(--dwd,100%)}
-.alt{font-family:var(--fa);font-weight:var(--aw);font-style:var(--ast)}
-.kicker{font:600 .74rem/1.25 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin:0 0 14px}
-.tagline{font-size:1.18rem;line-height:1.55;max-width:34ch}
-.note{color:var(--mut);font-size:.95rem;max-width:46ch}
-.sect{padding:clamp(84px,11vw,var(--section)) 0;position:relative}
-.sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:20px 40px;margin-bottom:clamp(36px,5vw,64px)}
-.sec-t{font-size:clamp(3rem,var(--sec-vw),7.4rem);line-height:.92}
-.sec-t .word{padding-bottom:.08em;margin-bottom:-.08em}
-.btns{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:var(--rb);font:600 .8125rem/1 var(--fb);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;position:relative;overflow:hidden;isolation:isolate;transition:color .35s,background .35s,border-color .35s;cursor:pointer;border:0}
-.btn-solid{background:var(--pri);color:var(--onp)}
-.btn-solid::before{content:"";position:absolute;inset:0;background:var(--ink);transform:translateY(101%);transition:transform .5s cubic-bezier(.7,0,.2,1);z-index:-1}
-.btn-solid:hover{color:var(--bg)}.btn-solid:hover::before{transform:none}
-.btn-line{border:1.5px solid currentColor;color:var(--ink);background:transparent}
-.btn-line:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.btn-sm{min-height:42px;padding:0 20px;font-size:.72rem}
-:focus-visible{outline:3px solid var(--sec);outline-offset:3px}
-.skip{position:absolute;left:-999px;top:0}.skip:focus{left:12px;top:12px;z-index:99;background:var(--pri);color:var(--onp);padding:10px 16px}
-.ribbon{position:relative;z-index:60;margin:0;padding:8px 16px;background:var(--ink);color:var(--bg);font:500 .72rem/1.4 var(--fb);text-align:center;letter-spacing:.02em}
-.ribbon a{color:inherit}
-/* nav */
-.nav{position:sticky;top:0;z-index:50;transition:background .4s,box-shadow .4s,transform .4s}
-.nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px;width:min(100% - 2*var(--gut),var(--max));margin:auto}
-@media(min-width:760px){.nav-in{width:min(100% - 2*var(--gutd),var(--max))}}
-.nav .mark{font-family:var(--fd);font-weight:var(--dw);font-style:var(--dst);text-transform:var(--dtt);font-size:1.5rem;letter-spacing:var(--dls);text-decoration:none;line-height:1;font-stretch:var(--dwd,100%);white-space:nowrap}
-.nav .links{display:none;gap:32px}
-.nav .links a{font:600 .74rem/1 var(--fb);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;position:relative}
-.nav .links a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .4s}
-.nav .links a:hover::after{transform:scaleX(1);transform-origin:left}
-@media(min-width:900px){.nav .links{display:flex}}
-.nav.solid{background:rgba(var(--bg-rgb),.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
-/* status chip */
-.chip{display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;padding:8px 14px;border-radius:999px;background:var(--sf);font:600 .72rem/1.2 var(--fb);letter-spacing:.14em;text-transform:uppercase}
-.chip .dot{width:8px;height:8px;border-radius:50%;background:var(--mut);flex:none}
-.chip.is-open .dot{background:#2bb673;box-shadow:0 0 0 0 rgba(43,182,115,.6);animation:pulse 2s infinite}
-@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(43,182,115,0)}100%{box-shadow:0 0 0 0 rgba(43,182,115,0)}}
-/* hero title lines */
-.hero-title{margin:0}
-.hl{display:block;overflow:hidden;padding:.04em .02em .1em;margin:-.04em -.02em -.1em}
-.hl-in{display:block}
-.motion-ok .hero-title .hl-in{visibility:hidden}
-.char{display:inline-block;will-change:transform}
-/* marquee (CSS animation so it runs without JS; paused under reduced motion) */
-.marquee{overflow:hidden;white-space:nowrap;pointer-events:none;user-select:none}
-.mq-track{display:inline-flex;width:max-content;animation:mq var(--mq-dur,38s) linear infinite}
-.mq-track.rev{animation-direction:reverse}
-.mq-track>span{display:inline-block;padding-right:.4em}
-.mq-out{-webkit-text-stroke:var(--mq-stroke,1.5px) var(--mq-col,var(--pri));color:transparent}
-@keyframes mq{to{transform:translateX(-50%)}}
-/* float loop and tilt */
-[data-float]{animation:floaty var(--fl-dur,6s) ease-in-out infinite}
-@keyframes floaty{0%,100%{transform:translate3d(0,0,0) rotate(var(--fl-r0,-2deg))}50%{transform:translate3d(0,var(--fl-y,-16px),0) rotate(var(--fl-r1,2deg))}}
-[data-tilt]{will-change:transform}
-/* reveal helpers */
-.ph-in{overflow:hidden;border-radius:inherit;height:100%}
-.ph-in img{width:100%;height:100%;object-fit:cover}
-.motion-ok [data-reveal]{opacity:0;transform:translateY(34px)}
-/* menu: tabs */
-.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
-.tabs button{appearance:none;border:1.5px solid var(--line);background:transparent;color:var(--ink);padding:12px 20px;border-radius:var(--rb);font:600 .74rem/1 var(--fb);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background .3s,color .3s,border-color .3s}
-.tabs button[aria-selected=true]{background:var(--pri);color:var(--onp);border-color:var(--pri)}
-.mlist{list-style:none;margin:0;padding:0;display:grid;gap:0 56px}
-@media(min-width:960px){.mlist{grid-template-columns:1fr 1fr}}
-.mlist li{padding:18px 0;border-bottom:1px solid var(--line);transition:transform .35s}
-.mlist li:hover{transform:translateX(6px)}
-.mi-h{display:flex;align-items:baseline;gap:12px}
-.mi-n{font-weight:600;font-size:1.08rem}
-.mi-dots{flex:1;border-bottom:1.5px dotted var(--mut);opacity:.5;transform:translateY(-4px)}
-.mi-p{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
-.mlist p{margin:4px 0 0;color:var(--mut);font-size:.95rem}
-/* offer cards */
-.offer{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
-@media(min-width:900px){.offer{grid-template-columns:repeat(3,minmax(0,1fr))}}
-.offer .card{padding:28px;border-radius:var(--r3);background:var(--sf);min-height:170px;display:flex;flex-direction:column;justify-content:space-between;text-decoration:none}
-.offer .card-t{font-family:var(--fd);font-weight:var(--dw);font-style:var(--dst);text-transform:var(--dtt);font-size:1.7rem;line-height:1.08;letter-spacing:-.01em;font-stretch:var(--dwd,100%)}
-/* story */
-.story-g{display:grid;gap:48px}
-@media(min-width:960px){.story-g{grid-template-columns:5fr 7fr;align-items:center;gap:80px}}
-.words{font-size:clamp(1.15rem,1.6vw,1.4rem);line-height:1.55;max-width:40ch}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:18px;margin:34px 0 0;padding:0}
-.fact{border-top:1px solid var(--line);padding-top:12px}
-.fact dt{font:600 .7rem/1.2 var(--fb);letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
-.fact dd{margin:6px 0 0;font-weight:600}
-.story-r{position:relative;min-height:clamp(360px,48vw,620px)}
-.story-r .ph{position:absolute;margin:0;border-radius:var(--r3);overflow:hidden}
-.story-r .ph-a{left:0;top:0;width:62%;height:78%}
-.story-r .ph-b{right:0;bottom:0;width:48%;height:58%;box-shadow:0 30px 60px -20px rgba(0,0,0,.35)}
-/* gallery */
-.g-grid{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr))}
-.g-it{min-width:0}
-main{overflow-x:clip}
-@media(min-width:960px){.g-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.g-it{margin:0}
-.g-it .ph-in{aspect-ratio:3/4;border-radius:var(--r2)}
-.g-it figcaption{font-size:.78rem;color:var(--mut);margin-top:10px;line-height:1.35}
-/* visit */
-.visit-g{display:grid;gap:40px}
-@media(min-width:960px){.visit-g{grid-template-columns:5fr 7fr;gap:64px}}
-.hours{width:100%;border-collapse:collapse;margin:8px 0 14px}
-.hours th,.hours td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);font-weight:500}
-.hours th{font-weight:600}
-.hours td{text-align:right;font-variant-numeric:tabular-nums}
-.hours tr.today{background:var(--sf)}
-.hours tr.today th::after{content:" · " attr(data-today);color:var(--pri);font-size:.8em}
-.vcard-t{font-family:var(--fd);font-weight:var(--dw);font-style:var(--dst);text-transform:var(--dtt);font-size:1.8rem;margin:26px 0 10px;line-height:1.05;font-stretch:var(--dwd,100%)}
-.vcard-t:first-child{margin-top:0}
-.addr{margin:0 0 6px}
-.soc{display:flex;gap:18px;margin:10px 0 0}
-.visit .btns{margin-top:24px}
-.map{border-radius:var(--r3);overflow:hidden;height:100%;min-height:420px;background:var(--sf)}
-.map iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
-/* cta */
-.cta{text-align:center}
-.cta-t{font-size:clamp(3.4rem,11vw,11rem);line-height:.88;margin-bottom:28px}
-.cta .tagline{margin:0 auto 30px}
-.cta .btns{justify-content:center}
-/* footer */
-.foot{padding:56px 0 120px;border-top:1px solid var(--line);font-size:.9rem}
-.foot .mark{font-family:var(--fd);font-weight:var(--dw);font-style:var(--dst);text-transform:var(--dtt);font-size:2rem;margin:0 0 10px;font-stretch:var(--dwd,100%)}
-.small{font-size:.8rem;color:var(--mut)}
-.foot details{margin-top:18px}.foot summary{cursor:pointer;font-weight:600}
-.foot ul{padding-left:18px}
-@media(min-width:900px){.foot{padding-bottom:56px}}
-/* mobile dock */
-.dock{position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:70;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px;border-radius:18px;background:rgba(var(--ink-rgb),.92);backdrop-filter:blur(10px);transition:transform .45s,opacity .45s}
-.dock a{color:var(--bg);text-decoration:none;text-align:center;padding:13px 6px;border-radius:13px;font:600 .72rem/1 var(--fb);letter-spacing:.12em;text-transform:uppercase}
-.dock a:first-child{background:var(--pri);color:var(--onp)}
-.dock.dock-hide{transform:translateY(140%);opacity:0}
-@media(min-width:900px){.dock{display:none}}
-/* pin base */
-.pin{position:relative;overflow:hidden}
-.pin-in{position:relative;height:100vh;height:100svh;overflow:hidden}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-html:not(.motion-ok) [data-float],html:not(.motion-ok) .mq-track{animation:none}
-/* chapters (static list without motion; stacked crossfade with motion) */
-.chs{display:grid;gap:28px}
-.ch-n{font:600 .74rem/1 var(--fb);letter-spacing:.2em;color:var(--pri)}
-.ch-k{font:600 .74rem/1.3 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin:10px 0 8px}
-.ch-t{font-size:clamp(2.2rem,4.4vw,4.4rem);line-height:.95;margin:0 0 14px}
-.ch-d{max-width:38ch;margin:0}
-.motion-ok .chs{display:block;position:relative}
-.motion-ok .ch{position:absolute;left:0;top:0;width:100%;opacity:0;transform:translateY(26px);transition:opacity .55s,transform .8s cubic-bezier(.2,.7,.2,1);pointer-events:none}
-.motion-ok .ch.is-on{opacity:1;transform:none;pointer-events:auto}
-html:not(.motion-ok) .pin-in{height:auto;min-height:0;padding:clamp(84px,10vw,140px) 0}
-.mq-sep{display:inline-block;padding:0 .35em;font-size:.5em;vertical-align:middle;opacity:.8}
-.mq-track>.mq-seg{display:inline-flex;align-items:center;padding-right:.35em}
-
-
-.nav-pill{padding-top:10px}
-.nav-pill .nav-in{background:rgba(var(--bg-rgb),.9);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:999px;height:62px;padding:0 8px 0 26px}
-.nav-pill.solid{background:none;box-shadow:none;backdrop-filter:none}
-.nav-pill .mark{color:var(--pri)}
-.bb-hero{padding:30px 0 90px;overflow:hidden}
-.bb-grid{display:grid;gap:36px;align-items:center}
-.bb-hero .hero-title{font-size:clamp(4.4rem,22vw,11.5vw);line-height:.86;margin-bottom:22px;font-variation-settings:"SOFT" 100}
-.bb-hero .l1 .hl-in{color:var(--pri)}
-.bb-it .hl-in{font-style:italic;font-weight:500;color:var(--ink);padding-left:.5em}
-.bb-hero .btns{margin:26px 0 18px}
-.bb-vis{position:relative;width:min(100%,560px);margin:auto;aspect-ratio:1}
-.bb-blob{position:absolute;inset:4%;overflow:hidden;border-radius:58% 42% 46% 54%/52% 46% 54% 48%;animation:blob 14s ease-in-out infinite alternate}
-.bb-blob img{width:100%;height:100%;object-fit:cover}
-@keyframes blob{33%{border-radius:42% 58% 60% 40%/44% 60% 40% 56%}66%{border-radius:52% 48% 38% 62%/60% 40% 58% 42%}100%{border-radius:60% 40% 52% 48%/40% 56% 44% 60%}}
-.bb-gc{position:absolute;left:-10%;bottom:-2%;width:62%;filter:drop-shadow(0 26px 24px rgba(46,59,47,.3));--fl-y:-12px}
-.bb-leaf{position:absolute;width:34px;fill:var(--sec);opacity:.85;animation:drift 9s ease-in-out infinite}
-.bb-leaf .vein{stroke:var(--bg);stroke-width:1.5;fill:none}
-.bb-leaf.lf0{right:4%;top:4%}.bb-leaf.lf1{right:-3%;top:44%;width:24px;animation-delay:-3s}.bb-leaf.lf2{left:6%;top:10%;width:26px;animation-delay:-5s}.bb-leaf.lf3{left:44%;top:-4%;width:20px;animation-delay:-7s}
-@keyframes drift{0%,100%{transform:translate(0,0) rotate(-20deg)}50%{transform:translate(-14px,22px) rotate(25deg)}}
-html:not(.motion-ok) .bb-blob,html:not(.motion-ok) .bb-leaf{animation:none}
-@media(min-width:960px){.bb-hero{min-height:calc(100svh - 104px);display:flex;align-items:center}.bb-grid{grid-template-columns:6fr 5fr}}
-.bb-soft{margin:0 var(--gut);border-radius:999px;background:var(--sf);padding:14px 0 6px;font:italic 600 clamp(2.2rem,5vw,4.4rem)/1.1 var(--fd);--mq-col:var(--ink);--mq-stroke:1px;--mq-dur:50s}
-.bb-soft .mq-fill{color:var(--pri)}.bb-soft .mq-sep{color:var(--sec)}
-/* seasons wheel */
-.bb-pin{background:var(--bg)}
-.bb-pin .pin-in{display:flex;align-items:center}
-.bb-pg{display:grid;gap:40px;align-items:center}
-@media(min-width:960px){.bb-pg{grid-template-columns:1fr 1fr}}
-.bb-ww{position:relative;width:min(100%,58vh,520px);aspect-ratio:1;margin:auto}
-.bb-wheel{position:absolute;inset:0;border-radius:50%;background:conic-gradient(var(--pri) 0 25%,var(--ink) 0 50%,var(--sec) 0 75%,#E3C58E 0 100%);transform:rotate(-45deg)}
-.bb-q{position:absolute;inset:0}
-.bb-q b{position:absolute;left:50%;top:9%;transform:translateX(-50%);white-space:nowrap;font:italic 600 clamp(1.1rem,2.6vw,2rem)/1 var(--fd);color:var(--bg)}
-.bb-q.q0{transform:rotate(45deg)}.bb-q.q1{transform:rotate(135deg)}.bb-q.q2{transform:rotate(225deg)}.bb-q.q3{transform:rotate(315deg)}
-.bb-q.q3 b{color:var(--ink)}
-.bb-hub{position:absolute;inset:27%;border-radius:50%;background:var(--bg);display:grid;place-content:center;text-align:center;box-shadow:0 10px 40px -10px rgba(46,59,47,.35)}
-.bb-hub .d{font-size:clamp(1.6rem,3vw,2.6rem);color:var(--pri)}.bb-hub small{font:600 .62rem/1.3 var(--fb);letter-spacing:.18em;text-transform:uppercase;color:var(--mut);max-width:12ch;margin:6px auto 0}
-.bb-ptr{position:absolute;left:50%;top:-18px;width:0;height:0;border:14px solid transparent;border-top:22px solid var(--ink);transform:translateX(-50%);z-index:2}
-.motion-ok .bb-pc .chs{min-height:12rem}
-/* pill-tab menu */
-.menu-tabs-pill .tabs button{border-radius:999px;background:var(--sf);border-color:var(--sf)}
-.menu-tabs-pill .tabs button[aria-selected=true]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-.menu-tabs-pill .mlist{gap:12px 18px}
-.menu-tabs-pill .mlist li{background:var(--sf);border:0;border-radius:var(--r3);padding:20px 24px}
-.menu-tabs-pill .mi-n{font:600 1.3rem/1.15 var(--fd)}
-.menu-tabs-pill .mi-p{color:var(--pri);font-weight:700}
-.menu-tabs-pill .mi-dots{opacity:.25}
-/* rounded collage */
-.gal-rounded .g-it .ph-in{border-radius:var(--r3)}
-.gal-rounded .g2 .ph-in{border-radius:50%;aspect-ratio:1}
-.gal-rounded .g3 .ph-in{border-radius:999px 999px var(--r3) var(--r3)}
-.gal-rounded .g-grid{align-items:center}
-.bb .story-r .ph{border-radius:var(--r3)}.bb .story-r .ph-b{border-radius:50%;aspect-ratio:1;height:auto}
-.bb .cta{background:var(--sf);border-radius:var(--r3);margin:0 var(--gut)}
-.bb .cta-t .word:first-child{color:var(--pri)}
-</style>
+<!doctype html><html lang="en-CA"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Bambi's Bistro · Homemade soups, sandwiches &amp; baking · Port Colborne</title>
+<meta name="description" content="Bambi's Bistro, 273 Main St W, Port Colborne. Homemade soups, grilled and fresh sandwiches, small-batch baking and treat boxes to go.">
+<meta name="theme-color" content="#F6F1EA">
+<link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="core.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E🥪%3C/text%3E%3C/svg%3E">
 <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
-<script>window.SITE={"tz": "America/Toronto", "hours": [[["11:00", "15:00"]], [["11:00", "15:00"]], [["09:00", "15:00"]], [["09:00", "15:00"]], [["09:00", "15:00"]], [], []], "lang": "en-CA", "h12": true, "L": {"open": "Open now", "until": "until", "closed": "Closed", "opens": "opens", "today": "Today", "dshort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]}, "motion": {"heroEase": "back.out(1.4)", "heroStagger": 0.05}, "tilt": 8, "steps": 4}</script>
-<script defer src="app.js"></script>
-</head>
-<body class="bb">
+<script defer src="core.js"></script><script defer src="app.js"></script>
+<style>
+:root{--p:#F6F1EA;--pl:#3E1E45;--t:#EE5233;--ov:#8E2F3E;--d:'Young Serif',Georgia,serif;--s:'Work Sans',system-ui,sans-serif}
+body{background:var(--p);color:var(--pl);font:400 17px/1.6 var(--s)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:300;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.demo-bar{background:var(--pl);color:var(--p)}
+.wrap{width:min(1320px,100% - 32px);margin-inline:auto}
+.d{font-family:var(--d);font-weight:400;line-height:.95}
+.mis{text-shadow:4px 3px 0 var(--t)}
+.k{font:600 12px/1.2 var(--s);letter-spacing:.18em;text-transform:uppercase;color:var(--t)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;border:2px solid var(--pl);background:var(--p);font:600 15px var(--s);text-decoration:none;box-shadow:4px 3px 0 var(--t);transition:transform .15s}
+.btn:hover{transform:translate(-2px,-2px)}
+.btn.f{background:var(--pl);color:var(--p)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.nav .d{font-size:26px;text-decoration:none}
+.nav ul{display:none;gap:26px;list-style:none;margin:0;padding:0}.nav ul a{text-decoration:none;font-weight:600}
+/* hero */
+.hero{padding:20px 0 50px}
+.hgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:center}
+.h1{font-size:18vw;margin:8px 0 0}.h1 .l{display:block}.h1 .t{color:var(--t);text-shadow:4px 3px 0 var(--pl)}
+.lede{font-size:19px;max-width:38ch}
+.gc{width:min(84vw,520px);justify-self:center;position:relative}
+.gc svg{width:100%;height:auto;overflow:hidden}
+.badge{position:absolute;right:0;top:0;width:96px;height:96px;border-radius:50%;background:var(--t);color:var(--p);display:grid;place-content:center;text-align:center;font:600 12px/1.2 var(--s);transform:rotate(-10deg);box-shadow:4px 3px 0 var(--pl)}
+.badge b{font:400 26px/1 var(--d)}
+/* seasons */
+.seasons{background:var(--pl);color:var(--p);padding:60px 0}
+.sgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+.wheel{width:min(70vw,380px);margin-inline:auto;display:none}
+.wheel svg{width:100%;height:auto}
+#wh{transition:transform 1s cubic-bezier(.6,-0.2,.3,1.3);transform-origin:200px 200px}
+.scards{display:grid;grid-auto-flow:column;grid-auto-columns:82%;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
+.scard{scroll-snap-align:start;border:2px solid var(--p);border-radius:28px;padding:26px;min-height:240px}
+.scard .k{color:var(--t)}
+.scard h3{font:400 clamp(32px,4vw,54px)/1 var(--d);margin:8px 0 12px}
+.scard.on{background:var(--t);border-color:var(--t)}.scard.on .k{color:var(--pl)}
+/* menu */
+.menu{padding:70px 0}
+.mh{font-size:clamp(48px,8vw,116px);margin:0 0 20px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 12px}
+.tabs button{flex:none;border:2px solid var(--pl);background:var(--p);border-radius:999px;padding:11px 18px;font:600 15px var(--s)}
+.tabs button[aria-selected=true]{background:var(--pl);color:var(--p);box-shadow:3px 3px 0 var(--t)}
+.tiles{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.tile{border:2px solid var(--pl);border-radius:28px;padding:20px 22px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;background:var(--p);transition:transform .2s}
+.tile:hover{transform:rotate(-.6deg)}
+.tile h3{margin:0;font:400 23px/1.1 var(--d)}
+.tile .pr{font:600 18px var(--s);color:var(--t)}
+.tile p{grid-column:1/-1;margin:0;font-size:15px;opacity:.85}
+/* treat box */
+.treat{background:var(--t);color:var(--p);padding:70px 0;border-radius:48px 48px 0 0}
+.tgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+.shelf{display:flex;flex-wrap:wrap;gap:10px}
+.shelf button{border:2px solid var(--p);background:transparent;color:var(--p);border-radius:999px;padding:12px 16px;font:600 15px var(--s);display:inline-flex;gap:8px;align-items:center}
+.shelf button span{font-size:22px;line-height:1}
+.box{background:var(--p);color:var(--pl);border-radius:28px;padding:22px;box-shadow:6px 5px 0 var(--pl)}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.slot{aspect-ratio:1;border:2px dashed var(--pl);border-radius:20px;display:grid;place-items:center;font-size:clamp(30px,6vw,46px)}
+.slot.f{border-style:solid;background:#fff}
+/* visit */
+.visit{padding:70px 0 120px}
+.vgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+.vbig{font-size:clamp(40px,6.5vw,96px);margin:10px 0 18px}
+.hrs div{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1.5px dashed rgba(62,30,69,.35)}
+.hrs .today{font-weight:700;color:var(--t)}
+.status{display:inline-block;padding:8px 14px;border-radius:999px;border:2px solid var(--pl);font-weight:600}
+.status.is-open{background:var(--t);color:var(--p);border-color:var(--t)}
+footer{font-size:13px;padding:0 0 100px}
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:60}.sticky .btn{width:100%;justify-content:center}
+/* iPad */
+@media (min-width:768px){
+ .wrap{width:min(1320px,100% - 64px)}
+ .nav ul{display:flex}
+ .h1{font-size:14vw}
+ .hgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .hgrid .htxt{grid-column:1/-1}
+ .gc{width:100%}
+ .wheel{display:block}
+ .seasons .sticky-w{position:sticky;top:20px}
+ .scards{grid-auto-flow:row;grid-template-columns:minmax(0,1fr) minmax(0,1fr);overflow:visible}
+ .tiles{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .tgrid{grid-template-columns:minmax(0,1fr)}
+ .vgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .sticky{display:none}footer{padding-bottom:30px}
+}
+/* Laptop */
+@media (min-width:1025px){
+ .hgrid{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:10px 60px}
+ .hgrid .htxt{grid-column:1/-1}
+ .gc{width:100%;max-width:520px;margin-top:10px}
+ .sgrid{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:60px;align-items:start}
+ .seasons .sticky-w{position:sticky;top:40px}
+ .wheel{width:100%;max-width:460px}
+ .scards{grid-template-columns:minmax(0,1fr);gap:22px}
+ .scard{min-height:60vh;display:flex;flex-direction:column;justify-content:center;padding:44px}
+ .tiles{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .tgrid{grid-template-columns:minmax(0,6fr) minmax(0,5fr);align-items:center;gap:60px}
+ .vgrid{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+}
+</style></head><body>
 <a class="skip" href="#main">Skip to content</a>
-<p class="ribbon">Design preview by GunaFix, not the official website of Bambi&#x27;s Bistro. <a href="https://gunafix.com" target="_blank" rel="noopener">gunafix.com</a></p>
-<header class="nav nav-pill" id="nav"><div class="nav-in"><a class="mark" href="#top">Bambi&#x27;s</a><nav class="links" aria-label="Main"><a href="#menu">Menu</a><a href="#story">Story</a><a href="#visit">Visit</a></nav><a class="btn btn-solid btn-sm" href="tel:+12898369836">Call</a></div></header>
-<main id="main"><span id="top"></span><section class="hero bb-hero"><div class="wrap bb-grid">
-<div class="bb-copy"><p class="kicker" data-hero-in>Homemade soups · sandwiches · small-batch baking · Port Colborne</p><h1 class="hero-title d " aria-label="Bambi&#x27;s Bistro"><span class="hl l1"><span class="hl-in">Bambi&#x27;s</span></span><span class="hl l2 bb-it"><span class="hl-in">Bistro</span></span></h1><p class="tagline" data-hero-in>Fresh, homemade food on Main Street West. Hearty warm fare in fall and winter, a fresher menu in spring and summer, and baking done daily in small batches.</p><div class="btns" data-hero-in><a class="btn btn-solid" href="tel:+12898369836">Call (289) 836-9836</a><a class="btn btn-line" href="#menu">Menu</a></div><p class="chip" id="status" data-hero-in><span class="dot"></span><span class="st-txt">Hours</span></p></div>
-<div class="bb-vis"><div class="bb-blob"><img src="images/hero.jpg" alt="" fetchpriority="high"></div><img class="bb-gc" data-float data-tilt src="images/grilled.webp" alt=""><span class="bb-leaf lf0"><svg viewBox="0 0 40 60" aria-hidden="true"><path d="M20 2C34 16 38 36 20 58C2 36 6 16 20 2Z"/><path d="M20 8V56" class="vein"/></svg></span><span class="bb-leaf lf1"><svg viewBox="0 0 40 60" aria-hidden="true"><path d="M20 2C34 16 38 36 20 58C2 36 6 16 20 2Z"/><path d="M20 8V56" class="vein"/></svg></span><span class="bb-leaf lf2"><svg viewBox="0 0 40 60" aria-hidden="true"><path d="M20 2C34 16 38 36 20 58C2 36 6 16 20 2Z"/><path d="M20 8V56" class="vein"/></svg></span><span class="bb-leaf lf3"><svg viewBox="0 0 40 60" aria-hidden="true"><path d="M20 2C34 16 38 36 20 58C2 36 6 16 20 2Z"/><path d="M20 8V56" class="vein"/></svg></span></div>
-</div></section><div class="marquee bb-soft" data-mq aria-hidden="true"><div class="mq-track"><span class="mq-seg"><span class="mq-out">Homemade soups</span><span class="mq-sep">❀</span><span class="mq-fill">Grilled sandwiches</span><span class="mq-sep">❀</span><span class="mq-out">Scones</span><span class="mq-sep">❀</span><span class="mq-fill">Treat boxes</span><span class="mq-sep">❀</span><span class="mq-out">Bambi&#x27;s</span><span class="mq-sep">❀</span></span><span class="mq-seg"><span class="mq-out">Homemade soups</span><span class="mq-sep">❀</span><span class="mq-fill">Grilled sandwiches</span><span class="mq-sep">❀</span><span class="mq-out">Scones</span><span class="mq-sep">❀</span><span class="mq-fill">Treat boxes</span><span class="mq-sep">❀</span><span class="mq-out">Bambi&#x27;s</span><span class="mq-sep">❀</span></span></div></div><section class="sect story story-bambis" id="story"><div class="wrap story-g"><div class="story-l"><p class="kicker">Story</p><h2 class="sec-t d " data-split>Where locals<br>feel at home</h2><div class="words"><p>Located in beautiful Port Colborne, Bambi&#x27;s is the bistro where the locals go to feel at home, dine on fresh food and socialize.</p><p>Homemade, flavourful soups, fresh sandwiches and a variety of baked goods. We cater to all types of dietary requirements, take orders and make treat boxes to go.</p></div><dl class="facts"><div class="fact"><dt>Mon &amp; Tue</dt><dd>11am–3pm</dd></div><div class="fact"><dt>Wed–Fri</dt><dd>9am–3pm</dd></div><div class="fact"><dt>Weekends</dt><dd>Closed</dd></div></dl></div><div class="story-r"><figure class="ph ph-a" data-speed="8"><div class="ph-in"><img src="images/scones.jpg" alt="" loading="lazy" decoding="async"></div></figure><figure class="ph ph-b" data-speed="-10"><div class="ph-in"><img src="images/lighthouse.jpg" alt="" loading="lazy" decoding="async"></div></figure></div></div></section><section class="pin bb-pin" data-step="0" aria-label="With the seasons"><div class="pin-in"><div class="wrap bb-pg">
-<div class="bb-ww" aria-hidden="true"><span class="bb-ptr"></span><div class="bb-wheel"><span class="bb-q q0"><b>Fall</b></span><span class="bb-q q1"><b>Winter</b></span><span class="bb-q q2"><b>Spring</b></span><span class="bb-q q3"><b>Summer</b></span></div><div class="bb-hub"><span class="d">Bambi's</span><small>menu, with the seasons</small></div></div>
-<div class="bb-pc"><p class="kicker">With the seasons</p><div class="chs "><div class="ch is-on" data-ch="0"><span class=ch-n>01 / 04</span><p class="ch-k">Fall</p><h3 class="ch-t d">Hearty and warm</h3><p class="ch-d">Our menu adjusts with the seasons: hearty, warm fall and winter fare.</p></div><div class="ch" data-ch="1"><span class=ch-n>02 / 04</span><p class="ch-k">Winter</p><h3 class="ch-t d">Soup of the day</h3><p class="ch-d">Soups are made fresh daily and posted on social media.</p></div><div class="ch" data-ch="2"><span class=ch-n>03 / 04</span><p class="ch-k">Spring</p><h3 class="ch-t d">Fresher plates</h3><p class="ch-d">A fresher menu for spring and summer.</p></div><div class="ch" data-ch="3"><span class=ch-n>04 / 04</span><p class="ch-k">Summer</p><h3 class="ch-t d">Baked in small batches</h3><p class="ch-d">Scones, cookies, bars, muffins, croissants and brownies, rotated with the season.</p></div></div></div>
-</div></div></section><section class="sect menu menu-tabs-pill" id="menu"><div class="wrap"><div class="sec-head"><h2 class="sec-t d " data-split>Fresh<br>&amp; homemade</h2><p class="note">Prices as listed on our current menu. Look for daily bakery and lunch features on Facebook and Instagram @bambisbistro.</p></div><div class="tabs" role="tablist" aria-label="Menu"><button role="tab" id="t-0" aria-controls="p-0" aria-selected="true" tabindex="0">Grilled</button><button role="tab" id="t-1" aria-controls="p-1" aria-selected="false" tabindex="-1">Fresh</button><button role="tab" id="t-2" aria-controls="p-2" aria-selected="false" tabindex="-1">Combos</button><button role="tab" id="t-3" aria-controls="p-3" aria-selected="false" tabindex="-1">Drinks</button></div><div role="tabpanel" id="p-0" aria-labelledby="t-0"><ul class="mlist"><li><div class="mi-h"><span class="mi-n">BB&#x27;s triple cheese</span><span class="mi-dots"></span><span class="mi-p">$13.50</span></div><p>Served with salad of the day</p></li><li><div class="mi-h"><span class="mi-n">Canuck</span><span class="mi-dots"></span><span class="mi-p">$14.50</span></div><p>Ham, cheddar, jalapeño &amp; Saskatoon berry</p></li><li><div class="mi-h"><span class="mi-n">Gobbler</span><span class="mi-dots"></span><span class="mi-p">$14.50</span></div><p>Turkey, provolone, cranberry chutney and herbed oil</p></li><li><div class="mi-h"><span class="mi-n">Pickled Italian</span><span class="mi-dots"></span><span class="mi-p">$14.50</span></div><p>Hot &amp; mild salami, provolone, pickles, zesty mustard &amp; Bambi oil</p></li><li><div class="mi-h"><span class="mi-n">Brie bliss</span><span class="mi-dots"></span><span class="mi-p">$14.50</span></div><p>Shaved ham, brie, fig and Dijon</p></li></ul></div><div role="tabpanel" id="p-1" aria-labelledby="t-1" hidden><ul class="mlist"><li><div class="mi-h"><span class="mi-n">Harvest tuna</span><span class="mi-dots"></span><span class="mi-p">$14.50</span></div><p>Albacore tuna, crunchy veggies, nuts, cranberries, apples, tangy dill mayo</p></li><li><div class="mi-h"><span class="mi-n">Ultimate ham</span><span class="mi-dots"></span><span class="mi-p">$14.50</span></div><p>Shaved ham, cheddar, red onion, arugula, tomato, herb Dijon mayo</p></li><li><div class="mi-h"><span class="mi-n">Goblet</span><span class="mi-dots"></span><span class="mi-p">$14.50</span></div><p>Shaved turkey, spinach, sharp white cheddar, cranberry mayo</p></li><li><div class="mi-h"><span class="mi-n">Soup of the day</span><span class="mi-dots"></span><span class="mi-p">$8.00</span></div><p>Made fresh daily</p></li></ul></div><div role="tabpanel" id="p-2" aria-labelledby="t-2" hidden><ul class="mlist"><li><div class="mi-h"><span class="mi-n">Soup and half sandwich</span><span class="mi-dots"></span><span class="mi-p">$14.99</span></div><p>Includes coffee or tea</p></li><li><div class="mi-h"><span class="mi-n">Soup and grilled bread</span><span class="mi-dots"></span><span class="mi-p">$10.99</span></div><p>Includes coffee or tea</p></li><li><div class="mi-h"><span class="mi-n">Soup and biscuit / scone</span><span class="mi-dots"></span><span class="mi-p">$11.99</span></div><p>Includes coffee or tea</p></li></ul></div><div role="tabpanel" id="p-3" aria-labelledby="t-3" hidden><ul class="mlist"><li><div class="mi-h"><span class="mi-n">Drip coffee / tea</span><span class="mi-dots"></span><span class="mi-p">$2.25</span></div></li><li><div class="mi-h"><span class="mi-n">Loose leaf tea, small / large pot</span><span class="mi-dots"></span><span class="mi-p">$5.00 / 8.00</span></div></li><li><div class="mi-h"><span class="mi-n">Bambi&#x27;s coffee / tea latte</span><span class="mi-dots"></span><span class="mi-p">$4.25</span></div></li><li><div class="mi-h"><span class="mi-n">BB&#x27;s mocha or hot chocolate</span><span class="mi-dots"></span><span class="mi-p">$3.50</span></div></li><li><div class="mi-h"><span class="mi-n">BB&#x27;s Italian soda</span><span class="mi-dots"></span><span class="mi-p">$3.25</span></div></li></ul></div></div></section><section class="sect gallery gal-rounded" aria-label="Around the place"><div class="wrap"><div class="sec-head"><h2 class="sec-t d " data-split>Port<br>Colborne</h2><p class="note">Atmosphere photos are stock images (credited below), not the venue&#x27;s own.</p></div><div class="g-grid"><figure class="g-it g1"><div class="ph-in"><img src="images/scones.jpg" alt="Scones (illustration, not Bambi&#x27;s)" loading="lazy" decoding="async"></div><figcaption>Scones (illustration, not Bambi&#x27;s)</figcaption></figure><figure class="g-it g2"><div class="ph-in"><img src="images/soup.jpg" alt="Grilled cheese and tomato soup (illustration)" loading="lazy" decoding="async"></div><figcaption>Grilled cheese and tomato soup (illustration)</figcaption></figure><figure class="g-it g3"><div class="ph-in"><img src="images/lighthouse.jpg" alt="Port Colborne lighthouse (Wikimedia Commons)" loading="lazy" decoding="async"></div><figcaption>Port Colborne lighthouse (Wikimedia Commons)</figcaption></figure><figure class="g-it g4"><div class="ph-in"><img src="images/bowl.jpg" alt="A bowl of soup (illustration)" loading="lazy" decoding="async"></div><figcaption>A bowl of soup (illustration)</figcaption></figure></div></div></section><section class="sect visit" id="visit"><div class="wrap"><div class="sec-head"><h2 class="sec-t d " data-split>Pop<br>in</h2><p class="chip" id="status2"><span class="dot"></span><span class="st-txt">Hours</span></p></div><div class="visit-g"><div class="vcard"><h3 class="vcard-t">Hours</h3><table class="hours"><tr data-d="0"><th scope="row">Monday</th><td>11am–3pm</td></tr><tr data-d="1"><th scope="row">Tuesday</th><td>11am–3pm</td></tr><tr data-d="2"><th scope="row">Wednesday</th><td>9am–3pm</td></tr><tr data-d="3"><th scope="row">Thursday</th><td>9am–3pm</td></tr><tr data-d="4"><th scope="row">Friday</th><td>9am–3pm</td></tr><tr data-d="5"><th scope="row">Saturday</th><td>Closed</td></tr><tr data-d="6"><th scope="row">Sunday</th><td>Closed</td></tr></table><p class="note">Dine in or take out. Plenty of parking at the side of the building.</p><h3 class="vcard-t">Find us</h3><p class="addr">273 Main St W, Port Colborne, ON L3K 3V7</p><p><a href="tel:+12898369836">(289) 836-9836</a></p><p><a href="mailto:bambisbistro@gmail.com">bambisbistro@gmail.com</a></p><div class="btns"><a class="btn btn-solid" href="tel:+12898369836">Call</a><a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Bambi%27s%20Bistro%2C%20273%20Main%20St%20W%2C%20Port%20Colborne%2C%20ON%20L3K%203V7" target="_blank" rel="noopener">Directions</a></div></div><div class="map"><iframe title="Map: Bambi&#x27;s Bistro" src="https://maps.google.com/maps?q=Bambi%27s%20Bistro%2C%20273%20Main%20St%20W%2C%20Port%20Colborne%2C%20ON%20L3K%203V7&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div></div></section><section class="sect cta"><div class="wrap"><h2 class="cta-t d" data-split>Treat boxes<br>to go</h2><p class="tagline">We take orders and make treat boxes to go. Call (289) 836-9836 or email bambisbistro@gmail.com.</p><div class="btns"><a class="btn btn-solid" href="tel:+12898369836">Call (289) 836-9836</a><a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Bambi%27s%20Bistro%2C%20273%20Main%20St%20W%2C%20Port%20Colborne%2C%20ON%20L3K%203V7" target="_blank" rel="noopener">Directions</a></div></div></section></main>
-<footer class="foot"><div class="wrap"><p class="mark">Bambi&#x27;s Bistro</p><p>273 Main St W, Port Colborne, ON L3K 3V7 · <a href="tel:+12898369836">(289) 836-9836</a> · <a href="mailto:bambisbistro@gmail.com">bambisbistro@gmail.com</a></p>
-<p class="small">Design preview by GunaFix, not the official website of Bambi&#x27;s Bistro. Preview designed by <a href="https://gunafix.com" target="_blank" rel="noopener">GunaFix</a>.</p>
-<details><summary>Sources & image credits</summary><p class="small">Prices as listed on our current menu. Look for daily bakery and lunch features on Facebook and Instagram @bambisbistro.</p><ul class="small"><li>Grilled Cheese Sandwich (16938984390).jpg, Willis Lam, CC BY-SA 2.0, <a href="https://commons.wikimedia.org/wiki/File:Grilled_Cheese_Sandwich_(16938984390).jpg" target="_blank" rel="noopener">Wikimedia Commons</a> (cut-out made by GunaFix)</li><li>Canal Days 2019 - Port Colborne, ON.jpg, JFVoll, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/wiki/File:Canal_Days_2019_-_Port_Colborne,_ON.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></li><li>Lemon Scones (6849625315).jpg, Benson Kua from Toronto, Canada, CC BY-SA 2.0, <a href="https://commons.wikimedia.org/wiki/File:Lemon_Scones_(6849625315).jpg" target="_blank" rel="noopener">Wikimedia Commons</a></li><li>Grilled four-cheese on Jesus bread sandwich with garlic-tomato soup.jpg, goblinbox_(queen_of_ad_hoc_bento) from Minneapolis, MN, US, CC BY 2.0, <a href="https://commons.wikimedia.org/wiki/File:Grilled_four-cheese_on_Jesus_bread_sandwich_with_garlic-tomato_soup.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></li><li>Lock 8 Gateway Park-Port Colborne-Ontario-20220317.jpg, Mhsheikholeslami, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/wiki/File:Lock_8_Gateway_Park-Port_Colborne-Ontario-20220317.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></li><li>DFC 3982 A steaming bowl of homemade vegetable soup garnished with chopped parsley served with a slice of rustic brown bread.jpg, PattayaPatrol, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/wiki/File:DFC_3982_A_steaming_bowl_of_homemade_vegetable_soup_garnished_with_chopped_parsley_served_with_a_slice_of_rustic_brown_bread.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></li></ul><p class="small">Fonts: Fraunces &amp; Figtree (SIL Open Font License). Motion: GSAP, ScrollTrigger, Lenis, SplitType.</p></details></div></footer><nav class="dock" aria-label="Quick actions"><a href="tel:+12898369836">Call</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Bambi%27s%20Bistro%2C%20273%20Main%20St%20W%2C%20Port%20Colborne%2C%20ON%20L3K%203V7" target="_blank" rel="noopener">Directions</a><a href="#menu">Menu</a></nav>
+<div class="demo-bar">Preview redesign by GunaFix for Bambi's Bistro · not the official website</div>
+<div class="wrap nav"><a class="d" href="#top">Bambi's</a><ul><li><a href="#seasons">Seasons</a></li><li><a href="#menu">Menu</a></li><li><a href="#treats">Treat boxes</a></li><li><a href="#visit">Visit</a></li></ul><a class="btn f" href="tel:+12898369836">Call</a></div>
+<main id="main">
+<section class="hero" id="top"><div class="wrap hgrid">
+ <div class="htxt"><p class="k">273 Main St W · Port Colborne</p>
+ <h1 class="h1 d mis" data-fit data-fit-max="200"><span class="l">Homemade,</span><span class="l t">with the seasons.</span></h1></div>
+ <div><p class="lede">The bistro where the locals go to feel at home. Flavourful soups made fresh daily, grilled and fresh sandwiches, and baking done every day in small batches.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn f" href="#menu">See the menu</a><a class="btn" href="#treats">Build a treat box</a></div></div>
+ <div class="gc" aria-hidden="true"><div class="badge"><span>Soup of</span><b>the day</b></div>
+  <svg viewBox="0 0 400 300" id="gcs">
+   <g id="g-bot"><path d="M60 214h280l-10 40c-2 8-10 14-18 14H88c-8 0-16-6-18-14z" fill="#EE5233" stroke="#3E1E45" stroke-width="5" stroke-linejoin="round"/><path d="M90 240h40M170 248h50M250 238h40" stroke="#3E1E45" stroke-width="4" stroke-linecap="round"/></g>
+   <g id="g-c1"><path d="M54 192h292v22H54z" fill="#F6C343" stroke="#3E1E45" stroke-width="5"/><path d="M90 214c0 18 10 22 10 34M200 214c0 12 8 16 6 26M290 214c2 16-8 20-6 30" stroke="#F6C343" stroke-width="12" stroke-linecap="round"/></g>
+   <g id="g-c2"><path d="M58 172h284v22H58z" fill="#FFE08A" stroke="#3E1E45" stroke-width="5"/></g>
+   <g id="g-c3"><path d="M54 152h292v22H54z" fill="#F2A541" stroke="#3E1E45" stroke-width="5"/></g>
+   <g id="g-top"><path d="M60 152c0-50 20-86 70-86 20-18 120-18 140 0 50 0 70 36 70 86z" fill="#EE5233" stroke="#3E1E45" stroke-width="5" stroke-linejoin="round"/><path d="M110 112l30-20M170 104l30-20M230 104l30-20M290 112l-20-20" stroke="#3E1E45" stroke-width="5" stroke-linecap="round" opacity=".8"/></g>
+   <g id="g-steam" fill="none" stroke="#3E1E45" stroke-width="4" stroke-linecap="round"><path d="M160 54c-10-12 10-18 0-30"/><path d="M200 50c-10-12 10-18 0-30"/><path d="M240 54c-10-12 10-18 0-30"/></g>
+  </svg></div>
+</div></section>
+
+<section class="seasons" id="seasons"><div class="wrap sgrid">
+ <div class="sticky-w"><p class="k">Our menu adjusts with the seasons</p><h2 class="d" style="font-size:clamp(44px,6vw,92px);margin:10px 0 24px">Four seasons<br>on Main Street</h2>
+  <div class="wheel" aria-hidden="true"><svg viewBox="0 0 400 400"><g id="wh">
+   <path d="M200 200V20a180 180 0 0 1 180 180z" fill="#EE5233"/><path d="M200 200h180a180 180 0 0 1-180 180z" fill="#F6F1EA"/><path d="M200 200v180A180 180 0 0 1 20 200z" fill="#8E2F3E"/><path d="M200 200H20A180 180 0 0 1 200 20z" fill="#F6C343"/>
+   <g font-family="Young Serif" font-size="26" text-anchor="middle"><text x="290" y="120" fill="#F6F1EA">Fall</text><text x="290" y="300" fill="#3E1E45">Winter</text><text x="110" y="300" fill="#F6F1EA">Spring</text><text x="110" y="120" fill="#3E1E45">Summer</text></g>
+   <circle cx="200" cy="200" r="180" fill="none" stroke="#F6F1EA" stroke-width="4"/></g>
+   <circle cx="200" cy="200" r="40" fill="#3E1E45" stroke="#F6F1EA" stroke-width="4"/><path d="M200 6l-14 26h28z" fill="#F6F1EA"/></svg></div></div>
+ <div class="scards" id="scards">
+  <article class="scard on" data-s="0"><span class="k">Fall</span><h3>Hearty &amp; warm</h3><p>When the leaves turn, the menu turns too: hearty, warm fall and winter fare.</p></article>
+  <article class="scard" data-s="1"><span class="k">Winter</span><h3>Soup of the day</h3><p>Soups are made fresh daily and posted on social media @bambisbistro.</p></article>
+  <article class="scard" data-s="2"><span class="k">Spring</span><h3>Fresher plates</h3><p>A fresher menu arrives for spring and summer.</p></article>
+  <article class="scard" data-s="3"><span class="k">Summer</span><h3>Baked in small batches</h3><p>Scones, cookies, bars, muffins, croissants and brownies, rotated with the season.</p></article>
+ </div>
+</div></section>
+
+<section class="menu" id="menu"><div class="wrap">
+ <p class="k">Dine in or take out · we cater to all dietary requirements</p>
+ <h2 class="mh d mis">The menu</h2>
+ <div class="tabs" role="tablist" aria-label="Menu sections"><button role="tab" aria-selected="true" aria-controls="m0" id="mt0">Grilled</button><button role="tab" aria-selected="false" tabindex="-1" aria-controls="m1" id="mt1">Fresh</button><button role="tab" aria-selected="false" tabindex="-1" aria-controls="m2" id="mt2">Combos</button><button role="tab" aria-selected="false" tabindex="-1" aria-controls="m3" id="mt3">Drinks</button></div>
+ <ul class="tiles" role="tabpanel" id="m0" aria-labelledby="mt0"><li class="tile"><h3>BB's triple cheese</h3><span class="pr">13.50</span><p>Served with salad of the day</p></li><li class="tile"><h3>Canuck</h3><span class="pr">14.50</span><p>Ham, cheddar, jalapeño &amp; Saskatoon berry</p></li><li class="tile"><h3>Gobbler</h3><span class="pr">14.50</span><p>Turkey, provolone, cranberry chutney and herbed oil</p></li><li class="tile"><h3>Pickled Italian</h3><span class="pr">14.50</span><p>Hot &amp; mild salami, provolone, pickles, zesty mustard &amp; Bambi oil</p></li><li class="tile"><h3>Brie bliss</h3><span class="pr">14.50</span><p>Shaved ham, brie, fig and Dijon</p></li></ul>
+ <ul class="tiles" role="tabpanel" id="m1" aria-labelledby="mt1" hidden><li class="tile"><h3>Harvest tuna</h3><span class="pr">14.50</span><p>Albacore tuna, crunchy veggies, nuts, cranberries, apples, tangy dill mayo</p></li><li class="tile"><h3>Ultimate ham</h3><span class="pr">14.50</span><p>Shaved ham, cheddar, red onion, arugula, tomato, herb Dijon mayo</p></li><li class="tile"><h3>Goblet</h3><span class="pr">14.50</span><p>Shaved turkey, spinach, sharp white cheddar, cranberry mayo</p></li><li class="tile"><h3>Soup of the day</h3><span class="pr">8.00</span><p>Made fresh daily</p></li></ul>
+ <ul class="tiles" role="tabpanel" id="m2" aria-labelledby="mt2" hidden><li class="tile"><h3>Soup and half sandwich</h3><span class="pr">14.99</span><p>Includes coffee or tea</p></li><li class="tile"><h3>Soup and grilled bread</h3><span class="pr">10.99</span><p>Includes coffee or tea</p></li><li class="tile"><h3>Soup and biscuit / scone</h3><span class="pr">11.99</span><p>Includes coffee or tea</p></li></ul>
+ <ul class="tiles" role="tabpanel" id="m3" aria-labelledby="mt3" hidden><li class="tile"><h3>Drip coffee / tea</h3><span class="pr">2.25</span></li><li class="tile"><h3>Loose leaf tea</h3><span class="pr">5.00 / 8.00</span><p>Small / large pot</p></li><li class="tile"><h3>Bambi's coffee / tea latte</h3><span class="pr">4.25</span></li><li class="tile"><h3>BB's mocha or hot chocolate</h3><span class="pr">3.50</span></li><li class="tile"><h3>BB's Italian soda</h3><span class="pr">3.25</span></li></ul>
+ <p style="font-size:14px;margin-top:18px">Prices as listed on Bambi's current menu. Daily bakery and lunch features on Facebook and Instagram @bambisbistro.</p>
+</div></section>
+
+<section class="treat" id="treats"><div class="wrap tgrid">
+ <div><p class="k" style="color:var(--pl)">We take orders</p><h2 class="d" style="font-size:clamp(44px,7vw,104px);margin:10px 0 18px">Fill a<br>treat box</h2>
+  <p style="max-width:40ch">Tap the baking to fill your box. It's a game, not a checkout: call us to order the real thing.</p>
+  <div class="shelf" id="shelf"><button type="button" data-e="🥐" data-n="Croissant"><span aria-hidden="true">🥐</span>Croissants</button><button type="button" data-e="🍪" data-n="Cookie"><span aria-hidden="true">🍪</span>Cookies</button><button type="button" data-e="🧁" data-n="Muffin"><span aria-hidden="true">🧁</span>Muffins</button><button type="button" data-e="🟫" data-n="Brownie"><span aria-hidden="true">🟫</span>Brownies</button><button type="button" data-e="🍰" data-n="Bar"><span aria-hidden="true">🍰</span>Bars</button><button type="button" data-e="🥯" data-n="Scone"><span aria-hidden="true">🥯</span>Scones</button></div></div>
+ <div class="box"><p class="k">Your treat box</p><div class="slots" id="slots"><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div></div>
+  <p id="boxmsg" aria-live="polite" style="margin:0 0 14px">Six empty spots. Start tapping.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn f" href="tel:+12898369836">Call (289) 836-9836</a><button type="button" class="btn" id="empty">Empty box</button></div></div>
+</div></section>
+
+<section class="visit" id="visit"><div class="wrap vgrid">
+ <div><p class="k">Come on in</p><div class="vbig d mis">273 Main St W,<br>Port Colborne</div><p>ON L3K 3V7. Plenty of parking at the side of the building.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn f" href="tel:+12898369836">(289) 836-9836</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Bambi%27s+Bistro,+273+Main+St+W,+Port+Colborne,+ON+L3K+3V7" rel="noopener">Directions</a></div>
+  <p><a href="mailto:bambisbistro@gmail.com">bambisbistro@gmail.com</a> · Instagram &amp; Facebook @bambisbistro</p></div>
+ <div><span class="status" data-status>Hours</span><div class="hrs" data-hours style="margin-top:14px"><div data-day="0"><span>Monday</span><span>11am–3pm</span></div><div data-day="1"><span>Tuesday</span><span>11am–3pm</span></div><div data-day="2"><span>Wednesday</span><span>9am–3pm</span></div><div data-day="3"><span>Thursday</span><span>9am–3pm</span></div><div data-day="4"><span>Friday</span><span>9am–3pm</span></div><div data-day="5"><span>Saturday</span><span>Closed</span></div><div data-day="6"><span>Sunday</span><span>Closed</span></div></div></div>
+</div></section>
+</main>
+<footer><div class="wrap">© <span data-year></span> Bambi's Bistro. Menu, prices and hours from Bambi's own website. Drawings by GunaFix. Preview by GunaFix.</div></footer>
+<div class="sticky"><a class="btn f" href="tel:+12898369836">Call (289) 836-9836</a></div>
+<script>window.HOURS={tz:'America/Toronto',days:[[["11:00","15:00"]],[["11:00","15:00"]],[["09:00","15:00"]],[["09:00","15:00"]],[["09:00","15:00"]],[],[]],labels:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],open:'Open now',closed:'Closed',until:'until',opens:'opens',today:'today'}</script>
 </body></html>
