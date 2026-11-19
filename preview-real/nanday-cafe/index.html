@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nanday Café — Coffee, breakfast &amp; lunch on Beach Blvd, Gulfport — GunaFix real-photo preview</title>
+<meta name="description" content="A GunaFix preview for Nanday Café, the new neighborhood café at 3107 Beach Blvd S in Gulfport, Florida. Coffee, breakfast and lunch, open daily from 8 am. This is not the official website.">
+<link rel="canonical" href="https://gunafix-nanday-cafe.netlify.app/">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1F2B17">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="GunaFix">
+<meta property="og:title" content="Nanday Café — Gulfport, Florida — GunaFix preview">
+<meta property="og:description" content="Coffee, breakfast and lunch at 3107 Beach Blvd S, Gulfport. A GunaFix preview, not the official website.">
+<meta property="og:url" content="https://gunafix-nanday-cafe.netlify.app/">
+<meta property="og:image" content="media/poster-l.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="media/poster-l.jpg">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/fraunces-5-8f90dc3721.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dmsans-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="fonts/fraunces.css">
+<link rel="stylesheet" href="fonts/dmsans.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Nanday Café","description":"A locally owned neighborhood café in Gulfport, Florida, serving coffee, breakfast and lunch. GunaFix preview, not the official website.","url":"https://gunafix-nanday-cafe.netlify.app/","telephone":"+17275487299","email":"hello@nandaycafe.com","image":"media/poster-l.jpg","servesCuisine":["Coffee","Breakfast","Lunch"],"address":{"@type":"PostalAddress","streetAddress":"3107 Beach Blvd S","addressLocality":"Gulfport","addressRegion":"FL","postalCode":"33707","addressCountry":"US"},"hasMap":"https://www.google.com/maps/search/?api=1&query=Nanday+Cafe+3107+Beach+Blvd+S+Gulfport+FL+33707","sameAs":["https://www.instagram.com/nandaycafe/","https://www.facebook.com/profile.php?id=61595141201923","https://www.nandaycafe.com/"]}
+</script>
+<style>
+:root{
+  --cream:#F6F0E2; --paper:#FBF8F0; --olive:#40582E; --olive-2:#566F3E; --jungle:#1F2B17; --jungle-2:#2A3A20;
+  --lime:#C3D94A; --leaf:#8DB33A; --sky:#4FA3DC; --hood:#141712; --shoulder:#C8452F; --soft:#5B6152; --line:#E2DAC6;
+  --display:"Fraunces","Iowan Old Style","Georgia",serif;
+  --sans:"DM Sans","Helvetica Neue",Arial,sans-serif;
+  --max:1160px; --banner:34px; --header:68px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 12px)}
+html,body{margin:0;background:var(--cream);color:var(--hood);font-family:var(--sans);font-size:16px;line-height:1.6}
+body{-webkit-font-smoothing:antialiased;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+@media(min-width:900px){body{padding-bottom:0}}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+@media(min-width:900px){.wrap{padding:0 40px}}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.04;letter-spacing:-.015em;margin:0}
+.eyebrow{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--olive);margin:0 0 14px}
+.note{font-size:.86rem;color:var(--soft);line-height:1.55}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;z-index:100}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:6px}
+
+/* preview banner */
+.preview{background:var(--hood);color:#E9E6DA;font-size:.78rem;text-align:center;padding:8px 16px;line-height:1.35}
+.preview a{color:var(--lime)}
+
+/* header */
+header.site{position:sticky;top:0;z-index:40;background:rgba(246,240,226,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+header.site.is-scrolled{border-color:var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand img{height:44px;width:auto}
+nav.links{display:none;gap:26px;font-weight:500;font-size:.95rem}
+nav.links a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+nav.links a:hover{border-color:var(--leaf)}
+.bar .call{min-height:42px;padding:0 16px;font-size:.9rem}
+.bar .call .long{display:none}
+@media(min-width:900px){nav.links{display:flex}.bar .call{min-height:48px;padding:0 22px;font-size:.97rem}.bar .call .long{display:inline}.bar .call .short{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:700;font-size:.97rem;text-decoration:none;border:1.5px solid transparent;transition:transform .15s,background .2s,color .2s;white-space:nowrap}
+.btn:active{transform:scale(.98)}
+.btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btn-lime{background:var(--lime);color:var(--jungle)}
+.btn-lime:hover{background:#D3E66A}
+.btn-ghost{border-color:rgba(246,240,226,.45);color:var(--cream)}
+.btn-ghost:hover{background:rgba(246,240,226,.1)}
+.btn-olive{background:var(--olive);color:var(--cream)}
+.btn-olive:hover{background:var(--jungle-2)}
+.btn-line{border-color:var(--olive);color:var(--olive)}
+.btn-line:hover{background:var(--olive);color:var(--cream)}
+
+/* hero */
+.hero{background:var(--jungle);color:var(--cream);position:relative;overflow:hidden}
+.hero-grid{display:grid;gap:0}
+.hero-copy{padding:44px 22px 40px;position:relative;z-index:2}
+.hero .eyebrow{color:var(--lime);display:flex;align-items:center;gap:10px}
+.hero .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(195,217,74,.22)}
+.hero h1{font-size:clamp(2.7rem,9.4vw,5.6rem);font-weight:600;letter-spacing:-.025em}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--lime)}
+.hero .lede{font-size:1.1rem;max-width:34ch;margin:20px 0 26px;color:#E4E2D2}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:10px}
+.hero .facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin:28px 0 0;padding:0;list-style:none;font-size:.9rem;color:#CFD3BE}
+.hero .facts li{display:flex;align-items:center;gap:8px}
+.hero .facts svg{width:16px;height:16px;stroke:var(--lime);fill:none;stroke-width:2}
+.hero-photo{position:relative;min-height:340px}
+.hero-photo > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(31,43,23,.0) 55%,rgba(31,43,23,.55))}
+.stamp{position:absolute;left:18px;bottom:18px;z-index:2;background:var(--cream);color:var(--jungle);border-radius:18px;padding:12px 16px 12px 12px;display:flex;align-items:center;gap:12px;box-shadow:0 18px 40px -18px rgba(0,0,0,.6);max-width:280px}
+.stamp img{width:46px;height:46px;border-radius:12px}
+.stamp b{display:block;font-family:var(--display);font-size:1.05rem;line-height:1.1}
+.stamp span{font-size:.8rem;color:var(--soft)}
+@media(min-width:900px){
+  .hero-grid{grid-template-columns:1.08fr .92fr;min-height:min(calc(100vh - var(--banner) - var(--header)), 820px)}
+  .hero-copy{padding:72px 56px 64px max(40px, calc((100vw - var(--max))/2 + 40px));display:flex;flex-direction:column;justify-content:center}
+  .hero-photo{min-height:auto}
+  .stamp{left:28px;bottom:28px}
+}
+.feathers{position:absolute;right:-60px;top:-40px;width:340px;opacity:.07;pointer-events:none}
+
+/* ticker */
+.ticker{background:var(--lime);color:var(--jungle);overflow:hidden;border-block:1px solid rgba(0,0,0,.08)}
+.ticker-track{display:flex;gap:34px;width:max-content;padding:13px 0;font-family:var(--display);font-size:1.15rem;font-weight:600;animation:tick 38s linear infinite}
+.ticker-track span{display:flex;align-items:center;gap:34px}
+.ticker-track span::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--jungle);opacity:.55}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+
+section{padding:76px 0}
+@media(min-width:900px){section{padding:110px 0}}
+
+/* story */
+.story-grid{display:grid;gap:40px;align-items:center}
+@media(min-width:900px){.story-grid{grid-template-columns:.95fr 1.05fr;gap:72px}}
+.story h2{font-size:clamp(2.3rem,6vw,3.8rem)}
+.story h2 em{font-style:italic;font-weight:400;color:var(--olive)}
+.story p.big{font-size:1.13rem;margin:20px 0 0;max-width:52ch}
+.story p{max-width:56ch}
+.bird-card{position:relative;border-radius:28px;overflow:hidden;background:var(--olive);aspect-ratio:4/4.3}
+.bird-card img{width:100%;height:100%;object-fit:cover}
+.bird-card figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(20,23,18,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:var(--cream);border-radius:16px;padding:14px 16px;font-size:.86rem;line-height:1.45}
+.bird-card figcaption b{font-family:var(--display);font-size:1.05rem;display:block;margin-bottom:2px;color:var(--lime)}
+.pillrow{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0;padding:0;list-style:none}
+.pillrow li{border:1.5px solid var(--olive);color:var(--olive);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
+
+/* menu */
+.menu{background:var(--paper);border-block:1px solid var(--line)}
+.menu-head{display:grid;gap:18px;margin-bottom:40px}
+@media(min-width:900px){.menu-head{grid-template-columns:1fr 1fr;align-items:end}}
+.menu h2{font-size:clamp(2.3rem,6vw,3.8rem)}
+.cards{display:grid;gap:18px}
+@media(min-width:760px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;display:flex;flex-direction:column}
+.card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--line)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover .ph img{transform:scale(1.04)}
+.card .body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card .tag{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--olive)}
+.card h3{font-size:1.65rem}
+.card .from{font-size:.93rem;color:var(--soft);margin:0}
+.card ul{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:9px}
+.card li{display:flex;gap:10px;align-items:baseline;font-weight:500}
+.card li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--leaf);transform:translateY(-1px)}
+.card .time{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--soft)}
+.badge{display:inline-flex;align-items:center;gap:6px;background:#EEF4D2;color:var(--olive);border-radius:999px;padding:5px 12px;font-size:.82rem;font-weight:700}
+.diet{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+
+.season{margin-top:22px;background:var(--jungle);color:var(--cream);border-radius:28px;overflow:hidden;display:grid}
+@media(min-width:900px){.season{grid-template-columns:1.1fr .9fr}}
+.season .txt{padding:34px 26px}
+@media(min-width:900px){.season .txt{padding:50px 48px}}
+.season .eyebrow{color:var(--lime)}
+.season h3{font-size:clamp(1.9rem,4.4vw,2.7rem)}
+.season h3 em{font-style:italic;font-weight:400;color:#F0B26A}
+.season ol{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:0}
+.season li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid rgba(246,240,226,.16);font-size:1.02rem}
+.season li span{color:#C9CDB8;font-size:.86rem;text-align:right}
+.season .img{min-height:260px;position:relative}
+.season .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.menu .after{margin-top:26px;display:grid;gap:14px}
+@media(min-width:900px){.menu .after{grid-template-columns:1fr auto;align-items:center}}
+
+/* seating */
+.seat-grid{display:grid;gap:34px;align-items:center}
+@media(min-width:900px){.seat-grid{grid-template-columns:1.1fr .9fr;gap:64px}}
+.seat-photo{border-radius:28px;overflow:hidden;aspect-ratio:7/6}
+.seat-photo img{width:100%;height:100%;object-fit:cover}
+.seat h2{font-size:clamp(2.2rem,5.4vw,3.4rem)}
+.seats{display:grid;gap:12px;margin:26px 0 0;padding:0;list-style:none}
+.seats li{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+.seats svg{flex:none;width:28px;height:28px;stroke:var(--olive);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.seats b{display:block;font-family:var(--display);font-size:1.15rem}
+.seats span{font-size:.92rem;color:var(--soft)}
+
+/* visit */
+.visit{background:var(--olive);color:var(--cream)}
+.visit .eyebrow{color:var(--lime)}
+.visit h2{font-size:clamp(2.4rem,6.4vw,4.2rem)}
+.visit-grid{display:grid;gap:22px;margin-top:38px}
+@media(min-width:900px){.visit-grid{grid-template-columns:1fr 1fr 1.15fr}}
+.panel{background:rgba(20,23,18,.22);border:1px solid rgba(246,240,226,.16);border-radius:24px;padding:26px}
+.panel h3{font-size:1.4rem;margin-bottom:14px}
+.hours{margin:0;padding:0;list-style:none}
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid rgba(246,240,226,.14)}
+.hours li:last-child{border-bottom:0}
+.hours b{font-weight:700}
+.visit .note{color:#D7DCC5}
+.visit .note a{color:var(--lime)}
+.contact{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.contact a{text-decoration:none;font-weight:600;border-bottom:1px solid rgba(195,217,74,.6)}
+.contact small{display:block;color:#C9D0B4;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:2px}
+.map{border-radius:24px;overflow:hidden;min-height:300px;background:var(--jungle-2);position:relative}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.85)}
+.callout{margin-top:22px;background:var(--lime);color:var(--jungle);border-radius:20px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start;font-weight:500}
+.callout svg{flex:none;width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2}
+.visit .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+
+/* social + enquiry */
+.social-grid{display:grid;gap:22px}
+@media(min-width:900px){.social-grid{grid-template-columns:.9fr 1.1fr;gap:56px}}
+.social h2{font-size:clamp(2.1rem,5vw,3.2rem)}
+.handles{display:grid;gap:12px;margin-top:26px}
+.handle{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px;text-decoration:none;transition:border-color .2s,transform .2s}
+.handle:hover{border-color:var(--olive);transform:translateY(-2px)}
+.handle svg{width:28px;height:28px;flex:none}
+.handle b{display:block;font-size:1.05rem}
+.handle span{font-size:.88rem;color:var(--soft)}
+form.enquiry{background:#fff;border:1px solid var(--line);border-radius:26px;padding:24px;display:grid;gap:14px}
+@media(min-width:600px){form.enquiry{grid-template-columns:1fr 1fr;padding:30px}}
+form.enquiry h3{font-size:1.6rem;grid-column:1/-1}
+form.enquiry .full{grid-column:1/-1}
+label{display:grid;gap:6px;font-size:.86rem;font-weight:600;color:var(--soft)}
+input,select,textarea{font:inherit;font-size:1rem;color:var(--hood);background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;min-height:48px;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--olive);box-shadow:0 0 0 4px rgba(64,88,46,.14)}
+.form-actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+[data-form-status]{grid-column:1/-1;border-radius:12px;padding:12px 14px;font-size:.92rem}
+[data-form-status][data-state=ok]{background:#EEF4D2;color:var(--olive)}
+[data-form-status][data-state=error]{background:#FBE6E1;color:#8E2D1C}
+
+/* credits & footer */
+.credits{padding:54px 0;border-top:1px solid var(--line)}
+.credits ul{margin:10px 0 0;padding-left:18px;font-size:.84rem;color:var(--soft)}
+footer{background:var(--hood);color:#C7CBB9;padding:46px 0 40px;font-size:.88rem}
+footer .row{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+footer img{height:56px;width:auto}
+footer a{color:var(--lime)}
+
+/* dock */
+.dock{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:rgba(20,23,18,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:20px;padding:6px;box-shadow:0 18px 40px -14px rgba(0,0,0,.55)}
+.dock a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:15px;color:var(--cream);text-decoration:none;font-size:.78rem;font-weight:700}
+.dock a.primary{background:var(--lime);color:var(--jungle)}
+.dock svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media(min-width:900px){.dock{display:none}}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.is-in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+<style>/* GunaFix 3D stage (scoped under .gf3d) */
+.gf3d{position:relative;height:330vh;background:var(--g-bg);color:var(--g-fg);font-family:var(--g-body);isolation:isolate;z-index:1}
+.gf3d *{box-sizing:border-box}
+.gf3d .gf-stick{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:radial-gradient(70% 60% at var(--g-gx,70%) 45%,var(--g-glow,transparent),transparent 70%),var(--g-bg)}
+.gf3d canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y;cursor:grab}
+.gf3d canvas:active{cursor:grabbing}
+.gf3d .gf-ghost{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;font-family:var(--g-disp);font-size:min(30vw,38vh);line-height:.9;letter-spacing:var(--g-ls,-.03em);text-transform:var(--g-tt,none);font-weight:var(--g-w,400);color:transparent;-webkit-text-stroke:1px var(--g-ghost,rgba(128,128,128,.18));pointer-events:none;white-space:nowrap;overflow:hidden;z-index:0}
+.gf3d canvas{z-index:1}
+.gf3d .gf-fallback{display:none}
+.gf-nowebgl .gf3d .gf-fallback{display:block;position:absolute;right:10vw;top:22vh;width:30vmin;height:30vmin;border-radius:50%;background:radial-gradient(circle at 40% 35%,var(--g-fg) 0 10%,var(--g-acc) 12% 55%,transparent 57%);opacity:.9}
+.gf3d .gf-beats{position:absolute;z-index:2;display:grid;pointer-events:none}
+.gf3d .gf-beat{grid-area:1/1;opacity:0;visibility:hidden;will-change:opacity,transform}
+.gf3d .gf-k{display:block;font:600 .75rem/1 var(--g-body);letter-spacing:.2em;text-transform:uppercase;color:var(--g-acc);margin-bottom:18px}
+.gf3d h2{margin:0;font-family:var(--g-disp);font-weight:var(--g-w,400);letter-spacing:var(--g-ls,-.03em);text-transform:var(--g-tt,none);line-height:.98;font-size:clamp(2.5rem,5.2vw,5.4rem);color:var(--g-fg)}
+.gf3d h2 em{font-style:var(--g-em,italic);color:var(--g-acc);font-family:var(--g-emf,inherit)}
+.gf3d p{margin:20px 0 0;max-width:30em;font-size:1.0625rem;line-height:1.6;color:var(--g-muted)}
+.gf3d .gf-facts{list-style:none;margin:24px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.gf3d .gf-facts li{font:500 .8125rem/1 var(--g-body);padding:10px 14px;border:1px solid var(--g-line);border-radius:var(--g-rad,999px);color:var(--g-fg);background:var(--g-chip,transparent)}
+.gf3d .gf-dots{position:absolute;z-index:2;display:flex;gap:8px}
+.gf3d .gf-dots i{width:26px;height:3px;border-radius:3px;background:var(--g-line);transition:background .3s,width .3s}
+.gf3d .gf-dots i.on{background:var(--g-acc);width:44px}
+.gf3d .gf-hint{position:absolute;z-index:2;font:600 .6875rem/1 var(--g-body);letter-spacing:.16em;text-transform:uppercase;color:var(--g-muted)}
+.gf3d .gf-toast{position:absolute;z-index:3;left:50%;bottom:26px;transform:translate(-50%,24px);opacity:0;transition:.4s;background:var(--g-acc);color:var(--g-on,#fff);padding:12px 20px;border-radius:var(--g-rad,999px);font:700 .75rem/1 var(--g-body);letter-spacing:.14em;text-transform:uppercase;pointer-events:none;white-space:nowrap}
+.gf3d .gf-toast.on{opacity:1;transform:translate(-50%,0)}
+/* laptop >=1025 */
+@media (min-width:1025px){
+  .gf3d .gf-beats{top:50%;transform:translateY(-50%);width:min(34rem,36vw);left:6vw}
+  .gf3d.gf-left .gf-beats{left:auto;right:6vw}
+  .gf3d .gf-dots{left:6vw;bottom:9vh}.gf3d.gf-left .gf-dots{left:auto;right:6vw}
+  .gf3d .gf-hint{right:6vw;bottom:9vh}.gf3d.gf-left .gf-hint{right:auto;left:6vw}
+  .gf3d.gf-v-center .gf-beats{top:auto;bottom:13vh;transform:none;left:50%;margin-left:calc(min(40rem,60vw)/-2);width:min(40rem,60vw);text-align:center}
+  .gf3d.gf-v-center h2{font-size:clamp(2.2rem,4vw,4rem)}
+  .gf3d.gf-v-center p{margin-left:auto;margin-right:auto}
+  .gf3d.gf-v-center .gf-facts{justify-content:center}
+  .gf3d.gf-v-center .gf-dots{left:50%;transform:translateX(-50%);bottom:6vh}.gf3d.gf-v-center .gf-hint{left:6vw;right:auto;bottom:6vh}
+  .gf3d.gf-v-card .gf-beat{background:var(--g-card);border:1px solid var(--g-line);border-radius:var(--g-rad2,22px);padding:34px 36px 38px;backdrop-filter:blur(10px)}
+}
+/* iPad 768-1024 */
+@media (max-width:1024px) and (min-width:768px){
+  .gf3d{height:300vh}
+  .gf3d .gf-beats{left:7vw;right:7vw;bottom:calc(112px + env(safe-area-inset-bottom));text-align:center}
+  .gf3d .gf-beat p{margin-left:auto;margin-right:auto}.gf3d .gf-facts{justify-content:center}
+  .gf3d h2{font-size:clamp(2.3rem,6.4vw,3.8rem)}
+  .gf3d .gf-dots{left:50%;transform:translateX(-50%);bottom:calc(88px + env(safe-area-inset-bottom))}
+  .gf3d .gf-hint{left:0;right:0;text-align:center;top:92px}
+  .gf3d.gf-v-card .gf-beat{background:var(--g-card);border:1px solid var(--g-line);border-radius:var(--g-rad2,22px);padding:26px 30px 30px}
+}
+/* phone <=767 */
+@media (max-width:767px){
+  .gf3d{height:270vh}
+  .gf3d .gf-beats{left:22px;right:22px;bottom:calc(104px + env(safe-area-inset-bottom))}
+  .gf3d h2{font-size:clamp(2.1rem,10.6vw,3rem)}
+  .gf3d p{font-size:.95rem;margin-top:12px}
+  .gf3d .gf-facts{margin-top:14px;gap:6px}.gf3d .gf-facts li{padding:8px 11px;font-size:.75rem}
+  .gf3d .gf-k{margin-bottom:12px}
+  .gf3d .gf-dots{left:22px;bottom:calc(84px + env(safe-area-inset-bottom))}
+  .gf3d .gf-hint{left:22px;top:84px}
+  .gf3d.gf-v-card .gf-beat{background:var(--g-card);border:1px solid var(--g-line);border-radius:var(--g-rad2,20px);padding:20px 20px 22px}
+  .gf3d .gf-toast{bottom:auto;top:120px}
+  .gf3d .gf-ghost{font-size:46vw}
+}
+/* no WebGL: readable stacked fallback */
+.gf-nowebgl .gf3d{height:auto}
+.gf-nowebgl .gf3d .gf-stick{position:relative;height:auto;padding:120px 6vw 90px}
+.gf-nowebgl .gf3d canvas,.gf-nowebgl .gf3d .gf-dots,.gf-nowebgl .gf3d .gf-hint,.gf-nowebgl .gf3d .gf-ghost{display:none}
+.gf-nowebgl .gf3d .gf-beats{position:relative;inset:auto;transform:none;width:auto;max-width:44rem;display:block;margin:0}
+.gf-nowebgl .gf3d .gf-beat{opacity:1!important;visibility:visible!important;transform:none!important;margin-bottom:56px}
+@media (prefers-reduced-motion:reduce){.gf3d .gf-toast,.gf3d .gf-dots i{transition:none}}
+</style><link rel="stylesheet" href="rp.css"></head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div class="preview">A GunaFix preview for Nanday Café. This is not the official website. <a href="https://gunafix.com">gunafix.com</a></div>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Nanday Café, back to top"><img src="images/logo-olive.webp" alt="Nanday Café" width="68" height="44"></a>
+    <nav class="links" aria-label="Sections">
+      <a href="#story">The café</a>
+      <a href="#menu">Menu</a>
+      <a href="#seating">Seating</a>
+      <a href="#visit">Hours &amp; visit</a>
+    </nav>
+    <a class="btn btn-olive call" href="tel:+17275487299"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h3l1 4-2 1.5a12 12 0 0 0 6.5 6.5l1.5-2 4 1v3a2 2 0 0 1-2 2A15.5 15.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2Z"/></svg><span class="long">(727) 548-7299</span><span class="short">Call</span></a>
+  </div>
+</header>
+
+<main id="content">
+<section class="hero rp-hero" id="top" style="padding:0"><div class="rp-bg" aria-hidden="true" style="--rp-wash:linear-gradient(180deg,rgba(20,26,15,.25),rgba(20,26,15,.55))"><picture><source media="(max-aspect-ratio: 1/1)" srcset="media/poster-p.jpg"><img src="media/poster-l.jpg" alt="" fetchpriority="high"></picture><video class="rp-vid" muted loop playsinline autoplay preload="auto" aria-hidden="true" data-l="media/hero-1280.mp4" data-p="media/hero-540p.mp4"></video></div>
+  <svg class="feathers" viewBox="0 0 200 200" aria-hidden="true"><path fill="#C3D94A" d="M100 10c40 30 60 80 40 140-20-30-50-40-80-40 10-40 20-70 40-100Z"/></svg>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Now open · Beach Blvd, Gulfport</p>
+      <h1>A little wild.<br><em>A lot of heart.</em></h1>
+      <p class="lede">Thoughtfully crafted coffee, breakfast and lunch in the heart of Gulfport. Open every day from 8&nbsp;am, with lunch from 11.</p>
+      <div class="ctas">
+        <a class="btn btn-lime" href="tel:+17275487299"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h3l1 4-2 1.5a12 12 0 0 0 6.5 6.5l1.5-2 4 1v3a2 2 0 0 1-2 2A15.5 15.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2Z"/></svg>Call the café</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Nanday+Cafe+3107+Beach+Blvd+S+Gulfport+FL+33707" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10Z"/><circle cx="12" cy="11" r="2"/></svg>Directions</a>
+        <a class="btn btn-ghost" href="#menu">See the menu</a>
+      </div>
+      <ul class="facts">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Daily from 8&nbsp;am</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10Z"/></svg>3107 Beach Blvd S</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M12 4v16"/></svg>Dine in or to go</li>
+      </ul>
+    </div>
+    <div class="hero-photo">
+      <div class="rp-bh inplace" aria-hidden="true"><div class="subj-par"><div class="subj-tilt"><div class="subj-float"><div class="rp-h"><figure class="h-back"><img src="img/p05.webp" srcset="img/p05-s.webp 800w, img/p05.webp 1600w" sizes="30vw" width="1600" height="1550" alt="" fetchpriority="high"></figure><figure class="h-sm"><img src="img/p07.webp" srcset="img/p07-s.webp 800w, img/p07.webp 1425w" sizes="14vw" width="1425" height="1900" alt="" fetchpriority="high"></figure><figure class="h-main"><img src="img/p05.webp" srcset="img/p05-s.webp 800w, img/p05.webp 1600w" sizes="(max-width:767px) 54vw, 27vw" width="1600" height="1550" alt="Açaí bowl with berries and granola" fetchpriority="high"></figure><figure class="h-det"><img style="object-position:55% 60%;transform:scale(2.0);transform-origin:55% 60%" src="img/p08.webp" srcset="img/p08-s.webp 800w, img/p08.webp 1425w" sizes="14vw" width="1425" height="1900" alt="" fetchpriority="high"></figure></div></div></div></div></div>
+      <div class="stamp"><img src="apple-touch-icon.png" alt="" width="46" height="46"><div><b>Fresh-made Belgian waffles</b><span>Served from 8 am, every day</span></div></div>
+    </div>
+  </div>
+</section>
+<section class="gf3d gf-left gf-v-side" id="gf3d" aria-label="Scroll-driven 3D gallery of Nanday Café&#x27;s own photos" style="--g-bg:#1F2B17;--g-fg:#F6F0E2;--g-acc:#C3D94A;--g-muted:#CBD4B8;--g-line:rgba(246,240,226,.28);--g-disp:'Fraunces',Georgia,serif;--g-body:'DM Sans',system-ui,sans-serif;--g-rad:999px;--g-ls:-.03em;--g-em:italic;--g-on:#141712;--g-glow:rgba(141,179,58,.25);--g-ghost:rgba(195,217,74,.2);--g-gx:30%"><div class="gf-stick"><div class="gf-ghost" aria-hidden="true">Nanday</div><div class="rp-stage"><div class="rp-world"><figure class="rp-plane" data-ar="1.0323" data-lb="img/p05.webp" data-cap="Açaí bowl with berries and granola"><img src="img/p05.webp" srcset="img/p05-s.webp 800w, img/p05.webp 1600w" sizes="(max-width:767px) 70vw, 40vw" width="1600" height="1550" alt="Açaí bowl with berries and granola" fetchpriority="high"><figcaption>Açaí bowl with berries and granola</figcaption></figure><figure class="rp-plane" data-ar="0.7500" data-lb="img/p08.webp" data-cap="Croissant breakfast sandwich and a mug"><img src="img/p08.webp" srcset="img/p08-s.webp 800w, img/p08.webp 1425w" sizes="(max-width:767px) 70vw, 40vw" width="1425" height="1900" alt="Croissant breakfast sandwich and a mug" fetchpriority="high"><figcaption>Croissant breakfast sandwich and a mug</figcaption></figure><figure class="rp-plane" data-ar="0.7500" data-lb="img/p07.webp" data-cap="Iced coffee and the specials board"><img src="img/p07.webp" srcset="img/p07-s.webp 800w, img/p07.webp 1425w" sizes="(max-width:767px) 70vw, 40vw" width="1425" height="1900" alt="Iced coffee and the specials board" loading="lazy" decoding="async"><figcaption>Iced coffee and the specials board</figcaption></figure><figure class="rp-plane" data-ar="0.7500" data-lb="img/p03.webp" data-cap="Inside, by the mural wall"><img src="img/p03.webp" srcset="img/p03-s.webp 800w, img/p03.webp 1425w" sizes="(max-width:767px) 70vw, 40vw" width="1425" height="1900" alt="Inside, by the mural wall" loading="lazy" decoding="async"><figcaption>Inside, by the mural wall</figcaption></figure><figure class="rp-plane" data-ar="0.7500" data-lb="img/p01.webp" data-cap="Nanday Café front porch"><img src="img/p01.webp" srcset="img/p01-s.webp 800w, img/p01.webp 1080w" sizes="(max-width:767px) 70vw, 40vw" width="1080" height="1440" alt="Nanday Café front porch" loading="lazy" decoding="async"><figcaption>Nanday Café front porch</figcaption></figure><figure class="rp-plane" data-ar="1.3333" data-lb="img/p02.webp" data-cap="The café from the garden path"><img src="img/p02.webp" srcset="img/p02-s.webp 800w, img/p02.webp 1600w" sizes="(max-width:767px) 70vw, 40vw" width="1600" height="1200" alt="The café from the garden path" loading="lazy" decoding="async"><figcaption>The café from the garden path</figcaption></figure><figure class="rp-plane" data-ar="0.7500" data-lb="img/p06.webp" data-cap="The counter and coffee station"><img src="img/p06.webp" srcset="img/p06-s.webp 800w, img/p06.webp 1425w" sizes="(max-width:767px) 70vw, 40vw" width="1425" height="1900" alt="The counter and coffee station" loading="lazy" decoding="async"><figcaption>The counter and coffee station</figcaption></figure></div></div><div class="gf-beats"><article class="gf-beat"><span class="gf-k">Who's the bird?</span><h2>A little wild. <em>A lot of heart.</em></h2><p>The café is named after the nanday parakeet, the loud green bird with the black hood that has made Pinellas County its home.</p><ul class="gf-facts"><li>Open every day from 8 am</li><li>Lunch from 11</li></ul></article><article class="gf-beat"><span class="gf-k">Breakfast · from 8 am</span><h2>Fresh-made <em>Belgian waffles.</em></h2><p>Easy mornings, made delicious: waffles, bowls and more, with coffee all day. Almost all breakfast items come gluten-free or vegetarian.</p><ul class="gf-facts"><li>Belgian waffles</li><li>Bowls</li><li>Espresso · Lattes · Matcha</li></ul></article><article class="gf-beat"><span class="gf-k">3107 Beach Blvd S · Gulfport</span><h2>A place <em>to land.</em></h2><p>Dine in or to go, with a front patio and back courtyard. Daily from 8 am, lunch from 11. Call (727) 548-7299.</p><ul class="gf-facts"><li>Front patio</li><li>Back courtyard</li><li>(727) 548-7299</li></ul></article></div><div class="gf-dots" aria-hidden="true"><i></i><i></i><i></i></div><div class="gf-hint" aria-hidden="true">Scroll through the photos · tap to enlarge</div></div></section>
+
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Espresso</span><span>Lattes</span><span>Matcha</span><span>Belgian waffles</span><span>Breakfast sandwiches</span><span>Bagels</span><span>Bowls</span><span>From-scratch soups</span><span>Salads</span><span>Sandwiches</span>
+    <span>Espresso</span><span>Lattes</span><span>Matcha</span><span>Belgian waffles</span><span>Breakfast sandwiches</span><span>Bagels</span><span>Bowls</span><span>From-scratch soups</span><span>Salads</span><span>Sandwiches</span>
+  </div>
+</div>
+
+<section class="story" id="story">
+  <div class="wrap story-grid">
+    <figure class="bird-card reveal" style="margin:0">
+      <img src="img/p01.webp" srcset="img/p01-s.webp 800w, img/p01.webp 1080w" sizes="(max-width:767px) 90vw, 45vw" width="1080" height="1440" alt="Nanday Café front porch" data-lb="img/p01.webp" data-cap="Nanday Café front porch" loading="lazy" decoding="async">
+      <figcaption><b>Who’s the bird?</b>The café is named after the nanday parakeet, the loud green bird with the black hood that has made Pinellas County its home.</figcaption>
+    </figure>
+    <div class="reveal">
+      <p class="eyebrow">The café</p>
+      <h2>A place <em>to land.</em></h2>
+      <p class="big">Nanday Café is a locally owned neighborhood spot serving thoughtfully crafted coffee, delicious breakfast and lunch, and a little something unexpected.</p>
+      <p>Come for your morning latte, stay for a leisurely lunch, or settle in and enjoy the Gulfport atmosphere. The café has taken over the former GulfPerk Coffee Bar space on Beach Boulevard, right on the town’s stretch of locally loved restaurants and shops.</p>
+      <ul class="pillrow">
+        <li>Locally owned</li><li>Former GulfPerk space</li><li>Front patio &amp; back courtyard</li><li>Gluten-free &amp; vegetarian options</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="menu-head reveal">
+      <div>
+        <p class="eyebrow">What’s on the menu</p>
+        <h2>Easy mornings.<br>Easy lunches.</h2>
+      </div>
+      <p>Breakfast from 8, lunch from 11, coffee all day. Almost everything at breakfast comes in a gluten-free or vegetarian version. The full menu and today’s soups are at the counter.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="ph"><img src="img/p08.webp" srcset="img/p08-s.webp 800w, img/p08.webp 1425w" sizes="(max-width:767px) 90vw, 45vw" width="1425" height="1900" alt="Croissant breakfast sandwich and a mug" data-lb="img/p08.webp" data-cap="Croissant breakfast sandwich and a mug" loading="lazy" decoding="async"></div>
+        <div class="body">
+          <p class="tag">Breakfast · from 8 am</p>
+          <h3>Easy mornings, made delicious.</h3>
+          <ul><li>Fresh-made Belgian waffles</li><li>Breakfast sandwiches</li><li>Bagels</li><li>Bowls, and more</li></ul>
+          <div class="diet"><span class="badge">GF versions</span><span class="badge">Vegetarian versions</span></div>
+          <p class="time">Almost all breakfast items come gluten-free or vegetarian.</p>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="ph"><img src="img/p07.webp" srcset="img/p07-s.webp 800w, img/p07.webp 1425w" sizes="(max-width:767px) 90vw, 45vw" width="1425" height="1900" alt="Iced coffee and the specials board" data-lb="img/p07.webp" data-cap="Iced coffee and the specials board" loading="lazy" decoding="async"></div>
+        <div class="body">
+          <p class="tag">Coffee · all day</p>
+          <h3>Thoughtfully crafted coffee.</h3>
+          <ul><li>Espresso</li><li>Lattes</li><li>Matcha</li><li>&amp; more at the counter</li></ul>
+          <p class="time">Your morning latte, or the one that keeps lunch going.</p>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="ph"><img src="img/p03.webp" srcset="img/p03-s.webp 800w, img/p03.webp 1425w" sizes="(max-width:767px) 90vw, 45vw" width="1425" height="1900" alt="Inside, by the mural wall" data-lb="img/p03.webp" data-cap="Inside, by the mural wall" loading="lazy" decoding="async"></div>
+        <div class="body">
+          <p class="tag">Lunch · from 11 am</p>
+          <h3>Fresh, satisfying neighborhood favorites.</h3>
+          <ul><li>From-scratch soups that rotate</li><li>Salads</li><li>Sandwiches, like the turkey club</li></ul>
+          <p class="time">The turkey club has been an early favorite with guests.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="season reveal">
+      <div class="txt">
+        <p class="eyebrow">This fall</p>
+        <h3>Pumpkin, maple, <em>and a very good club.</em></h3>
+        <ol>
+          <li>Pumpkin Spice Belgian Waffle <span>Breakfast</span></li>
+          <li>Pumpkin chili soup <span>Lunch</span></li>
+          <li>Maple harvest spinach salad <span>Lunch</span></li>
+          <li>Turkey club sandwich <span>Early favorite</span></li>
+        </ol>
+      </div>
+      <div class="img"><img src="img/p05.webp" srcset="img/p05-s.webp 800w, img/p05.webp 1600w" sizes="(max-width:767px) 90vw, 45vw" width="1600" height="1550" alt="Açaí bowl with berries and granola" data-lb="img/p05.webp" data-cap="Açaí bowl with berries and granola" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="after reveal">
+      <p class="note">Dishes are those named by Nanday Café or by I Love the Burg (11 Nov 2026). Prices are not published online yet, so none are shown. Soups rotate, so ask what’s on today. Photos are stock images for mood, not Nanday Café dishes.</p>
+      <a class="btn btn-line" href="tel:+17275487299">Ask what’s on today</a>
+    </div>
+  </div>
+</section>
+
+<section class="seat" id="seating">
+  <div class="wrap seat-grid">
+    <div class="seat-photo reveal"><img src="img/p02.webp" srcset="img/p02-s.webp 800w, img/p02.webp 1600w" sizes="(max-width:767px) 90vw, 45vw" width="1600" height="1200" alt="The café from the garden path" data-lb="img/p02.webp" data-cap="The café from the garden path" loading="lazy" decoding="async"></div>
+    <div class="reveal">
+      <p class="eyebrow">Settle in</p>
+      <h2>Inside, out front, or out back.</h2>
+      <ul class="seats">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg><div><b>Front patio</b><span>Watch Beach Blvd go by with your coffee.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18"/><path d="M12 8c-3-3-7-3-8-1 3 0 5 1 8 4 3-3 5-4 8-4-1-2-5-2-8 1Z"/></svg><div><b>Back courtyard</b><span>Outdoor seating out back for a slower lunch.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11h14v3a5 5 0 0 1-5 5h-4a5 5 0 0 1-5-5v-3Z"/><path d="M19 12h1a2 2 0 0 1 0 4h-1"/><path d="M9 4c0 2 2 2 2 4M13 4c0 2 2 2 2 4"/></svg><div><b>Plenty of seats inside</b><span>For the days it gets a little chilly.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="rp-g2 rp-gal" id="photos" aria-label="Photos"><div class="rp-wrap"><p class="rp-kick">Around the café</p><h2>Photographs</h2><p class="rp-note">Photos: from Nanday Café&#x27;s public Google Maps listing, used for this private preview.</p><div class="g-grid" style="--gc:4"><figure class="g-it"><div class="ph-in" data-lb="img/p01.webp" data-cap="Nanday Café front porch"><img src="img/p01.webp" srcset="img/p01-s.webp 800w, img/p01.webp 1080w" sizes="(max-width:767px) 46vw, 24vw" width="1080" height="1440" alt="Nanday Café front porch" loading="lazy" decoding="async"></div><figcaption>Nanday Café front porch</figcaption></figure><figure class="g-it"><div class="ph-in" data-lb="img/p02.webp" data-cap="The café from the garden path"><img src="img/p02.webp" srcset="img/p02-s.webp 800w, img/p02.webp 1600w" sizes="(max-width:767px) 46vw, 24vw" width="1600" height="1200" alt="The café from the garden path" loading="lazy" decoding="async"></div><figcaption>The café from the garden path</figcaption></figure><figure class="g-it"><div class="ph-in" data-lb="img/p03.webp" data-cap="Inside, by the mural wall"><img src="img/p03.webp" srcset="img/p03-s.webp 800w, img/p03.webp 1425w" sizes="(max-width:767px) 46vw, 24vw" width="1425" height="1900" alt="Inside, by the mural wall" loading="lazy" decoding="async"></div><figcaption>Inside, by the mural wall</figcaption></figure><figure class="g-it"><div class="ph-in" data-lb="img/p05.webp" data-cap="Açaí bowl with berries and granola"><img src="img/p05.webp" srcset="img/p05-s.webp 800w, img/p05.webp 1600w" sizes="(max-width:767px) 46vw, 24vw" width="1600" height="1550" alt="Açaí bowl with berries and granola" loading="lazy" decoding="async"></div><figcaption>Açaí bowl with berries and granola</figcaption></figure><figure class="g-it"><div class="ph-in" data-lb="img/p06.webp" data-cap="The counter and coffee station"><img src="img/p06.webp" srcset="img/p06-s.webp 800w, img/p06.webp 1425w" sizes="(max-width:767px) 46vw, 24vw" width="1425" height="1900" alt="The counter and coffee station" loading="lazy" decoding="async"></div><figcaption>The counter and coffee station</figcaption></figure><figure class="g-it"><div class="ph-in" data-lb="img/p07.webp" data-cap="Iced coffee and the specials board"><img src="img/p07.webp" srcset="img/p07-s.webp 800w, img/p07.webp 1425w" sizes="(max-width:767px) 46vw, 24vw" width="1425" height="1900" alt="Iced coffee and the specials board" loading="lazy" decoding="async"></div><figcaption>Iced coffee and the specials board</figcaption></figure><figure class="g-it"><div class="ph-in" data-lb="img/p08.webp" data-cap="Croissant breakfast sandwich and a mug"><img src="img/p08.webp" srcset="img/p08-s.webp 800w, img/p08.webp 1425w" sizes="(max-width:767px) 46vw, 24vw" width="1425" height="1900" alt="Croissant breakfast sandwich and a mug" loading="lazy" decoding="async"></div><figcaption>Croissant breakfast sandwich and a mug</figcaption></figure></div></div></section><section class="visit" id="visit">
+  <div class="wrap">
+    <p class="eyebrow reveal">Come hang with us</p>
+    <h2 class="reveal">Hours &amp; visit</h2>
+    <div class="visit-grid">
+      <div class="panel reveal">
+        <h3>Hours</h3>
+        <ul class="hours">
+          <li><span>Every day</span><b>Opens 8:00 am</b></li>
+          <li><span>Breakfast</span><b>From 8:00 am</b></li>
+          <li><span>Lunch</span><b>From 11:00 am</b></li>
+          <li><span>Closing time</span><b>Call to check</b></li>
+        </ul>
+        <p class="note" style="margin-top:14px">Opening times from I Love the Burg, 11 Nov 2026. Closing time has not been published yet.</p>
+      </div>
+      <div class="panel reveal">
+        <h3>Find us</h3>
+        <ul class="contact">
+          <li><small>Address</small><a href="https://www.google.com/maps/search/?api=1&amp;query=Nanday+Cafe+3107+Beach+Blvd+S+Gulfport+FL+33707" rel="noopener" target="_blank">3107 Beach Blvd S<br>Gulfport, FL 33707</a></li>
+          <li><small>Phone</small><a href="tel:+17275487299">(727) 548-7299</a></li>
+          <li><small>Email</small><a href="mailto:hello@nandaycafe.com">hello@nandaycafe.com</a></li>
+        </ul>
+        <div class="btns">
+          <a class="btn btn-lime" href="https://www.google.com/maps/dir/?api=1&amp;destination=Nanday+Cafe+3107+Beach+Blvd+S+Gulfport+FL+33707" rel="noopener" target="_blank">Get directions</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Map showing Nanday Café at 3107 Beach Blvd S, Gulfport" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=3107+Beach+Blvd+S,+Gulfport,+FL+33707&amp;z=16&amp;output=embed"></iframe>
+      </div>
+    </div>
+    <div class="callout reveal"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><p style="margin:0">As things get started, orders are taken in person only, for dine-in and to go. Thank you for your understanding and support!</p></div>
+  </div>
+</section>
+
+<section class="social" id="say-hello">
+  <div class="wrap social-grid">
+    <div class="reveal">
+      <p class="eyebrow">Say hello</p>
+      <h2>Questions, events &amp; special requests.</h2>
+      <p>Have a question, an event or a special request? Drop the café a line. For today’s soups and specials, follow along online.</p>
+      <div class="handles">
+        <a class="handle" href="https://www.instagram.com/nandaycafe/" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#40582E" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#40582E"/></svg>
+          <div><b>@nandaycafe</b><span>Instagram</span></div>
+        </a>
+        <a class="handle" href="https://www.facebook.com/profile.php?id=61595141201923" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#40582E" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M13 21v-8h3l.5-3H13V8.5c0-1 .4-1.5 1.5-1.5H16.5V4.3A20 20 0 0 0 14 4c-2.4 0-4 1.5-4 4.2V10H7.5v3H10v8"/></svg>
+          <div><b>Nanday Café</b><span>Facebook</span></div>
+        </a>
+      </div>
+    </div>
+    <form class="enquiry reveal" id="enquiry" novalidate>
+      <h3>Drop us a line</h3>
+      <label>Name<input name="name" type="text" autocomplete="name" required></label>
+      <label>Email or phone<input name="contact" type="text" autocomplete="email"></label>
+      <label class="full">What’s it about?
+        <select name="topic"><option value="">Choose one</option><option>A question</option><option>An event</option><option>A special request</option><option>Something else</option></select>
+      </label>
+      <label class="full">Message<textarea name="message" rows="4" placeholder="Tell the café what you need."></textarea></label>
+      <div data-form-status hidden></div>
+      <div class="form-actions">
+        <button class="btn btn-olive" type="submit" style="cursor:pointer">Open email</button>
+        <span class="note">Opens a draft to hello@nandaycafe.com in your email app. Nothing is sent until you send it.</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="credits">
+  <div class="wrap">
+    <p class="note"><b>About this preview.</b> Built by GunaFix from what Nanday Café and local press have published: the café’s own website (address, phone, email, in-person ordering note, “A place to land” copy), I Love the Burg (11 Nov 2026: opening hours, dishes, seating), St Pete Rising (20 Oct 2026: the parakeet name, former GulfPerk space, Instagram and Facebook) and Local Shops 1 (pre-opening soup note). The logo belongs to Nanday Café. Photos: from Nanday Café&#x27;s public Google Maps listing, used for this private preview.</p>
+    
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <img src="images/logo-cream.webp" alt="Nanday Café" width="87" height="56" loading="lazy">
+    <p style="margin:0">Nanday Café · 3107 Beach Blvd S, Gulfport, FL 33707 · <a href="tel:+17275487299">(727) 548-7299</a></p>
+    <p style="margin:0">A GunaFix preview, not the official website · <a href="https://gunafix.com">gunafix.com</a></p>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Quick actions">
+  <a class="primary" href="tel:+17275487299"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h3l1 4-2 1.5a12 12 0 0 0 6.5 6.5l1.5-2 4 1v3a2 2 0 0 1-2 2A15.5 15.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2Z"/></svg>Call</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Nanday+Cafe+3107+Beach+Blvd+S+Gulfport+FL+33707" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10Z"/><circle cx="12" cy="11" r="2"/></svg>Directions</a>
+  <a href="#menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>Menu</a>
+</nav>
+
+<script>
+(function(){
+  const header=document.querySelector('header.site');
+  const set=()=>header.classList.toggle('is-scrolled', window.scrollY>8);
+  set(); window.addEventListener('scroll', set, {passive:true});
+})();
+(function(){
+  const form=document.getElementById('enquiry');
+  const box=form.querySelector('[data-form-status]');
+  const show=(state,msg)=>{box.hidden=false;box.dataset.state=state;box.setAttribute('role',state==='error'?'alert':'status');box.textContent=msg;};
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    const d=Object.fromEntries(new FormData(form).entries());
+    if(!(d.name||'').trim()){show('error','Please add your name.');return;}
+    if(!(d.contact||'').trim()){show('error','Leave an email or phone number so the café can reply.');return;}
+    const body=['Hello Nanday Café,','',d.message||'I have a question.','',d.topic?('About: '+d.topic):'','Name: '+d.name,'Contact: '+d.contact].join('\n');
+    window.location.href='mailto:hello@nandaycafe.com?subject='+encodeURIComponent((d.topic||'Hello')+' — '+d.name)+'&body='+encodeURIComponent(body);
+    show('ok','Your email app should open with a draft. Check it before sending.');
+  });
+})();
+(function(){
+  const nodes=document.querySelectorAll('.reveal');
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)){nodes.forEach(n=>n.classList.add('is-in'));return;}
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target);}}),{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  nodes.forEach(n=>io.observe(n));
+})();
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script><script defer src="rp.js"></script></body>
+</html>
