@@ -1,0 +1,50 @@
+[
+ {
+  "file": "images/pizza.webp",
+  "title": "File:Margherita Originale.JPG",
+  "artist": "Mario56",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Margherita_Originale.JPG",
+  "role": "cut"
+ },
+ {
+  "file": "images/hero.jpg",
+  "title": "File:Keuka Lake (34871023350).jpg",
+  "artist": "See1,Do1,Teach1",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Keuka_Lake_(34871023350).jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/pasta.jpg",
+  "title": "File:Spaghetti and meatballs 1.jpg",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Spaghetti_and_meatballs_1.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/arancini.jpg",
+  "title": "File:Mozzarella arancini 1.jpg",
+  "artist": "chomjong",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mozzarella_arancini_1.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/pizza-table.jpg",
+  "title": "File:Neapolitan pizza in Fort Lauderdale, Florida.jpg",
+  "artist": "Gatorfan252525",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Neapolitan_pizza_in_Fort_Lauderdale,_Florida.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/lake.jpg",
+  "title": "File:Keuka Lake.jpg",
+  "artist": "Theghostofmojo",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Keuka_Lake.jpg",
+  "role": "img"
+ }
+]

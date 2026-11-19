@@ -1,0 +1,50 @@
+[
+ {
+  "file": "images/plate.webp",
+  "title": "File:Full English breakfast at Sainsbury's Low Hall, Chingford, London.jpg",
+  "artist": "Acabashi",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Full_English_breakfast_at_Sainsbury%27s_Low_Hall,_Chingford,_London.jpg",
+  "role": "cut"
+ },
+ {
+  "file": "images/hero.jpg",
+  "title": "File:Full English - The Boudica 2025-05-15.jpg",
+  "artist": "Andy Li",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Full_English_-_The_Boudica_2025-05-15.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/pancakes.jpg",
+  "title": "File:American Pancakes with banana and blueberries - Jonny's Goring Bar & Kitchen 2026-01-29.jpg",
+  "artist": "Andy Li",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:American_Pancakes_with_banana_and_blueberries_-_Jonny%27s_Goring_Bar_%26_Kitchen_2026-01-29.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/coffee.jpg",
+  "title": "File:Coffee (197330221).jpeg",
+  "artist": "H R Photography",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Coffee_(197330221).jpeg",
+  "role": "img"
+ },
+ {
+  "file": "images/cathedral.jpg",
+  "title": "File:StAlbansCathedral-PS02.JPG",
+  "artist": "Przemys\u0142aw Sakrajda",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:StAlbansCathedral-PS02.JPG",
+  "role": "img"
+ },
+ {
+  "file": "images/english.jpg",
+  "title": "File:Full English Breakfast - Foodilic 2024-01-29.jpg",
+  "artist": "Andy Li",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Full_English_Breakfast_-_Foodilic_2024-01-29.jpg",
+  "role": "img"
+ }
+]

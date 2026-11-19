@@ -1,0 +1,50 @@
+[
+ {
+  "file": "images/cup.webp",
+  "title": "File:Latte art - London Grind, London, UK.jpg",
+  "artist": "Bex Walton",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Latte_art_-_London_Grind,_London,_UK.jpg",
+  "role": "cut"
+ },
+ {
+  "file": "images/hero.jpg",
+  "title": "File:Korean cuisine-Kimchi bokkeumbap-01.jpg",
+  "artist": "Jerine Lay",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Kimchi_bokkeumbap-01.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/kimchi.jpg",
+  "title": "File:Korean cuisine-Kimchi bokkeumbap-02.jpg",
+  "artist": "L. W. Yang",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Kimchi_bokkeumbap-02.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/bulgogi.jpg",
+  "title": "File:Korean Beef Bulgogi Rice Bowl (34817154336).jpg",
+  "artist": "A Healthier Michigan from Detroit, United States",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Korean_Beef_Bulgogi_Rice_Bowl_(34817154336).jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/club.jpg",
+  "title": "File:Club-sandwich.jpg",
+  "artist": "Memm",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Club-sandwich.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/coffee.jpg",
+  "title": "File:Closeup of a cup of latte art with coffee powder.jpg",
+  "artist": "Shixart1985",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Closeup_of_a_cup_of_latte_art_with_coffee_powder.jpg",
+  "role": "img"
+ }
+]

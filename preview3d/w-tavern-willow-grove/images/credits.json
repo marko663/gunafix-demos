@@ -1,0 +1,50 @@
+[
+ {
+  "file": "images/glass.webp",
+  "title": "File:15-09-26-RalfR-WLC-0141.jpg",
+  "artist": "Ralf Roletschek",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:15-09-26-RalfR-WLC-0141.jpg",
+  "role": "cut"
+ },
+ {
+  "file": "images/hero.jpg",
+  "title": "File:Old Fashioned Cocktail Hilton London Syon Park (55775610).jpeg",
+  "artist": "Jack Oughton",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_Fashioned_Cocktail_Hilton_London_Syon_Park_(55775610).jpeg",
+  "role": "img"
+ },
+ {
+  "file": "images/wings.jpg",
+  "title": "File:Chicken Wings- It's been a while. Baton Rouge LA 2026.jpg",
+  "artist": "Paul Lowry",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_Wings-_It%27s_been_a_while._Baton_Rouge_LA_2026.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/cheesesteak.jpg",
+  "title": "File:Philly Cheesesteak - 5449870218.jpg",
+  "artist": "JoshBerglund19",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Philly_Cheesesteak_-_5449870218.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/bar.jpg",
+  "title": "File:Rum, Manhattan, Tequila Old Fashioned (1).jpg",
+  "artist": "File:Rum, Manhattan, Tequila Old Fashioned.jpg: Cocktailmarler\nderivative work: Jocian",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rum,_Manhattan,_Tequila_Old_Fashioned_(1).jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/cocktail.jpg",
+  "title": "File:Whiskey Old Fashioned.jpg",
+  "artist": "Erich Wagner (www.eventografie.de)",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Whiskey_Old_Fashioned.jpg",
+  "role": "img"
+ }
+]

@@ -1,0 +1,50 @@
+[
+ {
+  "file": "images/pint.webp",
+  "title": "File:British dimpled glass pint jug with ale.jpg",
+  "artist": "Jongleur100",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:British_dimpled_glass_pint_jug_with_ale.jpg",
+  "role": "cut"
+ },
+ {
+  "file": "images/hero.jpg",
+  "title": "File:Interior of a traditional London pub - geograph.org.uk - 8378573.jpg",
+  "artist": "Alan Hughes",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Interior_of_a_traditional_London_pub_-_geograph.org.uk_-_8378573.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/bar.jpg",
+  "title": "File:The Viaduct Tavern bar interior, Newgate St, St Paul's, London 02.jpg",
+  "artist": "Acabashi",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Viaduct_Tavern_bar_interior,_Newgate_St,_St_Paul%27s,_London_02.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/room.jpg",
+  "title": "File:The Plough Pub Bar, Norwood Green - London. (30827934300).jpg",
+  "artist": "Jim Linwood from London",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Plough_Pub_Bar,_Norwood_Green_-_London._(30827934300).jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/steak.jpg",
+  "title": "File:Steak frites - yummy.jpg",
+  "artist": "LuvsMG481",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Steak_frites_-_yummy.jpg",
+  "role": "img"
+ },
+ {
+  "file": "images/pudding.jpg",
+  "title": "File:Sticky Toffee Pudding (4935903321).jpg",
+  "artist": "Neil Conway from Oakland, USA",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Sticky_Toffee_Pudding_(4935903321).jpg",
+  "role": "img"
+ }
+]
